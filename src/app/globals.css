@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f2fffd;
+  color: #04211d;
+}
+
+::selection {
+  background-color: #00a693;
+  color: #ffffff;
+}
+
+/* Thin scrollbar, brand-tinted */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f2fffd;
+}
+::-webkit-scrollbar-thumb {
+  background: #00a693;
+  border-radius: 999px;
+}
+
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(0, 166, 147, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 166, 147, 0.09) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.corner-brackets {
+  position: relative;
+}
+.corner-brackets::before,
+.corner-brackets::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: #00a693;
+  opacity: 0.6;
+}
+.corner-brackets::before {
+  top: -6px;
+  right: -6px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+.corner-brackets::after {
+  bottom: -6px;
+  left: -6px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
