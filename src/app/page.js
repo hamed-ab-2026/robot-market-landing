@@ -1,21 +1,28 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Locations from "@/components/Locations";
-import Products from "@/components/Products";
-import Footer from "@/components/Footer";
-import ScrollRefresh from "@/components/ScrollRefresh";
+import dynamic from "next/dynamic";
+import Navbar from "@components/layout/Navbar";
+import Hero from "@components/hero/Hero";
+import Footer from "@components/layout/Footer";
 
-export default function Home() {
+// Below-the-fold sections are lazy-loaded: they're heavier
+// (GSAP timelines, multiple SVG stacks) and never needed for the
+// first paint, so splitting them keeps the hero's LCP fast.
+const ProductsShowcase = dynamic(
+  () => import("@components/products/ProductsShowcase")
+);
+const About = dynamic(() => import("@components/layout/About"));
+const ContactCta = dynamic(() => import("@components/layout/ContactCta"));
+
+export default function HomePage() {
   return (
-    <main>
-      <ScrollRefresh />
-      <Header />
-      <Hero />
-      <About />
-      <Locations />
-      <Products />
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <ProductsShowcase />
+        <About />
+        <ContactCta />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

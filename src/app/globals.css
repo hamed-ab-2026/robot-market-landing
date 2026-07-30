@@ -2,73 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #00a693;
+  --color-dark: #063d39;
+  --color-accent: #19d7c2;
+  --color-light: #d8fff8;
+  --color-bg: #f7fbfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f2fffd;
-  color: #04211d;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  font-family: var(--font-vazirmatn), Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
-::selection {
-  background-color: #00a693;
-  color: #ffffff;
+/* Respect the user's motion preference across the whole site. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
-/* Thin scrollbar, brand-tinted */
+/* Slim, brand-tinted scrollbar (progressive enhancement only). */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f2fffd;
+  background: var(--color-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #00a693;
+  background: var(--color-primary);
   border-radius: 999px;
 }
 
-.blueprint-grid {
-  background-image:
-    linear-gradient(rgba(0, 166, 147, 0.09) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 166, 147, 0.09) 1px, transparent 1px);
-  background-size: 42px 42px;
+/* Visible keyboard focus ring, brand-colored, never removed. */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
-.corner-brackets {
-  position: relative;
-}
-.corner-brackets::before,
-.corner-brackets::after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-color: #00a693;
-  opacity: 0.6;
-}
-.corner-brackets::before {
-  top: -6px;
-  right: -6px;
-  border-top: 2px solid;
-  border-right: 2px solid;
-}
-.corner-brackets::after {
-  bottom: -6px;
-  left: -6px;
-  border-bottom: 2px solid;
-  border-left: 2px solid;
+.glass-surface {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .text-balance {
   text-wrap: balance;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
