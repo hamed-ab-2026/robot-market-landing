@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="400" height="700">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00a693" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#08554e"/>
+    </linearGradient>
+  </defs>
+  <rect x="40" y="30" width="320" height="620" rx="26" fill="url(#body)" stroke="#012e28" stroke-width="6"/>
+  <rect x="70" y="70" width="260" height="360" rx="10" fill="#04120f" opacity="0.55"/>
+  <g fill="#0b3d38" opacity="0.9">
+    <rect x="85" y="85" width="55" height="80" rx="4"/>
+    <rect x="150" y="85" width="55" height="80" rx="4"/>
+    <rect x="215" y="85" width="55" height="80" rx="4"/>
+    <rect x="280" y="85" width="35" height="80" rx="4"/>
+    <rect x="85" y="175" width="55" height="80" rx="4"/>
+    <rect x="150" y="175" width="55" height="80" rx="4"/>
+    <rect x="215" y="175" width="55" height="80" rx="4"/>
+    <rect x="280" y="175" width="35" height="80" rx="4"/>
+    <rect x="85" y="265" width="55" height="80" rx="4"/>
+    <rect x="150" y="265" width="55" height="80" rx="4"/>
+    <rect x="215" y="265" width="55" height="80" rx="4"/>
+    <rect x="280" y="265" width="35" height="80" rx="4"/>
+  </g>
+  <rect x="70" y="450" width="260" height="150" rx="10" fill="#04120f" opacity="0.4"/>
+  <circle cx="200" cy="525" r="34" fill="none" stroke="#e6f7f4" stroke-width="4"/>
+  <rect x="185" y="595" width="30" height="40" rx="4" fill="#04120f"/>
+  <text x="200" y="670" font-family="Tahoma, sans-serif" font-size="26" fill="#e6f7f4" text-anchor="middle">RM-35</text>
+</svg>

@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Theme tokens — dark is the default; .light overrides on <html>      */
+/* ------------------------------------------------------------------ */
+:root {
+    --brand: #00a693;
+    --color-bg-page: #04120f;
+    --color-bg-elevated: #0c2b24;
+    --color-bg-surface: rgba(255, 255, 255, 0.045);
+    --color-bg-surface-strong: rgba(255, 255, 255, 0.08);
+    --color-border: rgba(0, 166, 147, 0.28);
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(230, 247, 244, 0.72);
+    --color-scrollbar-track: #071e19;
+    --color-scrollbar-thumb: #0b5c50;
+    color-scheme: dark;
+}
+
+html.light {
+    --color-bg-page: #f5fbf9;
+    --color-bg-elevated: #ffffff;
+    --color-bg-surface: rgba(0, 89, 79, 0.045);
+    --color-bg-surface-strong: rgba(0, 89, 79, 0.08);
+    --color-border: rgba(0, 166, 147, 0.25);
+    --color-text-primary: #04231f;
+    --color-text-secondary: rgba(4, 35, 31, 0.68);
+    --color-scrollbar-track: #e1f3ef;
+    --color-scrollbar-thumb: #8fdccc;
+    color-scheme: light;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html[dir='rtl'] body {
+    font-family: var(--font-vazirmatn), Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgba(0, 166, 147, 0.35);
+    color: var(--color-text-primary);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb);
+    border-radius: 999px;
+}
+
+/* Semantic surface/text utilities — read the theme variables above so every
+   component that uses them automatically supports dark + light mode. */
+.bg-page {
+    background-color: var(--color-bg-page);
+}
+
+.bg-elevated {
+    background-color: var(--color-bg-elevated);
+}
+
+.bg-surface {
+    background-color: var(--color-bg-surface);
+}
+
+.bg-surface-strong {
+    background-color: var(--color-bg-surface-strong);
+}
+
+.border-subtle {
+    border-color: var(--color-border);
+}
+
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+/* Opacity variants of the tokens above (Tailwind's /NN modifier only works on
+   Tailwind-generated utilities, not these hand-written classes). */
+.bg-page-60 {
+    background-color: color-mix(in srgb, var(--color-bg-page) 60%, transparent);
+}
+
+.bg-page-85 {
+    background-color: color-mix(in srgb, var(--color-bg-page) 85%, transparent);
+}
+
+.bg-elevated-95 {
+    background-color: color-mix(in srgb, var(--color-bg-elevated) 95%, transparent);
+}
+
+.text-primary-90 {
+    color: color-mix(in srgb, var(--color-text-primary) 90%, transparent);
+}
+
+/* ------------------------------------------------------------------ */
+/* Horizontal scroll showcase (pinned via GSAP ScrollTrigger)          */
+/* ------------------------------------------------------------------ */
+.horizontal-track {
+    display: flex;
+    height: 100vh;
+    /*width: 100vw;*/
+    will-change: transform;
+}
+
+.horizontal-panel {
+    height: 100vh;
+    width: 100vw;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* Cursor spotlight / lens reveal effect over the vending machine       */
+/* ------------------------------------------------------------------ */
+.spotlight-stage {
+    position: relative;
+    cursor: none;
+    isolation: isolate;
+}
+
+.spotlight-stage .base-layer,
+.spotlight-stage .reveal-layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+.spotlight-stage .reveal-layer {
+    clip-path: circle(0px at 50% 50%);
+    transition: clip-path 0.05s linear;
+}
+
+.spotlight-lens {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 190px;
+    border-radius: 999px;
+    border: 2px solid rgba(0, 166, 147, 0.9);
+    box-shadow: 0 0 0 4px rgba(0, 166, 147, 0.15),
+    0 0 40px 6px rgba(0, 166, 147, 0.45);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 30;
+}
+
+.spotlight-stage:hover .spotlight-lens {
+    opacity: 1;
+}
+
+/* Utility: hide native scrollbar but keep scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Gradient text helper for headings */
+.brand-gradient-text {
+    background: linear-gradient(90deg, #6fe0c9 0%, #00a693 55%, #017065 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ------------------------------------------------------------------ */
+/* Typewriter caret for the hero headline                              */
+/* ------------------------------------------------------------------ */
+.typewriter-caret {
+    display: inline-block;
+    width: 3px;
+    margin-inline-start: 4px;
+    background-color: var(--brand);
+    animation: caretBlink 0.9s steps(1) infinite;
+}
+
+@keyframes caretBlink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* Chat widget                                                          */
+/* ------------------------------------------------------------------ */
+.chat-bubble {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}

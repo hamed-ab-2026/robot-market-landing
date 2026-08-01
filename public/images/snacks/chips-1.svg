@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" width="120" height="160">
+  <path d="M20 10 L100 10 L92 150 L28 150 Z" fill="#ffb020" stroke="#7a4a00" stroke-width="3"/>
+  <path d="M20 10 L100 10 L96 45 L24 45 Z" fill="#00a693"/>
+  <circle cx="60" cy="90" r="26" fill="#fff4d6" opacity="0.85"/>
+  <text x="60" y="30" font-family="Tahoma, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">چیپس</text>
+</svg>

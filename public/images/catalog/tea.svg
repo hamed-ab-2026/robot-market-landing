@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+  <rect x="20" y="25" width="80" height="95" rx="6" fill="#00a693" stroke="#017065" stroke-width="3"/>
+  <rect x="30" y="15" width="60" height="16" rx="4" fill="#e6f7f4"/>
+  <line x1="60" y1="0" x2="60" y2="15" stroke="#8fdccc" stroke-width="2"/>
+  <text x="60" y="80" font-family="Tahoma, sans-serif" font-size="13" fill="#e6f7f4" text-anchor="middle">چای</text>
+</svg>
