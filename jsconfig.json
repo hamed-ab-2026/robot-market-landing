@@ -2,15 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@redux/*": ["src/redux/*"],
-      "@services/*": ["src/services/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["src/utils/*"],
-      "@constants/*": ["src/constants/*"],
-      "@data/*": ["src/data/*"]
+      "@/*": ["./*"]
     }
-  },
-  "exclude": ["node_modules", ".next"]
+  }
 }

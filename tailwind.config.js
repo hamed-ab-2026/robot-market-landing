@@ -1,58 +1,57 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
-    "./src/app/**/*.{js,jsx}",
-    "./src/components/**/*.{js,jsx}",
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#00A693",
-          dark: "#063D39",
-          accent: "#19D7C2",
-          light: "#D8FFF8",
+        brand: {
+          DEFAULT: '#00a693',
+          50: '#e6f7f4',
+          100: '#c0ebe3',
+          200: '#8fdccc',
+          300: '#5cccb4',
+          400: '#2eba9c',
+          500: '#00a693',
+          600: '#008c7c',
+          700: '#017065',
+          800: '#08554e',
+          900: '#0b3d38',
+          950: '#062522',
         },
-        surface: {
-          DEFAULT: "#F7FBFB",
+        ink: {
+          950: '#04120f',
+          900: '#071e19',
+          800: '#0c2b24',
         },
       },
       fontFamily: {
-        vazir: ["var(--font-vazirmatn)", "Tahoma", "sans-serif"],
-      },
-      backgroundImage: {
-        "brand-gradient":
-          "linear-gradient(135deg, #00A693 0%, #19D7C2 50%, #063D39 100%)",
-        "brand-radial":
-          "radial-gradient(60% 60% at 50% 40%, #19D7C2 0%, rgba(25,215,194,0) 70%)",
-      },
-      boxShadow: {
-        glass: "0 8px 32px 0 rgba(6, 61, 57, 0.12)",
-        "glass-lg": "0 20px 60px -10px rgba(6, 61, 57, 0.25)",
-        glow: "0 0 40px rgba(25, 215, 194, 0.35)",
-      },
-      backdropBlur: {
-        xs: "2px",
-      },
-      borderRadius: {
-        "4xl": "2rem",
-        "5xl": "2.5rem",
+        vazir: ['var(--font-vazirmatn)', 'Tahoma', 'sans-serif'],
       },
       keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-14px)" },
+        floaty: {
+          '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+          '50%': { transform: 'translateY(-18px) rotate(4deg)' },
         },
-        "pulse-glow": {
-          "0%, 100%": { opacity: 0.5 },
-          "50%": { opacity: 1 },
+        pulseSoft: {
+          '0%, 100%': { opacity: '0.6' },
+          '50%': { opacity: '1' },
         },
       },
       animation: {
-        float: "float 6s ease-in-out infinite",
-        "pulse-glow": "pulse-glow 4s ease-in-out infinite",
+        floaty: 'floaty 6s ease-in-out infinite',
+        pulseSoft: 'pulseSoft 2.4s ease-in-out infinite',
+      },
+      boxShadow: {
+        brandGlow: '0 0 60px -10px rgba(0, 166, 147, 0.55)',
       },
     },
   },
   plugins: [],
+  corePlugins: {
+    preflight: true,
+  },
 };

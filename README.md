@@ -1,138 +1,132 @@
-# روبات مارکت — Robot Market Landing
+# روبات مارکت — Vending Machine Showcase
 
-A cinematic, RTL, Persian-language landing page for **Robot Market**, a
-smart refrigerated vending-machine brand. Built with Next.js (App Router),
-Tailwind CSS, Ant Design, Redux Toolkit, Axios and GSAP + ScrollTrigger.
+پروژه Next.js (App Router) صفحه معرفی محصولات «روبات مارکت»، با انیمیشن‌های GSAP/ScrollTrigger،
+مدیریت سبد خرید با Redux Toolkit، حالت تیره/روشن، دو زبانه (فارسی/انگلیسی)، نقشه، فرم تیکت
+پشتیبانی، و ویجت چت.
 
-The centerpiece of the page is a scroll-driven hero animation: scattered
-SVG pieces fly together into a fully assembled vending machine as the user
-scrolls, followed by a three-act "scroll story" introducing each of the
-three product models.
-
-## Getting started
+## اجرای پروژه
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+سپس `http://localhost:3000` را باز کنید.
 
-```bash
-npm run build   # production build
-npm run start   # serve the production build
-npm run lint    # eslint
-```
-
-## Tech stack
-
-| Concern            | Library                         |
-| ------------------- | -------------------------------- |
-| Framework            | Next.js 14 (App Router, JS only) |
-| Styling              | Tailwind CSS                     |
-| Component library    | Ant Design (RTL-configured)      |
-| State management     | Redux Toolkit                    |
-| HTTP client          | Axios                            |
-| Animation            | GSAP + ScrollTrigger + @gsap/react |
-| Icons                | react-icons                      |
-| Font                 | Vazirmatn (next/font/google)     |
-
-## Project structure
+## ساختار پروژه
 
 ```
-src/
-  app/                  Routes (App Router): layout, page, dashboard,
-                         robots.js, sitemap.js, manifest.js, loading, 404
-  components/
-    common/              Container, Section, GlassCard, MagneticButton
-    layout/              Navbar, Footer, About, ContactCta
-    hero/                Hero, HeroBackground, MachineAssembly, FloatingProducts
-    products/            ProductsShowcase, ProductSection, MachineVisual
-    animations/          ScrollReveal (shared scroll-in wrapper)
-    ui/                  AntThemeProvider (Ant Design RTL + token bridge)
-  redux/
-    store.js             Store factory (per-request, App-Router-safe)
-    provider.jsx          Client <StoreProvider>
-    slices/               auth, products, ui
-  services/
-    axios.js              Shared Axios instance + interceptors
-    auth.service.js        // TODO: Connect Login API
-    product.service.js     // TODO: Connect Product API
-    dashboard.service.js   // TODO: Connect Dashboard API
-  hooks/                  useReducedMotion, useIsomorphicLayoutEffect
-  utils/                  cn, formatPrice, gsapConfig, breakpoints
-  constants/              theme tokens, nav links
-  data/                   products.json, floatingProducts.json (mock data)
+app/
+  layout.jsx              # پوسته HTML، فونت وزیرمتن
+  page.jsx                 # چیدمان کامل صفحه
+  providers.jsx             # Redux + Theme + Language + AntD ConfigProvider
+  globals.css                # توکن‌های رنگ دارک/لایت، جلوه اسپات‌لایت، تایپ‌رایتر
+  context/
+    ThemeContext.jsx          # حالت دارک/لایت (ذخیره در localStorage)
+    LanguageContext.jsx        # زبان فا/en (ذخیره در localStorage + جهت صفحه)
+store/                       # Redux (سبد خرید)
+data/
+  content.js                 # منبع واحد محتوای دوزبانه (fa/en) — همه‌ی متن‌ها اینجاست
+components/
+  Header.jsx                  # هدر + سوییچ زبان/تم + دکمه ورود به پنل کاربری
+  ThemeToggle.jsx / LanguageToggle.jsx
+  HeroSection.jsx              # هدلاین تایپ‌شونده + پس‌زمینه رنگی در حال چرخش
+  HorizontalShowcase.jsx        # اسکرول افقی پین‌شده + ویدیوی پس‌زمینه
+  VendingCard.jsx                # کارت دستگاه + جلوه اسپات‌لایت
+  FloatingItems.jsx
+  FeaturesSection.jsx
+  AboutSection.jsx
+  LocationsSection.jsx
+  MapSection.jsx                 # نقشه Neshan (کلید API را خودتان اضافه می‌کنید)
+  CatalogSection.jsx              # کاتالوگ محصولات قابل سفارش
+  IntroVideoSection.jsx            # ویدیوی معرفی شرکت
+  TicketForm.jsx                  # فرم تیکت پشتیبانی
+  ChatWidget.jsx                   # آیکون شناور چت + مودال گفتگو
+  CartDrawer.jsx
+  Footer.jsx
 public/
-  svg/machines/machine35|48|60/   Assembly pieces: base, body, door, panel, screen, shelves
-  svg/floating/                    chip, cola, drink, cookie, snack, juice
-  icons/                           Brand icon + OG image placeholders (SVG)
+  images/, gifs/, video/            # دارایی‌های placeholder — در پیام قبلی توضیح داده شده
 ```
 
-## Replacing placeholder assets
+## ویژگی‌های اضافه‌شده در این نسخه
 
-Every visual asset in `public/svg` is a deliberately simple placeholder —
-swap the files in place (same filenames) and nothing else needs to change:
+### نقشه (Neshan)
+`components/MapSection.jsx` از **Neshan Static Map API** استفاده می‌کند (یک تصویر ساده، بدون نیاز
+به اسکریپت/SDK جاوااسکریپت). کلید API را اینجا وارد کنید:
 
-- `public/svg/machines/<model>/*.svg` — the 6 pieces GSAP assembles/positions.
-  Keep the same `viewBox="0 0 400 700"` coordinate space so pieces still
-  line up when assembled, or update the piece list in `src/data/products.json`.
-- `public/svg/floating/*.svg` — the floating product icons around the hero.
-- `public/icons/*.svg` — brand icon and Open Graph placeholder. Replace the
-  OG placeholder with a real 1200×630 raster (`.png`/`.jpg`) before launch
-  and update the reference in `src/app/layout.js`.
+1. یک فایل `.env.local` در ریشه پروژه بسازید (از روی `.env.local.example` کپی کنید)
+2. مقدار `NEXT_PUBLIC_NESHAN_API_KEY` را با کلید واقعی خودتان از
+   [platform.neshan.org](https://platform.neshan.org) پر کنید
 
-## Connecting the real API
+تا وقتی کلید خالی باشد، به‌جای نقشه یک پیام راهنما («برای فعال شدن نقشه، کلید API نشان را در
+تنظیمات پروژه قرار دهید») نمایش داده می‌شود — سایت خراب نمی‌شود. نقشه در حالت تیره/روشن هم استایل
+متفاوتی می‌گیرد (`standard-night` / `standard-day`). لینک «مشاهده در نشان» کنار هر آدرس به نقشه
+تعاملی neshan.org می‌رود و نیازی به کلید ندارد. مختصات فعلی در `data/content.js`
+(`mapLocations`) تقریبی هستند — با پین دقیق جایگزین کنید.
 
-Nothing here talks to a real backend yet. Each service method already has
-the exact call commented out — uncomment and remove the mock `Promise.resolve`:
+### کاتالوگ محصولات
+`components/CatalogSection.jsx` — گرید محصولاتی (زعفران، تنقلات، نوشیدنی، قهوه، چای و ...) که
+مشتریان دستگاه می‌توانند با قیمت کمتر از بازار سفارش دهند. هر آیتم قیمت بازار (خط‌خورده) و قیمت
+ویژه را نشان می‌دهد و دکمه «افزودن به سفارش» آن را به همان سبد خرید Redux اضافه می‌کند (در کنار
+دستگاه‌ها). لیست محصولات، قیمت‌ها و تصاویر در `data/content.js` (کلید `catalog`) قابل ویرایش است؛
+تصاویر placeholder در `public/images/catalog/` قرار دارند.
 
-```js
-// src/services/product.service.js
-async getAll() {
-  // TODO: Connect Product API
-  return apiClient.get("/products").then((res) => res.data);
-}
-```
+### سکشن ویدیوی معرفی شرکت
+`components/IntroVideoSection.jsx` — یک پلیر ویدیوی مستقل (جدا از ویدیوی پس‌زمینه اسکرول افقی) با
+پوستر و دکمه پخش استاندارد مرورگر. برای جایگزینی، فایل واقعی را در
+`public/video/company-intro-placeholder.mp4` بگذارید (یا مسیر `introVideoSrc` را در
+`data/content.js` عوض کنید)؛ پوستر هم از `public/images/video-poster.svg` می‌آید.
 
-Set `NEXT_PUBLIC_API_BASE_URL` in `.env.local` (see `.env.example`).
+### رنگ‌بندی متناوب سکشن‌ها
+هر سکشن اصلی صفحه (به‌جز هیرو و بخش اسکرول افقی که پس‌زمینه مخصوص خودشان را دارند) به‌ترتیب بین سه
+تن رنگی برند می‌چرخد: `bg-page` → `bg-surface` → `bg-elevated` → ... به‌همراه یک خط جداکننده ظریف
+بالای هر بخش. این‌ها همان توکن‌های دارک/لایت هستند، پس با تغییر تم هم هماهنگ می‌مانند. برای تغییر
+ترتیب یا اضافه کردن سکشن جدید، کافی‌ست یکی از این سه کلاس را روی `<section>` بگذارید.
 
-## Motion & accessibility notes
+### حالت دارک/لایت
+دکمه سوییچ در هدر (آیکون خورشید/ماه). ترجیح در `localStorage` ذخیره می‌شود و در اولین بار بر اساس
+تنظیمات سیستم کاربر تعیین می‌شود. رنگ‌بندی از طریق متغیرهای CSS در `app/globals.css`
+(`--color-bg-page`, `--color-text-primary`, ...) و کلاس‌های کمکی `bg-page` / `bg-surface` /
+`text-primary` / `text-secondary` / `border-subtle` مدیریت می‌شود؛ برای هر رنگ جدید فقط همین‌جا را
+ویرایش کنید. تم Ant Design هم به‌صورت خودکار (`darkAlgorithm` / `defaultAlgorithm`) هماهنگ می‌شود.
 
-- **Scroll-locked product story.** Each `ProductSection` reports its DOM
-  nodes up to `ProductsShowcase`, which builds and pins all three
-  machines' `ScrollTrigger` timelines together in one place (fixing a bug
-  where wide/desktop viewports could fail to reveal machines after the
-  first one — see the comment at the top of `ProductsShowcase.jsx`), then
-  calls `ScrollTrigger.refresh()` once every measurement has settled.
-  Scrolling literally cannot advance past a pinned section until its
-  reveal finishes — only then does the next machine begin.
-- **Vivid, temperature-coded background per machine.** Each product
-  carries its own `bgColor` in `src/data/products.json`, and
-  `ProductsShowcase` cross-fades a single fixed color layer to that color
-  over the *exact same* scroll range the section uses to pin — so the
-  backdrop finishes changing exactly as the machine settles into place.
-  The three models deliberately alternate cool → warm → cool: a vivid icy
-  cyan-blue (`#12C4E0`) for the entry model, a warm coral-orange
-  (`#FF7A45`) for the mid-tier, and a cool emerald-teal (`#12D6A8`) for
-  the flagship — all bright, cheerful tones rather than muted brand
-  neutrals, chosen specifically for this section.
-- **Floating drinks/snacks per section.** `SectionFloatingItems.jsx`
-  places a small set of product icons (soda, mineral water, juice,
-  snacks) drifting gently around each machine — which items appear is
-  configurable per product via `floatingItemIds` in `products.json`.
-- All GSAP animations check `prefers-reduced-motion` and degrade to simple
-  opacity fades (or skip entirely) when it's set.
-- `gsap.matchMedia()` is used in both `MachineAssembly` (hero) and
-  `ProductSection` to give desktop/tablet/mobile different scroll
-  distances/intensity.
-- Focus states, semantic landmarks (`<header>`, `<main>`, `<footer>`,
-  `<nav>`), and ARIA labels are included throughout.
+### دو زبانه (فارسی / انگلیسی)
+دکمه «EN / فا» در هدر. تمام متن‌های سایت (منو، هیرو، محصولات، درباره ما، مکان‌های نصب، فرم تیکت،
+چت، فوتر) از `data/content.js` خوانده می‌شوند — یک آبجکت با کلیدهای `fa` و `en`. تغییر زبان همچنین
+جهت صفحه (`dir`) و `lang` تگ `html` را به‌روزرسانی می‌کند. برای اضافه یا اصلاح متن، فقط
+`data/content.js` را ویرایش کنید؛ کامپوننت‌ها نیازی به تغییر ندارند.
 
-## SEO / PWA
+> نکته فنی: بخش اسکرول افقی (`HorizontalShowcase`) به‌عمد همیشه `dir="ltr"` روی خود track دارد
+> (چون محاسبات GSAP به آن نیاز دارد)، اما هر کارت داخلش جهت متن را بر اساس زبان فعال تنظیم می‌کند.
 
-- Metadata API with OpenGraph, Twitter cards, and canonical URL in
-  `src/app/layout.js`.
-- JSON-LD `Organization` schema inlined in the root layout.
-- `robots.js`, `sitemap.js`, and `manifest.js` are implemented as Next.js
-  route handlers (App Router convention) rather than static files.
+### فرم تیکت پشتیبانی
+`components/TicketForm.jsx` — فرم Ant Design با اعتبارسنجی (نام، تلفن، ایمیل اختیاری، موضوع،
+اولویت، پیام). ارسال فعلاً فقط یک پیام موفقیت نمایش می‌دهد؛ بلوک کامنت‌شده
+`// TODO: Connect to the real ticketing/support API` دقیقاً نشان می‌دهد کجا باید axios را وصل کنید.
+
+### ویجت چت
+دکمه شناور گوشه صفحه (`components/ChatWidget.jsx`) یک مودال گفتگوی ساده باز می‌کند. پیام‌ها فعلاً
+در state محلی نگه‌داری می‌شوند و یک پاسخ خودکار نمایشی می‌دهند. بلوک
+`// TODO: Connect to a real chat/support backend` محل اتصال به بک‌اند واقعی (یا وب‌سوکت) را مشخص
+کرده.
+
+### هیرو: تایپ‌رایتر + پس‌زمینه رنگی در حال تغییر
+هدلاین با افکت تایپ‌رایتر بین چند جمله (`data/content.js` → `hero.typingPhrases`) می‌چرخد.
+پس‌زمینه به‌صورت حلقه‌ای بین سبز برند (`#00a693`)، مشکی و سفید تغییر رنگ می‌دهد (با GSAP). یک لایه
+scrim تیره روی آن قرار دارد تا متن در هر سه حالت خوانا بماند. وقتی ویدیوی هیرو را آماده کردید،
+داخل `components/HeroSection.jsx` یک بلوک `TODO` کامنت‌شده دقیقاً نشان می‌دهد چطور به‌جای پس‌زمینه
+رنگی، ویدیو را جایگزین کنید (فقط از حالت کامنت خارجش کنید).
+
+### ورود به پنل کاربری
+دکمه «ورود به پنل کاربری» / «Sign In» در هدر اضافه شده (در `components/Header.jsx`). چون گفتید
+لینک‌دهی را خودتان انجام می‌دهید، فعلاً فقط یک `onClick` خالی با کامنت TODO دارد — مسیر واقعی پنل
+کاربری را همان‌جا وصل کنید.
+
+## جایگزینی دارایی‌های واقعی (تصاویر/گیف/ویدیو)
+همان‌طور که قبلاً توضیح داده شد، فایل‌های داخل `public/images`, `public/gifs`, `public/video`
+placeholder هستند. برای جایگزینی، فایل جدید را با همان نام/مسیر جایگزین کنید یا مسیر را در
+`data/content.js` تغییر دهید.
+
+## اتصال درگاه پرداخت
+در `components/CartDrawer.jsx` داخل `handleCheckout` بلوک `// TODO: Connect to payment gateway API`
+با نمونه‌کد axios کامنت‌شده وجود دارد.

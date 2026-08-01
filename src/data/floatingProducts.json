@@ -1,9 +1,0 @@
-[
-  { "id": "chip", "src": "/svg/floating/chip.svg", "size": 64, "depth": 0.2 },
-  { "id": "cola", "src": "/svg/floating/cola.svg", "size": 80, "depth": 0.4 },
-  { "id": "drink", "src": "/svg/floating/drink.svg", "size": 70, "depth": 0.6 },
-  { "id": "cookie", "src": "/svg/floating/cookie.svg", "size": 56, "depth": 0.3 },
-  { "id": "snack", "src": "/svg/floating/snack.svg", "size": 68, "depth": 0.5 },
-  { "id": "juice", "src": "/svg/floating/juice.svg", "size": 74, "depth": 0.7 },
-  { "id": "water", "src": "/svg/floating/water.svg", "size": 66, "depth": 0.45 }
-]
