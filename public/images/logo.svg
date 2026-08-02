@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
-  <rect x="2" y="2" width="56" height="56" rx="14" fill="#00a693"/>
-  <rect x="16" y="14" width="28" height="32" rx="4" fill="#04120f"/>
-  <rect x="20" y="18" width="8" height="10" rx="1" fill="#00a693"/>
-  <rect x="32" y="18" width="8" height="10" rx="1" fill="#00a693"/>
-  <text x="70" y="27" font-family="Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#e6f7f4">روبات مارکت</text>
-  <text x="70" y="46" font-family="Tahoma, sans-serif" font-size="12" fill="#8fdccc">Robot Market</text>
-</svg>
