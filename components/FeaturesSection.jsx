@@ -1,5 +1,7 @@
 'use client';
 
+// نوار مزایا: ضمانت کالا، مشاوره رایگان، خرید اقساطی، بسته‌بندی ایمن.
+
 import {
   SafetyCertificateOutlined,
   CustomerServiceOutlined,
@@ -19,7 +21,7 @@ export default function FeaturesSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative px-6 md:px-16 py-16 md:py-20 bg-page border-t border-subtle">
+    <section className="relative px-6 md:px-16 py-16 md:py-20 bg-surface border-t border-subtle">
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {t.features.map((feature) => {
           const Icon = ICONS[feature.icon];

@@ -1,5 +1,7 @@
 'use client';
 
+// دکمه سوییچ حالت روشن/تیره.
+
 import { Button, Tooltip } from 'antd';
 import { SunOutlined, MoonOutlined } from '@ant-design/icons';
 import { useTheme } from '@/app/context/ThemeContext';

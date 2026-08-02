@@ -1,5 +1,7 @@
 'use client';
 
+// رندر آیتم‌های شناور (چیپس/نوشابه) دور دستگاه با حرکت تصادفی و ملایم GSAP.
+
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 

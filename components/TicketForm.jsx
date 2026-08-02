@@ -1,5 +1,7 @@
 'use client';
 
+// فرم ثبت تیکت پشتیبانی با اعتبارسنجی antd؛ ارسال واقعی به بک‌اند در بلوک TODO داخل کد مشخص شده.
+
 import { Form, Input, Select, Button, message } from 'antd';
 import { useLanguage } from '@/app/context/LanguageContext';
 
@@ -28,7 +30,7 @@ export default function TicketForm() {
   };
 
   return (
-    <section id="support" className="relative px-6 md:px-16 py-20 md:py-28 bg-page border-t border-subtle">
+    <section id="support" className="relative px-6 md:px-16 py-20 md:py-28 bg-surface border-t border-subtle">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-brand-400 text-sm font-semibold tracking-wide">{t.ticket.eyebrow}</span>

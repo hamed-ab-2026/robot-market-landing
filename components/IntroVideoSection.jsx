@@ -1,5 +1,7 @@
 'use client';
 
+// سکشن مستقل ویدیوی معرفی شرکت (جدا از ویدیوی پس‌زمینه ویترین محصولات).
+
 import { useLanguage } from '@/app/context/LanguageContext';
 import { introVideoSrc, introVideoPoster } from '@/data/content';
 
@@ -7,7 +9,7 @@ export default function IntroVideoSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="video" className="relative px-6 md:px-16 py-20 md:py-28 bg-surface border-t border-subtle">
+    <section id="video" className="relative px-6 md:px-16 py-20 md:py-28 bg-elevated border-t border-subtle">
       <div className="max-w-5xl mx-auto text-center">
         <span className="text-brand-400 text-sm font-semibold tracking-wide">{t.introVideo.eyebrow}</span>
         <h2 className="text-2xl md:text-4xl font-extrabold brand-gradient-text mt-3 mb-3">

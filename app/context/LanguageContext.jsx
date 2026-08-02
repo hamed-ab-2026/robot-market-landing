@@ -1,5 +1,7 @@
 'use client';
 
+// context زبان سایت: نگه‌داری زبان فعلی (fa/en)، ذخیره در localStorage، و تنظیم جهت صفحه (rtl/ltr).
+
 import { createContext, useContext, useEffect, useState } from 'react';
 import { content } from '@/data/content';
 

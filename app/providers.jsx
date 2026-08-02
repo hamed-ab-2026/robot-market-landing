@@ -1,5 +1,7 @@
 'use client';
 
+// پل ارتباطی بین Redux، حالت تیره/روشن، و زبان فا/en با تنظیمات ConfigProvider آنت‌دیزاین.
+
 import { Provider as ReduxProvider } from 'react-redux';
 import { ConfigProvider, theme as antdThemeApi } from 'antd';
 import faIR from 'antd/locale/fa_IR';

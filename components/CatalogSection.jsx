@@ -1,5 +1,8 @@
 'use client';
 
+// کاتالوگ محصولات جانبی (زعفران، تنقلات، نوشیدنی و ...) که مشتریان دستگاه با قیمت کمتر از بازار
+// می‌توانند سفارش دهند. دکمه «افزودن به سفارش» از همان سبد خرید Redux دستگاه‌ها استفاده می‌کند.
+
 import { Button, message } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
@@ -29,7 +32,7 @@ export default function CatalogSection() {
   };
 
   return (
-    <section id="catalog" className="relative px-6 md:px-16 py-20 md:py-28 bg-elevated border-t border-subtle">
+    <section id="catalog" className="relative px-6 md:px-16 py-20 md:py-28 bg-page border-t border-subtle">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-4">
           <span className="text-brand-400 text-sm font-semibold tracking-wide">{t.catalog.eyebrow}</span>

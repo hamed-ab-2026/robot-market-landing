@@ -105,13 +105,32 @@ export const content = {
     },
     hero: {
       loading: 'در حال بارگذاری روبات مارکت…',
-      typingPhrases: [
-        'به دنیای خودکار و هوشمند خوش آمدید!',
-        'تجربه‌ای نوین از خرید آسان و سریع.',
-        'روبات مارکت؛ فروشنده هوشمند شما، ۲۴ ساعته.',
-      ],
-      sub: 'تجربه‌ای نوین از خرید آسان و سریع با دستگاه‌های وندینگ روبات مارکت.',
       cta: 'مشاهده دستگاه‌ها',
+      // هر اسلاید یک تصویر دستگاه + یک عنوان دو خطی بزرگ (شبیه سایت Sielaff) دارد.
+      // برای افزودن اسلاید جدید، فقط یک آیتم دیگر به این آرایه اضافه کنید.
+      slides: [
+        {
+          id: 'slide-1',
+          kicker: 'روبات مارکت',
+          titleLines: ['فروش خودکار،', 'هوشمند و بی‌وقفه'],
+          sub: 'تجربه‌ای نوین از خرید آسان و سریع با دستگاه‌های وندینگ روبات مارکت.',
+          image: '/images/machine-35-base.svg',
+        },
+        {
+          id: 'slide-2',
+          kicker: 'یخچالدار',
+          titleLines: ['خنک‌کننده قدرتمند،', 'کیفیت تضمینی'],
+          sub: 'نگهداری اصولی تنقلات و نوشیدنی سرد، ۲۴ ساعته و بدون نیاز به نیروی انسانی.',
+          image: '/images/machine-48-base.svg',
+        },
+        {
+          id: 'slide-3',
+          kicker: 'مدیریت آنلاین',
+          titleLines: ['کنترل کامل کسب‌وکار', 'از راه دور'],
+          sub: 'مدیریت موجودی، فروش و گزارش‌گیری آنلاین، هر ساعت از شبانه‌روز.',
+          image: '/images/machine-60-base.svg',
+        },
+      ],
     },
     cart: {
       title: 'سبد خرید',
@@ -131,6 +150,19 @@ export const content = {
       gifAlt: (name) => `نمایش عملکرد ${name}`,
     },
     machines: machinesFa,
+    trustedBy: {
+      eyebrow: 'اعتماد شما، افتخار ماست',
+      title: 'کسب‌وکارهایی که به روبات مارکت اعتماد کرده‌اند',
+      // اسم‌های نمونه/فرضی هستند — با نام مشتریان واقعی جایگزین کنید.
+      clients: [
+        { id: 'c1', name: 'هتل پارسیان' },
+        { id: 'c2', name: 'دانشگاه فردوسی' },
+        { id: 'c3', name: 'بیمارستان رضوی' },
+        { id: 'c4', name: 'فروشگاه‌های زنجیره‌ای رفاه' },
+        { id: 'c5', name: 'مجتمع اداری آسمان' },
+        { id: 'c6', name: 'باشگاه ورزشی تلاش' },
+      ],
+    },
     features: [
       { id: 'warranty', icon: 'safety', title: 'ضمانت کالا', description: 'کلیه محصولات شرکت دارای یک سال خدمات پس از فروش می‌باشند.' },
       { id: 'consulting', icon: 'consulting', title: 'مشاوره تخصصی و رایگان', description: 'خدمات مشاوره رایگان در مورد نوع دستگاه و چیدمان محصولات.' },
@@ -274,13 +306,30 @@ export const content = {
     },
     hero: {
       loading: 'Loading Robot Market…',
-      typingPhrases: [
-        'Welcome to a smart, automated world!',
-        'A new experience of fast, easy shopping.',
-        'Robot Market — your smart seller, around the clock.',
-      ],
-      sub: 'A new experience of fast, easy shopping with Robot Market vending machines.',
       cta: 'View Machines',
+      slides: [
+        {
+          id: 'slide-1',
+          kicker: 'Robot Market',
+          titleLines: ['Automated selling,', 'smart & non-stop'],
+          sub: 'A new experience of fast, easy shopping with Robot Market vending machines.',
+          image: '/images/machine-35-base.svg',
+        },
+        {
+          id: 'slide-2',
+          kicker: 'Refrigerated',
+          titleLines: ['Powerful cooling,', 'guaranteed quality'],
+          sub: 'Proper storage for snacks and cold drinks, 24/7, with no staff required.',
+          image: '/images/machine-48-base.svg',
+        },
+        {
+          id: 'slide-3',
+          kicker: 'Online Management',
+          titleLines: ['Full control of your', 'business, remotely'],
+          sub: 'Manage inventory, sales, and reports online, any hour of the day.',
+          image: '/images/machine-60-base.svg',
+        },
+      ],
     },
     cart: {
       title: 'Cart',
@@ -300,6 +349,19 @@ export const content = {
       gifAlt: (name) => `${name} in action`,
     },
     machines: machinesEn,
+    trustedBy: {
+      eyebrow: 'Trusted by businesses like yours',
+      title: 'Businesses That Trust Robot Market',
+      // Sample/placeholder names — replace with real client names.
+      clients: [
+        { id: 'c1', name: 'Parsian Hotel' },
+        { id: 'c2', name: 'Ferdowsi University' },
+        { id: 'c3', name: 'Razavi Hospital' },
+        { id: 'c4', name: 'Refah Retail Chain' },
+        { id: 'c5', name: 'Asemaan Office Complex' },
+        { id: 'c6', name: 'Talash Sports Club' },
+      ],
+    },
     features: [
       { id: 'warranty', icon: 'safety', title: 'Product Warranty', description: 'All our products come with one year of after-sales service.' },
       { id: 'consulting', icon: 'consulting', title: 'Free Expert Consulting', description: 'Free consulting on the right machine type and product layout.' },

@@ -1,5 +1,8 @@
 'use client';
 
+// کارت نمایش هر دستگاه داخل ویترین: شامل جلوه اسپات‌لایت (هاور روی عکس دستگاه رنگ جایگزین را نشان می‌دهد)،
+// آیتم‌های شناور، گیف+توضیحات، و دکمه‌های افزودن به سبد / مشاهده سریع / علاقه‌مندی.
+
 import { useRef, useState } from 'react';
 import { Button, Tooltip, message } from 'antd';
 import { ShoppingCartOutlined, EyeOutlined, HeartOutlined, HeartFilled } from '@ant-design/icons';

@@ -1,5 +1,7 @@
 'use client';
 
+// آیکون شناور چت گوشه صفحه؛ با کلیک یک مودال گفتگوی ساده باز می‌شود (فعلاً بدون اتصال به بک‌اند واقعی).
+
 import { useEffect, useRef, useState } from 'react';
 import { Modal, Input, Button, Tooltip } from 'antd';
 import { MessageOutlined, SendOutlined, CloseOutlined } from '@ant-design/icons';

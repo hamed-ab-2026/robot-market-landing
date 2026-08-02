@@ -1,5 +1,7 @@
 'use client';
 
+// کشوی (Drawer) سبد خرید: نمایش آیتم‌های انتخابی، تغییر تعداد، جمع کل، و دکمه پرداخت (placeholder).
+
 import { Drawer, Button, Empty, InputNumber, message } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';

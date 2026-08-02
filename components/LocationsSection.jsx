@@ -1,5 +1,7 @@
 'use client';
 
+// گرید «مکان مناسب برای نصب» — هتل‌ها، مدارس، داروخانه‌ها، بیمارستان‌ها، شیفت شب، محصولات تخصصی.
+
 import {
   HomeOutlined,
   ReadOutlined,
@@ -23,7 +25,7 @@ export default function LocationsSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="locations" className="relative px-6 md:px-16 py-20 md:py-28 bg-page border-t border-subtle">
+    <section id="locations" className="relative px-6 md:px-16 py-20 md:py-28 bg-surface border-t border-subtle">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-extrabold brand-gradient-text">{t.locations.title}</h2>

@@ -1,5 +1,8 @@
 'use client';
 
+// نقشه نشان (Neshan) — از Static Map API استفاده می‌کند. تا وقتی کلید API خالی باشد،
+// به‌جای نقشه یک پیام راهنما نشان داده می‌شود (نه تصویر خراب).
+
 import { useState } from 'react';
 import { EnvironmentOutlined } from '@ant-design/icons';
 import { useLanguage } from '@/app/context/LanguageContext';
@@ -71,7 +74,7 @@ export default function MapSection() {
   ];
 
   return (
-    <section id="map" className="relative px-6 md:px-16 py-20 md:py-28 bg-elevated border-t border-subtle">
+    <section id="map" className="relative px-6 md:px-16 py-20 md:py-28 bg-page border-t border-subtle">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-brand-400 text-sm font-semibold tracking-wide">{t.map.eyebrow}</span>

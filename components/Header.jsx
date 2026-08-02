@@ -1,5 +1,7 @@
 'use client';
 
+// هدر ثابت بالای صفحه: لوگو، منوی ناوبری، سوییچ زبان/تم، دکمه ورود به پنل کاربری و آیکون سبد خرید.
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Badge, Button } from 'antd';
@@ -45,7 +47,7 @@ export default function Header() {
           <Image src="/images/logo.svg" alt="روبات مارکت" width={150} height={42} priority />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <nav className="hidden xl:flex items-center gap-5 2xl:gap-7">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -84,7 +86,7 @@ export default function Header() {
           </Badge>
 
           <button
-            className="lg:hidden text-brand-400 text-2xl"
+            className="xl:hidden text-brand-400 text-2xl"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="menu"
           >
@@ -94,7 +96,7 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <nav className="lg:hidden bg-elevated-95 backdrop-blur-md border-t border-subtle px-5 py-4 flex flex-col gap-4">
+        <nav className="xl:hidden bg-elevated-95 backdrop-blur-md border-t border-subtle px-5 py-4 flex flex-col gap-4 max-h-[calc(100vh-5rem)] overflow-y-auto">
           {navLinks.map((link) => (
             <a
               key={link.href}

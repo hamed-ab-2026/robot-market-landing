@@ -1,5 +1,7 @@
 'use client';
 
+// فوتر سایت: درباره ما کوتاه، لینک‌های شبکه اجتماعی، دسترسی سریع، و اطلاعات تماس/آدرس.
+
 import { PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import { useLanguage } from '@/app/context/LanguageContext';
 
@@ -8,7 +10,7 @@ export default function Footer() {
   const c = t.contactInfo;
 
   return (
-    <footer id="contact" className="relative border-t border-subtle bg-surface">
+    <footer id="contact" className="relative border-t border-subtle bg-elevated">
       <div className="max-w-6xl mx-auto px-6 md:px-16 py-14 grid md:grid-cols-3 gap-10 text-center md:text-start">
         <div>
           <h3 className="text-primary font-bold text-lg mb-3">{t.footer.aboutLabel}</h3>

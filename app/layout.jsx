@@ -15,11 +15,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Default server-rendered shell: Persian + dark. ThemeProvider/LanguageProvider
-  // read localStorage on mount and correct lang/dir/class client-side if needed —
-  // suppressHydrationWarning avoids a noisy (harmless) mismatch warning for that swap.
+  // پوسته پیش‌فرض سمت سرور: فارسی + حالت روشن (Light).
+  // ThemeProvider/LanguageProvider بعد از mount شدن، اگر کاربر قبلاً تم/زبان
+  // دیگری را انتخاب کرده بود (ذخیره‌شده در localStorage)، آن را روی <html> اعمال
+  // می‌کنند؛ suppressHydrationWarning جلوی هشدار بی‌ضرر عدم‌تطابق را می‌گیرد.
   return (
-    <html lang="fa" dir="rtl" className={`${vazirmatn.variable} dark`} suppressHydrationWarning>
+    <html lang="fa" dir="rtl" className={`${vazirmatn.variable} light`} suppressHydrationWarning>
       <body className="bg-page text-primary antialiased transition-colors duration-300">
         <Providers>{children}</Providers>
       </body>
