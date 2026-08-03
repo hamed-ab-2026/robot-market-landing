@@ -13,40 +13,35 @@ import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import ChatWidget from '@/components/ChatWidget';
 
-// چیدمان کامل صفحه اصلی. ترتیب سکشن‌ها از بالا به پایین:
-// هیرو (اسلایدر) -> ویترین محصولات (اسکرول افقی + ویدیو) -> مشتریان ما ->
-// مزایا -> درباره ما -> کاتالوگ -> مکان‌های نصب -> ویدیوی معرفی -> نقشه ->
-// فرم تیکت -> فوتر. همه‌ی سکشن‌ها به‌جز هیرو و ویترین محصولات، رنگ زمینه‌شان
-// به‌ترتیب بین سه تن روشن/متوسط/برجسته (bg-page / bg-surface / bg-elevated)
-// می‌چرخد تا هنگام اسکرول یک تغییر رنگ ظریف حس شود.
+
 export default function HomePage() {
-  return (
-    <main className="relative bg-page">
-      <Header />
-      <CartDrawer />
-      <ChatWidget />
+    return (
+        <main className="relative bg-page">
+            <Header/>
+            <CartDrawer/>
+            <ChatWidget/>
 
-      <HeroSection />
+            <HeroSection/>
 
-      <HorizontalShowcase />
+            <HorizontalShowcase/>
 
-      <TrustedBySection />
+            <TrustedBySection/>
 
-      <FeaturesSection />
+            <FeaturesSection/>
 
-      <AboutSection />
+            <AboutSection/>
 
-      <CatalogSection />
+            <CatalogSection/>
 
-      <LocationsSection />
+            <LocationsSection/>
 
-      <IntroVideoSection />
+            <IntroVideoSection/>
 
-      <MapSection />
+            <MapSection/>
 
-      <TicketForm />
+            <TicketForm/>
 
-      <Footer />
-    </main>
-  );
+            <Footer/>
+        </main>
+    );
 }

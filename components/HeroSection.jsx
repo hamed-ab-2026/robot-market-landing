@@ -131,14 +131,14 @@ export default function HeroSection() {
                 aria-label="previous slide"
                 className="hidden sm:flex absolute top-1/2 -translate-y-1/2 start-4 z-20 w-11 h-11 rounded-full bg-page-70 border border-subtle items-center justify-center text-primary hover:bg-brand hover:text-ink-950 transition-colors"
             >
-                <LeftOutlined/>
+                <RightOutlined/>
             </button>
             <button
                 onClick={() => handleManualNav('next')}
                 aria-label="next slide"
                 className="hidden sm:flex absolute top-1/2 -translate-y-1/2 end-4 z-20 w-11 h-11 rounded-full bg-page-70 border border-subtle items-center justify-center text-primary hover:bg-brand hover:text-ink-950 transition-colors"
             >
-                <RightOutlined/>
+                <LeftOutlined/>
             </button>
 
             {/* نقطه‌های شمارشگر اسلاید پایین صفحه — کلیک روی هرکدام مستقیم به همان اسلاید می‌رود */}

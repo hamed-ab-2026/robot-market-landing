@@ -667,12 +667,12 @@ export const content = {
 
 // Locale-independent asset config (positions/paths only — same in both languages).
 export const floatingSnacks = [
-    {id: 'chips-1', image: '/images/snacks/item-1.png', size: 76, top: '18%', left: '8%', duration: 5.5, delay: 0},
-    {id: 'soda-1', image: '/images/snacks/item-2.png', size: 64, top: '68%', left: '12%', duration: 6.2, delay: 0.6},
-    {id: 'chips-2', image: '/images/snacks/item-3.png', size: 58, top: '22%', left: '85%', duration: 4.8, delay: 0.3},
-    {id: 'soda-2', image: '/images/snacks/item-4.png', size: 70, top: '72%', left: '88%', duration: 5.9, delay: 0.9},
-    {id: 'chips-3', image: '/images/snacks/item-5.png', size: 48, top: '42%', left: '90%', duration: 6.6, delay: 1.2},
-    {id: 'soda-3', image: '/images/snacks/item-6.png', size: 52, top: '46%', left: '4%', duration: 5.1, delay: 1.5},
+    {id: 'chips-1', image: '/images/snacks/item-1.png', size: 125, top: '5%', left: '-5%', duration: 5.5, delay: 0},
+    {id: 'soda-1', image: '/images/snacks/item-2.png', size: 85, top: '68%', left: '2%', duration: 6.2, delay: 0.6},
+    {id: 'chips-2', image: '/images/snacks/item-3.png', size: 95, top: '10%', left: '85%', duration: 4.8, delay: 0.3},
+    {id: 'soda-2', image: '/images/snacks/item-4.png', size: 105, top: '72%', left: '88%', duration: 5.9, delay: 0.9},
+    {id: 'chips-3', image: '/images/snacks/item-5.png', size: 90, top: '42%', left: '90%', duration: 6.6, delay: 1.2},
+    {id: 'soda-3', image: '/images/snacks/item-6.png', size: 95, top: '46%', left: '-4%', duration: 5.1, delay: 1.5},
 ];
 
 export const showcaseVideoSrc = '/video/showcase-placeholder.mp4';
