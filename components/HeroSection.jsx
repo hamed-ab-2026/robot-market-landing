@@ -101,7 +101,7 @@ export default function HeroSection() {
             {/* متن روی اسلاید: کیکر کوچک + عنوان بزرگ دو خطی + توضیح + دکمه CTA     */}
             {/* ------------------------------------------------------------------ */}
             <div
-                className="relative  z-10 h-full flex flex-col justify-end md:justify-center px-6 md:px-16 pb-28 md:pb-0">
+                className="relative  z-10 h-full flex flex-col justify-end md:justify-end px-6 md:px-16 pb-28 md:pb-72">
                 <div className="max-w-2xl">
                   <span className="text-brand-400 font-semibold tracking-widest text-sm uppercase">
                     {slide.kicker}
