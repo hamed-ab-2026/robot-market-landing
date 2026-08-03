@@ -39,9 +39,9 @@ export default function HomePage() {
 
             <IntroVideoSection/>
 
-            {/*<MapSection/>*/}
+            <MapSection/>
 
-            {/*<TicketForm/>*/}
+            <TicketForm/>
 
             <Footer/>
         </main>
