@@ -18,7 +18,9 @@ export default function HomePage() {
     return (
         <main className="relative bg-page">
             <Header/>
+
             <CartDrawer/>
+
             <ChatWidget/>
 
             <HeroSection/>
