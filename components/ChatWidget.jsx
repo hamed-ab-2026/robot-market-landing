@@ -38,6 +38,8 @@ export default function ChatWidget() {
     // import axios from 'axios';
     // const { data } = await axios.post('/api/chat', { message: text });
     // setMessages((prev) => [...prev, { from: 'bot', text: data.reply }]);
+    // api() <===> todo : use this func to fetch ...
+
     // -----------------------------------------------------------------
     setTimeout(() => {
       setMessages((prev) => [...prev, { from: 'bot', text: t.chat.fallbackReply }]);
