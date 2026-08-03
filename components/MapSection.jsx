@@ -95,8 +95,7 @@ export default function MapSection() {
 
                 <div className="grid lg:grid-cols-[1.3fr,1fr] gap-6">
                     <div className="rounded-2xl overflow-hidden border border-subtle h-[360px] lg:h-auto min-h-[360px]">
-                        {/*<MapThumb coords={pins[0].coords} mapStyle={mapStyle} alt={pins[0].label} />*/}
-                        <Image src="/images/map.png" alt="روبات مارکت" width={600} height={600} className={"object-contain"} />
+                        <MapThumb coords={pins[0].coords} mapStyle={mapStyle} alt={pins[0].label}/>
                     </div>
 
                     <div className="flex flex-col gap-4">

@@ -33,15 +33,15 @@ export default function HomePage() {
 
             <AboutSection/>
 
-            <CatalogSection/>
+            {/*<CatalogSection/>*/}
 
             <LocationsSection/>
 
             <IntroVideoSection/>
 
-            <MapSection/>
+            {/*<MapSection/>*/}
 
-            <TicketForm/>
+            {/*<TicketForm/>*/}
 
             <Footer/>
         </main>
