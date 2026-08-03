@@ -1,11 +1,9 @@
 'use client';
 
-// کارت نمایش هر دستگاه داخل ویترین: شامل جلوه اسپات‌لایت (هاور روی عکس دستگاه رنگ جایگزین را نشان می‌دهد)،
-// آیتم‌های شناور، گیف+توضیحات، و دکمه‌های افزودن به سبد / مشاهده سریع / علاقه‌مندی.
 
-import {useRef, useState} from 'react';
-import {Button, Tooltip, message} from 'antd';
-import {ShoppingCartOutlined, EyeOutlined, HeartOutlined, HeartFilled} from '@ant-design/icons';
+import {useRef} from 'react';
+import {Button, message} from 'antd';
+import {ShoppingCartOutlined, EyeOutlined} from '@ant-design/icons';
 import {useDispatch} from 'react-redux';
 import {addToCart} from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
@@ -15,7 +13,6 @@ import {floatingSnacks} from '@/data/content';
 export default function VendingCard({machine, onQuickView}) {
     const dispatch = useDispatch();
     const {t, dir} = useLanguage();
-    const [wishlisted, setWishlisted] = useState(false);
     const stageRef = useRef(null);
     const lensRef = useRef(null);
     const revealRef = useRef(null);
@@ -110,14 +107,6 @@ export default function VendingCard({machine, onQuickView}) {
                         <Button size="large" icon={<EyeOutlined/>} onClick={() => onQuickView?.(machine)}>
                             {t.machineActions.quickView}
                         </Button>
-                        {/*<Tooltip title={wishlisted ? t.machineActions.wishlistRemove : t.machineActions.wishlistAdd}>*/}
-                        {/*    <Button*/}
-                        {/*        size="large"*/}
-                        {/*        shape="circle"*/}
-                        {/*        icon={wishlisted ? <HeartFilled className="text-brand-400"/> : <HeartOutlined/>}*/}
-                        {/*        onClick={() => setWishlisted((v) => !v)}*/}
-                        {/*    />*/}
-                        {/*</Tooltip>*/}
                     </div>
                 </div>
             </div>
