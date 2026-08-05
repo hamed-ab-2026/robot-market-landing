@@ -12,6 +12,8 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
+    basePath: '/robot-market-landing',
+    assetPrefix: '/robot-market-landing/',
 };
 
 module.exports = nextConfig;
