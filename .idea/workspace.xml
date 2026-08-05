@@ -3,7 +3,102 @@
   <component name="ChangeListManager">
     <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/111-f16f62938c71aed3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/23-7cf7e85664c06943.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/626-a82a66213f6b7b8b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/898-e414610cb6ef5700.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/936-3fedc5aa4979d3db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/app/_not-found/page-7b60e89054c75b37.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/app/layout-f9c6f3d5ec4330ab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/app/page-91839e78b9eb5fd3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/fd9d1056-bf12fd48b55a9a02.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/framework-f66176bb897dc684.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/main-4f8185701087eebb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/main-app-e910c64ac70cd9f5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/pages/_app-6a626577ffa902a4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/pages/_error-1be831200e60c5c0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/chunks/webpack-107791004c74366c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/css/1e17379f7fda5afa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/media/17cf9497af825577-s.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/media/1abbc144918f74fd-s.p.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/media/8c96cc4bd2a39381-s.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/mrueFRSOFLA4c6PewpFI9/_buildManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_next/static/mrueFRSOFLA4c6PewpFI9/_ssgManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gifs/machine-35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gifs/machine-48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gifs/machine-60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/catalog/coffee.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/catalog/saffron.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/catalog/tea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/catalog/water.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clients/client-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clients/client-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clients/client-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clients/client-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clients/client-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clients/client-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-35-base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-35-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-48-base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-48-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-60-base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-60-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-slide-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-slide-0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-slide-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-slide-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-slide-31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/machine-slide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/snacks/item-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/video-poster.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/video/company-intro-placeholder.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/video/showcase-placeholder.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-35-base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-35-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-48-base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-48-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-60-base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-60-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-slide-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-slide-0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-slide-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-slide-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-slide-31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/machine-slide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/snacks/item-9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,27 +122,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/GitHubRepo/robot-market-landing&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "26.3.0",
+    "javascript.nodejs.core.library.typings.version": "26.1.2",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "D:/Project/GitHubRepo/robot-market-landing",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -88,7 +185,7 @@
       <workItem from="1785646314677" duration="16621000" />
       <workItem from="1785730130350" duration="12049000" />
       <workItem from="1785757166936" duration="5000" />
-      <workItem from="1785901279535" duration="10222000" />
+      <workItem from="1785901279535" duration="11889000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -234,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785914887554</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update">
+      <option name="closed" value="true" />
+      <created>1785915840468</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1785915840468</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
