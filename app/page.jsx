@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import HorizontalShowcase from '@/components/HorizontalShowcase';
 import TrustedBySection from '@/components/TrustedBySection';
 import FeaturesSection from '@/components/FeaturesSection';
 import AboutSection from '@/components/AboutSection';
@@ -12,6 +11,7 @@ import TicketForm from '@/components/TicketForm';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import ChatWidget from '@/components/ChatWidget';
+import ShowcaseSection from "@/components/ShowcaseSection";
 
 
 export default function HomePage() {
@@ -25,7 +25,7 @@ export default function HomePage() {
 
             <HeroSection/>
 
-            <HorizontalShowcase/>
+            <ShowcaseSection/>
 
             <TrustedBySection/>
 
@@ -33,7 +33,7 @@ export default function HomePage() {
 
             <AboutSection/>
 
-            {/*<CatalogSection/>*/}
+            <CatalogSection/>
 
             <LocationsSection/>
 

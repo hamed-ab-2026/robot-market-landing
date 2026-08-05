@@ -1,9 +1,5 @@
 'use client';
 
-// سکشن ویترین محصولات: با اسکرول عمودی به اسکرول افقی پین‌شده تبدیل می‌شود (GSAP ScrollTrigger)
-// و یک ویدیوی پس‌زمینه دارد که با پیشرفت اسکرول جلو/عقب می‌رود. طبق درخواست کاربر، این سکشن
-// و هیرو از چرخه‌ی رنگ‌بندی متناوب بقیه سکشن‌ها مستثنا هستند.
-
 import {useEffect, useRef, useState} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
@@ -30,9 +26,28 @@ export default function HorizontalShowcase() {
         const ctx = gsap.context(() => {
             const track = trackRef.current;
             const section = sectionRef.current;
+
             if (!track || !section) return;
 
-            const scrollDistance = () => track.scrollWidth - window.innerWidth;
+            const scrollDistance = () => (
+                Math.max(track.scrollWidth - window.innerWidth, 0)
+            );
+
+            let animationFrameId = null;
+            let latestProgress = 0;
+
+            const syncVideo = (progress) => {
+                latestProgress = progress;
+                if (animationFrameId !== null) return;
+
+                animationFrameId = window.requestAnimationFrame(() => {
+                    const video = videoRef.current;
+                    if (video && Number.isFinite(video.duration) && video.duration > 0) {
+                        video.currentTime = latestProgress * video.duration;
+                    }
+                    animationFrameId = null;
+                });
+            };
 
             const horizontalTween = gsap.to(track, {
                 x: () => -scrollDistance(),
@@ -44,16 +59,12 @@ export default function HorizontalShowcase() {
                     scrub: 1,
                     pin: true,
                     invalidateOnRefresh: true,
-                    onUpdate: (self) => {
-                        const video = videoRef.current;
-                        if (video && video.duration) {
-                            video.currentTime = self.progress * video.duration;
-                        }
-                    },
+                    onUpdate: (self) => syncVideo(self.progress),
                 },
             });
 
             return () => {
+                if (animationFrameId !== null) window.cancelAnimationFrame(animationFrameId);
                 horizontalTween.scrollTrigger?.kill();
                 horizontalTween.kill();
             };
@@ -64,6 +75,7 @@ export default function HorizontalShowcase() {
 
     const handleModalAddToCart = () => {
         if (!quickViewMachine) return;
+
         dispatch(
             addToCart({
                 id: quickViewMachine.id,
@@ -73,6 +85,7 @@ export default function HorizontalShowcase() {
                 image: quickViewMachine.image,
             })
         );
+
         message.success(t.cart.addToast(quickViewMachine.name));
         setQuickViewMachine(null);
     };
@@ -115,12 +128,19 @@ export default function HorizontalShowcase() {
             >
                 {quickViewMachine && (
                     <div className="flex flex-col gap-4">
-                        <img src={quickViewMachine.image} alt={quickViewMachine.name}
-                             className="w-full h-64 object-contain"/>
+                        <img
+                            src={quickViewMachine.image}
+                            alt={quickViewMachine.name}
+                            className="w-full h-64 object-contain"
+                        />
                         <p className="text-secondary leading-7">{quickViewMachine.description}</p>
                         <p className="text-xl font-bold text-primary">{quickViewMachine.priceLabel}</p>
-                        <Button type="primary" size="large" icon={<ShoppingCartOutlined/>}
-                                onClick={handleModalAddToCart}>
+                        <Button
+                            type="primary"
+                            size="large"
+                            icon={<ShoppingCartOutlined/>}
+                            onClick={handleModalAddToCart}
+                        >
                             {t.machineActions.addToCart}
                         </Button>
                     </div>
