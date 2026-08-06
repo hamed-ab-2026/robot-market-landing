@@ -44,7 +44,7 @@ export default function Header() {
         >
             <div className="mx-auto max-w-7xl px-5 md:px-8 h-20 flex items-center justify-between gap-4">
                 <a href="#hero" className="flex items-center gap-2 shrink-0">
-                    <Image src="/images/logo.png" alt="روبات مارکت" width={150} height={42} priority/>
+                    <Image src="/images/icons/logo.png" alt="روبات مارکت" width={150} height={42} priority/>
                 </a>
 
                 <nav className="hidden xl:flex items-center gap-5 2xl:gap-7">

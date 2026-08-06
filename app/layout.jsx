@@ -8,11 +8,18 @@ const vazirmatn = Vazirmatn({
     display: 'swap',
 });
 
+
 export const metadata = {
     title: 'روبات مارکت | دستگاه‌های وندینگ هوشمند',
     description:
         'روبات مارکت؛ دستگاه‌های فروش خودکار هوشمند با مدیریت آنلاین، تحویل نرم و طراحی مدرن.',
 };
+
+
+export const viewport = {
+    themeColor: '#00a693',
+};
+
 
 export default function RootLayout({children}) {
 
