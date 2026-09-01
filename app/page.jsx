@@ -21,27 +21,27 @@ export default function HomePage() {
 
             <CartDrawer/>
 
-            <ChatWidget/>
+            {/*<ChatWidget/>*/}
 
             <HeroSection/>
 
             <ShowcaseSection/>
 
-            <TrustedBySection/>
+            {/*<TrustedBySection/>*/}
 
             <FeaturesSection/>
 
             <AboutSection/>
 
-            <CatalogSection/>
+            {/*<CatalogSection/>*/}
 
             <LocationsSection/>
 
-            <IntroVideoSection/>
+            {/*<IntroVideoSection/>*/}
 
-            <MapSection/>
+            {/*<MapSection/>*/}
 
-            <TicketForm/>
+            {/*<TicketForm/>*/}
 
             <Footer/>
         </main>

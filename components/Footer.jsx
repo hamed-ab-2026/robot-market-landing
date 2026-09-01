@@ -36,11 +36,11 @@ export default function Footer() {
             <li><a href="#hero" className="hover:text-brand-400">{t.nav.home}</a></li>
             <li><a href="#showcase" className="hover:text-brand-400">{t.nav.showcase}</a></li>
             <li><a href="#about" className="hover:text-brand-400">{t.nav.about}</a></li>
-            <li><a href="#catalog" className="hover:text-brand-400">{t.nav.catalog}</a></li>
+            {/*<li><a href="#catalog" className="hover:text-brand-400">{t.nav.catalog}</a></li>*/}
             <li><a href="#locations" className="hover:text-brand-400">{t.nav.locations}</a></li>
-            <li><a href="#video" className="hover:text-brand-400">{t.nav.video}</a></li>
-            <li><a href="#map" className="hover:text-brand-400">{t.nav.map}</a></li>
-            <li><a href="#support" className="hover:text-brand-400">{t.nav.support}</a></li>
+            {/*<li><a href="#video" className="hover:text-brand-400">{t.nav.video}</a></li>*/}
+            {/*<li><a href="#map" className="hover:text-brand-400">{t.nav.map}</a></li>*/}
+            {/*<li><a href="#support" className="hover:text-brand-400">{t.nav.support}</a></li>*/}
           </ul>
         </div>
 

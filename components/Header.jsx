@@ -23,11 +23,11 @@ export default function Header() {
         {href: '#hero', label: t.nav.home},
         {href: '#showcase', label: t.nav.showcase},
         {href: '#about', label: t.nav.about},
-        {href: '#catalog', label: t.nav.catalog},
+        // {href: '#catalog', label: t.nav.catalog},
         {href: '#locations', label: t.nav.locations},
-        {href: '#video', label: t.nav.video},
-        {href: '#map', label: t.nav.map},
-        {href: '#support', label: t.nav.support},
+        // {href: '#video', label: t.nav.video},
+        // {href: '#map', label: t.nav.map},
+        // {href: '#support', label: t.nav.support},
     ];
 
     useEffect(() => {
