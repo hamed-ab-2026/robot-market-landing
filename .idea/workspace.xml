@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -16,6 +19,65 @@
     <layout place="tools.popupnpm">
       <scroll-view-position x="0" y="0" />
     </layout>
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.9180577791458209" />
+      <entry key="MS500" value="4.688644388100796" />
+      <entry key="S2" value="8.26749701184336" />
+      <entry key="S5" value="10.565752377401568" />
+      <entry key="S10" value="11.665306157952212" />
+      <entry key="S30" value="12.525747261610114" />
+      <entry key="S60" value="12.758981623001501" />
+      <entry key="M2" value="12.87850025822862" />
+      <entry key="M5" value="12.951160086704387" />
+      <entry key="M10" value="12.975539848697636" />
+      <entry key="M15" value="12.983684286049057" />
+      <entry key="M30" value="12.99183766624342" />
+      <entry key="H1" value="12.995917713255967" />
+      <entry key="H2" value="12.997958576577691" />
+      <entry key="H4" value="12.99897921826579" />
+      <entry key="D1" value="12.999829859984649" />
+      <entry key="W1" value="12.999975694045316" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.7420918727122994" />
+      <entry key="MS500" value="4.512290317154382" />
+      <entry key="S2" value="8.19204120547899" />
+      <entry key="S5" value="10.528482205836237" />
+      <entry key="S10" value="11.645001964515167" />
+      <entry key="S30" value="12.518545816831239" />
+      <entry key="S60" value="12.755322274489146" />
+      <entry key="M2" value="12.876655570534636" />
+      <entry key="M5" value="12.950418561706101" />
+      <entry key="M10" value="12.97516847394418" />
+      <entry key="M15" value="12.98343656653061" />
+      <entry key="M30" value="12.991713738236065" />
+      <entry key="H1" value="12.995855732176478" />
+      <entry key="H2" value="12.997927581767277" />
+      <entry key="H4" value="12.998963719792695" />
+      <entry key="D1" value="12.999827276757467" />
+      <entry key="W1" value="12.999975325009228" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -43,7 +105,9 @@
     &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Project/GitHubRepo/robot-market-landing&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
@@ -75,7 +139,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.26222.58" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.27258.45" />
       </set>
     </attachedChunks>
   </component>
@@ -105,6 +169,11 @@
       <workItem from="1785999908774" duration="697000" />
       <workItem from="1786434051896" duration="714000" />
       <workItem from="1787030163530" duration="2042000" />
+      <workItem from="1787052515900" duration="43000" />
+      <workItem from="1787980069071" duration="1369000" />
+      <workItem from="1787993488084" duration="706000" />
+      <workItem from="1788148958104" duration="1576000" />
+      <workItem from="1788244010046" duration="1115000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -282,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785988898096</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <option name="closed" value="true" />
+      <created>1787052543722</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1787052543722</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
