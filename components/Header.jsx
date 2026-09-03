@@ -75,7 +75,8 @@ export default function Header() {
                         {t.nav.login}
                     </Button>
 
-                    <Badge count={cartCount} size="small" offset={[-2, 2]}>
+                    {/* faz 1 */}
+                    {/* <Badge count={cartCount} size="small" offset={[-2, 2]}>
                         <Button
                             shape="circle"
                             size="large"
@@ -83,7 +84,7 @@ export default function Header() {
                             onClick={() => dispatch(openDrawer())}
                             aria-label="cart"
                         />
-                    </Badge>
+                    </Badge>*/}
 
                     <button
                         className="xl:hidden text-brand-400 text-2xl"

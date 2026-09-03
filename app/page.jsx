@@ -21,6 +21,7 @@ export default function HomePage() {
 
             <CartDrawer/>
 
+            {/*faz 1*/}
             {/*<ChatWidget/>*/}
 
             <HeroSection/>

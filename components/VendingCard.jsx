@@ -101,9 +101,9 @@ export default function VendingCard({machine, onQuickView}) {
                     <p className="text-xl md:text-2xl font-bold text-primary mt-2">{machine.priceLabel}</p>
 
                     <div className="flex flex-wrap  items-center gap-2 mt-2 ">
-                        <Button type="primary" size="large" icon={<ShoppingCartOutlined/>} onClick={handleAddToCart}>
+                       {/* <Button type="primary" size="large" icon={<ShoppingCartOutlined/>} onClick={handleAddToCart}>
                             {t.machineActions.addToCart}
-                        </Button>
+                        </Button>*/}
                         <Button size="large" icon={<EyeOutlined/>} onClick={() => onQuickView?.(machine)}>
                             {t.machineActions.quickView}
                         </Button>
