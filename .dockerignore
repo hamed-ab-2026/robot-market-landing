@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+docs
+.git
+.gitignore
+npm-debug.log
