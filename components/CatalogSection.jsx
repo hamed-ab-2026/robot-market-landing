@@ -28,6 +28,7 @@ export default function CatalogSection() {
         image: item.image,
       })
     );
+
     message.success(t.catalog.addToast(item.name));
   };
 
