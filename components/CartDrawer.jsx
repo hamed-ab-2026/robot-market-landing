@@ -47,7 +47,7 @@ export default function CartDrawer() {
         // api() <===> todo : use this func to fetch ...
 
         // -------------------------------------------------------------------
-        message.info(t.cart.checkoutToast);
+        await message.info(t.cart.checkoutToast);
     };
 
     return (
