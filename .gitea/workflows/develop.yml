@@ -1,0 +1,55 @@
+name: Build & Deploy (develop)
+
+# Runs on:
+# - Pull requests targeting develop
+# - Direct pushes to develop
+# main is intentionally NOT included yet (no prod target configured)
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Resolve commit SHA
+        id: vars
+        run: |
+          # For PRs, gitea.sha is a temporary merge commit — use the real
+          # PR head commit instead so tags map to actual git history.
+          FULL_SHA="${{ gitea.event.pull_request.head.sha || gitea.sha }}"
+          echo "sha=${FULL_SHA:0:7}" >> "$GITHUB_OUTPUT"
+
+      - name: Build Docker image (tagged by commit SHA)
+        run: |
+          docker build -t robot-market:${{ steps.vars.outputs.sha }} .
+
+      - name: Save previous tag for rollback
+        run: |
+          if [ -f /opt/robot-market-front/.env ]; then
+            cp /opt/robot-market-front/.env /opt/robot-market-front/.env.previous
+          fi
+
+      - name: Point compose at this build
+        run: |
+          echo "IMAGE_TAG=${{ steps.vars.outputs.sha }}" > /opt/robot-market-front/.env
+
+      - name: Deploy via compose
+        run: |
+          docker compose --env-file /opt/robot-market-front/.env \
+            -f /opt/robot-market-front/docker-compose.yml \
+            up -d --force-recreate
+
+      - name: Clean up dangling (untagged) layers only
+        run: docker image prune -f
+        # Note: this does NOT remove SHA-tagged images, so rollback targets
+        # stay available. Periodically clean up old SHA tags manually if
+        # disk usage grows (e.g. keep the last 10 builds).
