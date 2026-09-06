@@ -48,6 +48,32 @@ jobs:
             -f /opt/robot-market-front/docker-compose.yml \
             up -d --force-recreate
 
+      - name: Health check (retries for ~30s)
+        run: |
+          for i in $(seq 1 6); do
+            if docker exec robot-market wget -qO- --timeout=5 http://localhost:3000 > /dev/null 2>&1; then
+              echo "Container is healthy"
+              exit 0
+            fi
+            echo "Not ready yet, retrying..."
+            sleep 5
+          done
+          echo "Health check failed after 30s"
+          exit 1
+
+      - name: Roll back to previous version on failed health check
+        if: failure()
+        run: |
+          if [ -f /opt/robot-market-front/.env.previous ]; then
+            cp /opt/robot-market-front/.env.previous /opt/robot-market-front/.env
+            docker compose --env-file /opt/robot-market-front/.env \
+              -f /opt/robot-market-front/docker-compose.yml \
+              up -d --force-recreate
+            echo "Rolled back to previous image."
+          else
+            echo "No previous deploy recorded — nothing to roll back to."
+          fi
+
       - name: Clean up dangling (untagged) layers only
         run: docker image prune -f
         # Note: this does NOT remove SHA-tagged images, so rollback targets
