@@ -78,8 +78,22 @@ jobs:
             echo "No previous deploy recorded — nothing to roll back to."
           fi
 
-      - name: Clean up dangling (untagged) layers only
+      - name: Clean up dangling (untagged) layers
         run: docker image prune -f
-        # Note: this does NOT remove SHA-tagged images, so rollback targets
-        # stay available. Periodically clean up old SHA tags manually if
-        # disk usage grows (e.g. keep the last 10 builds).
+
+      - name: Prune old SHA-tagged images (keep last 5)
+        run: |
+          KEEP=5
+          CURRENT_TAG=$(grep IMAGE_TAG /opt/robot-market-front/.env 2>/dev/null | cut -d= -f2)
+          PREVIOUS_TAG=$(grep IMAGE_TAG /opt/robot-market-front/.env.previous 2>/dev/null | cut -d= -f2)
+
+          docker images robot-market --format '{{.Tag}}	{{.CreatedAt}}' \
+            | sort -t"	" -k2 -r \
+            | tail -n +$((KEEP + 1)) \
+            | cut -f1 \
+            | while read -r tag; do
+                if [ "$tag" != "$CURRENT_TAG" ] && [ "$tag" != "$PREVIOUS_TAG" ] && [ "$tag" != "<none>" ]; then
+                  echo "Removing old image robot-market:$tag"
+                  docker rmi "robot-market:$tag" 2>/dev/null || true
+                fi
+              done
