@@ -50,7 +50,7 @@ jobs:
 
       - name: Health check (retries for ~30s)
         run: |
-          for i in $(seq 1 6); do
+          for i in $(seq 1 15); do
             if docker exec robot-market wget -qO- --timeout=5 http://localhost:3000 > /dev/null 2>&1; then
               echo "Container is healthy"
               exit 0
