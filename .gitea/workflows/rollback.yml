@@ -1,0 +1,37 @@
+name: Rollback (develop)
+
+# Trigger manually from the Gitea Actions UI.
+# Leave "sha" empty to roll back to the previous deploy.
+# Fill "sha" in (short 7-char form, e.g. a3f9c21) to roll back to a specific past build.
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: "Short commit SHA to roll back to (empty = previous deploy)"
+        required: false
+        default: ""
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine target tag
+        run: |
+          if [ -n "${{ gitea.event.inputs.sha }}" ]; then
+            TAG="${{ gitea.event.inputs.sha }}"
+          else
+            TAG=$(grep IMAGE_TAG /opt/robot-market-front/.env.previous | cut -d= -f2)
+          fi
+          echo "Rolling back to: $TAG"
+          echo "IMAGE_TAG=$TAG" > /opt/robot-market-front/.env
+
+      - name: Verify that image actually exists locally
+        run: |
+          TAG=$(grep IMAGE_TAG /opt/robot-market-front/.env | cut -d= -f2)
+          docker image inspect robot-market:$TAG > /dev/null
+
+      - name: Redeploy target image
+        run: |
+          docker compose --env-file /opt/robot-market-front/.env \
+            -f /opt/robot-market-front/docker-compose.yml \
+            up -d --force-recreate
