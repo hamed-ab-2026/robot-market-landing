@@ -51,12 +51,16 @@ jobs:
       - name: Health check (retries for ~30s)
         run: |
           for i in $(seq 1 15); do
-            if docker exec robot-market wget -qO- --timeout=5 http://localhost:3000 > /dev/null 2>&1; then
+            if docker exec robot-market node -e "
+              require('http').get('http://localhost:3000', res => {
+                process.exit(res.statusCode < 400 ? 0 : 1);
+              }).on('error', () => process.exit(1));
+            " 2>/dev/null; then
               echo "Container is healthy"
               exit 0
             fi
             echo "Not ready yet, retrying..."
-            sleep 5
+            sleep 2
           done
           echo "Health check failed after 30s"
           exit 1
