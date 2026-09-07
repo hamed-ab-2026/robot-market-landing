@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="initial new branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
@@ -188,6 +187,21 @@
       <workItem from="1788592387411" duration="8000" />
       <workItem from="1788592424522" duration="13793000" />
       <workItem from="1788670304118" duration="1889000" />
+      <workItem from="1788692863346" duration="12000" />
+      <workItem from="1788693390990" duration="297000" />
+      <workItem from="1788694091581" duration="32000" />
+      <workItem from="1788752617575" duration="6000" />
+      <workItem from="1788752739539" duration="37000" />
+      <workItem from="1788752981242" duration="4000" />
+      <workItem from="1788753013718" duration="6000" />
+      <workItem from="1788753196368" duration="9000" />
+      <workItem from="1788753332401" duration="266000" />
+      <workItem from="1788753911813" duration="62000" />
+      <workItem from="1788754080543" duration="8000" />
+      <workItem from="1788754367612" duration="44000" />
+      <workItem from="1788754500033" duration="11000" />
+      <workItem from="1788755066884" duration="65000" />
+      <workItem from="1788755350943" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
