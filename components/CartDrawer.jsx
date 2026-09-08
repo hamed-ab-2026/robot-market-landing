@@ -32,7 +32,7 @@ export default function CartDrawer() {
 
     const handleCheckout = async () => {
         // -------------------------------------------------------------------
-        // TODO: Connect to payment gateway API.
+        // TODO: Connect to payment gateway API..
 
         // try {
         //   const { data } = await axios.post('/api/payment/create', {
@@ -48,6 +48,7 @@ export default function CartDrawer() {
 
         // -------------------------------------------------------------------
         await message.info(t.cart.checkoutToast);
+
     };
 
     return (
