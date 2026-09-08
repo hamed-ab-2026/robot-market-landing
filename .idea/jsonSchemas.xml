@@ -14,6 +14,9 @@
                   <Item>
                     <option name="path" value=".gitea/workflows/test.yml" />
                   </Item>
+                  <Item>
+                    <option name="path" value=".gitea/workflows/develop.yml" />
+                  </Item>
                 </list>
               </option>
             </SchemaInfo>
