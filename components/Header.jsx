@@ -36,6 +36,11 @@ export default function Header() {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
+    console.log(
+        "%c👋 Hamed Abdollahzade · Frontend Developer",
+        "font-size:14px;font-weight:600;"
+    );
+
     return (
         <header
             className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
