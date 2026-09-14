@@ -11,8 +11,7 @@ import {
     selectIsDrawerOpen,
     closeDrawer,
     removeFromCart,
-    incrementQty,
-    decrementQty,
+    setQuantity,
 } from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
 import api from "@/lib/axios";
@@ -32,7 +31,7 @@ export default function CartDrawer() {
 
     const handleCheckout = async () => {
         // -------------------------------------------------------------------
-        // TODO: Connect to payment gateway API.
+        // TODO: Connect to payment gateway API..
 
         // try {
         //   const { data } = await axios.post('/api/payment/create', {
@@ -48,6 +47,7 @@ export default function CartDrawer() {
 
         // -------------------------------------------------------------------
         await message.info(t.cart.checkoutToast);
+
     };
 
     return (
@@ -76,10 +76,10 @@ export default function CartDrawer() {
                                     <InputNumber
                                         size="small"
                                         min={1}
+                                        precision={0}
                                         value={item.qty}
                                         onChange={(val) => {
-                                            if (val > item.qty) dispatch(incrementQty(item.id));
-                                            else if (val < item.qty) dispatch(decrementQty(item.id));
+                                            if (val !== null) dispatch(setQuantity({id: item.id, qty: val}));
                                         }}
                                         className="w-16"
                                     />

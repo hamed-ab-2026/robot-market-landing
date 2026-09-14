@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat:dockerized &amp; test actions added">
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add landing page device images and fix machine branding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -22,61 +27,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7659734554897204" />
-      <entry key="MS500" value="2.6200917385797573" />
-      <entry key="S2" value="2.895672466750576" />
-      <entry key="S5" value="2.9711768722246337" />
-      <entry key="S10" value="3.095911797960576" />
-      <entry key="S30" value="3.6130929483281937" />
-      <entry key="S60" value="4.862542006443887" />
-      <entry key="M2" value="8.222118193057797" />
-      <entry key="M5" value="14.352669475563026" />
-      <entry key="M10" value="18.025488407782152" />
-      <entry key="M15" value="19.665360290707866" />
-      <entry key="M30" value="22.62190726116564" />
-      <entry key="H1" value="26.416500535541072" />
-      <entry key="H2" value="30.051114228090462" />
-      <entry key="H4" value="32.65287419479587" />
-      <entry key="D1" value="35.38129255958758" />
-      <entry key="W1" value="35.9099877286286" />
+      <entry key="MS100" value="1.0105021478132723" />
+      <entry key="MS500" value="1.6326904583013002" />
+      <entry key="S2" value="3.200495115489667" />
+      <entry key="S5" value="4.148160592733714" />
+      <entry key="S10" value="4.983360398199462" />
+      <entry key="S30" value="7.2170837140275825" />
+      <entry key="S60" value="9.732495501143132" />
+      <entry key="M2" value="14.025681297470134" />
+      <entry key="M5" value="22.17637857625762" />
+      <entry key="M10" value="27.702751951097298" />
+      <entry key="M15" value="30.22928327611057" />
+      <entry key="M30" value="34.21976380295617" />
+      <entry key="H1" value="38.60682034968035" />
+      <entry key="H2" value="42.59562362296086" />
+      <entry key="H4" value="45.40713861912438" />
+      <entry key="D1" value="48.33720180411775" />
+      <entry key="W1" value="48.90360237164015" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.5499348360687339E-164" />
-      <entry key="S2" value="1.1157794535925266E-41" />
-      <entry key="S5" value="4.1594062872493325E-17" />
-      <entry key="S10" value="6.449345925944224E-9" />
-      <entry key="S30" value="0.0018613950614188026" />
-      <entry key="S60" value="0.043143887880194604" />
-      <entry key="M2" value="0.20771106826597993" />
-      <entry key="M5" value="0.533315069904893" />
-      <entry key="M10" value="0.7302842391185045" />
-      <entry key="M15" value="0.8109510091490459" />
-      <entry key="M30" value="0.9005281834285062" />
-      <entry key="H1" value="0.9489616343290734" />
-      <entry key="H2" value="0.9741466184969663" />
-      <entry key="H4" value="0.986988661787442" />
-      <entry key="D1" value="0.9978195926881375" />
-      <entry key="W1" value="0.9996882217756649" />
+      <entry key="MS500" value="8.86528819923573E-248" />
+      <entry key="S2" value="1.7255327824639203E-62" />
+      <entry key="S5" value="1.9713751865934254E-25" />
+      <entry key="S10" value="4.440017101986686E-13" />
+      <entry key="S30" value="7.628893420815487E-5" />
+      <entry key="S60" value="0.008734353680047248" />
+      <entry key="M2" value="0.09345776415069663" />
+      <entry key="M5" value="0.387477201784943" />
+      <entry key="M10" value="0.6224766676630884" />
+      <entry key="M15" value="0.7290355699678522" />
+      <entry key="M30" value="0.8538357980126227" />
+      <entry key="H1" value="0.9240323576653702" />
+      <entry key="H2" value="0.9612660181580177" />
+      <entry key="H4" value="0.9804417464378067" />
+      <entry key="D1" value="0.9967134048485689" />
+      <entry key="W1" value="0.9995298237292167" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6363299214720612" />
-      <entry key="MS500" value="2.580440430635064" />
-      <entry key="S2" value="2.884654206650678" />
-      <entry key="S5" value="2.9666305108034594" />
-      <entry key="S10" value="3.0934710562664876" />
-      <entry key="S30" value="3.6138341741583195" />
-      <entry key="S60" value="4.903918162005831" />
-      <entry key="M2" value="8.426649355082025" />
-      <entry key="M5" value="14.882896956006677" />
-      <entry key="M10" value="18.75367770497998" />
-      <entry key="M15" value="20.474761353109788" />
-      <entry key="M30" value="23.521564444287325" />
-      <entry key="H1" value="27.364990222969524" />
-      <entry key="H2" value="31.025011433737856" />
-      <entry key="H4" value="33.639733831212105" />
-      <entry key="D1" value="36.37908993480534" />
-      <entry key="W1" value="36.90967275725512" />
+      <entry key="MS100" value="0.01712637149186048" />
+      <entry key="MS500" value="0.9540168467150943" />
+      <entry key="S2" value="2.9136793264313505" />
+      <entry key="S5" value="4.013649896020289" />
+      <entry key="S10" value="4.909460420460746" />
+      <entry key="S30" value="7.187579804050971" />
+      <entry key="S60" value="9.723843431274007" />
+      <entry key="M2" value="14.107987700307802" />
+      <entry key="M5" value="22.55725525698723" />
+      <entry key="M10" value="28.321163439518607" />
+      <entry key="M15" value="30.955381308867647" />
+      <entry key="M30" value="35.07198888146704" />
+      <entry key="H1" value="39.52999740754272" />
+      <entry key="H2" value="43.55644480884343" />
+      <entry key="H4" value="46.38735262517173" />
+      <entry key="D1" value="49.33387639135037" />
+      <entry key="W1" value="49.903126627030524" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -97,12 +102,14 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/hamed/Documents/Projects/GItLabRepo/device_web&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -111,6 +118,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -182,6 +190,21 @@
       <workItem from="1788592387411" duration="8000" />
       <workItem from="1788592424522" duration="13793000" />
       <workItem from="1788670304118" duration="1889000" />
+      <workItem from="1788772211468" duration="3288000" />
+      <workItem from="1788845304938" duration="5986000" />
+      <workItem from="1789189667293" duration="1409000" />
+      <workItem from="1789191385769" duration="3038000" />
+      <workItem from="1789200888982" duration="408000" />
+      <workItem from="1789202103910" duration="646000" />
+      <workItem from="1789202776318" duration="599000" />
+      <workItem from="1789207496509" duration="153000" />
+      <workItem from="1789278993260" duration="734000" />
+      <workItem from="1789360783891" duration="48000" />
+      <workItem from="1789361888102" duration="68000" />
+      <workItem from="1789362025574" duration="23000" />
+      <workItem from="1789362137185" duration="377000" />
+      <workItem from="1789362644534" duration="6512000" />
+      <workItem from="1789383269194" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -391,7 +414,63 @@
       <option name="project" value="LOCAL" />
       <updated>1788601868240</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="initial new branch">
+      <option name="closed" value="true" />
+      <created>1788682674027</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1788682674027</updated>
+    </task>
+    <task id="LOCAL-00028" summary="initial new branch">
+      <option name="closed" value="true" />
+      <created>1788682678051</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1788682678051</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update">
+      <option name="closed" value="true" />
+      <created>1789191804591</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1789191804591</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update">
+      <option name="closed" value="true" />
+      <created>1789362384351</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1789362384351</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789367962553</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1789367962553</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789368598921</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1789368598921</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789369799782</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1789369799782</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,9 +481,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ui : change the position of header in Hero Section" />
-    <MESSAGE value="update" />
     <MESSAGE value="feat:dockerized &amp; test actions add" />
     <MESSAGE value="feat:dockerized &amp; test actions added" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:dockerized &amp; test actions added" />
+    <MESSAGE value="initial new branch" />
+    <MESSAGE value="update" />
+    <MESSAGE value="feat: add landing page device images and fix machine branding" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add landing page device images and fix machine branding" />
   </component>
 </project>

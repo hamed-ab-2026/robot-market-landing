@@ -9,8 +9,8 @@ const machinesFa = [
         id: 'rm-35',
         name: 'روبات مارکت ۳۵ کانال',
         shortLabel: '۳۵ کانال',
-        priceLabel: '۳,۸۶۰,۰۰۰,۰۰۰ ریال',
-        priceNumeric: 3860000000,
+        priceLabel: '4,180,000,000 ریال',
+        priceNumeric: 4180000000,
         description: 'یخچالدار، ۳۵ کانال اختصاصی، سیستم خنک‌کننده قدرتمند، تحویل نرم، مدیریت آنلاین ۲۴ ساعته.',
         highlights: ['یخچالدار', '۳۵ کانال اختصاصی', 'تحویل نرم', 'مدیریت آنلاین ۲۴ ساعته'],
         image: '/images/machine-35-base.webp',
@@ -21,8 +21,8 @@ const machinesFa = [
         id: 'rm-48',
         name: 'روبات مارکت ۴۸ کانال',
         shortLabel: '۴۸ کانال',
-        priceLabel: '۴,۴۸۰,۰۰۰,۰۰۰ ریال',
-        priceNumeric: 4480000000,
+        priceLabel: '4,980,000,000 ریال',
+        priceNumeric: 4980000000,
         description: 'یخچالدار، ۴۸ کانال اختصاصی، قابلیت‌های پیشرفته مدیریت آنلاین و تحویل کالا.',
         highlights: ['یخچالدار', '۴۸ کانال اختصاصی', 'مدیریت آنلاین پیشرفته', 'تحویل هوشمند کالا'],
         image: '/images/machine-48-base.webp',
@@ -33,8 +33,8 @@ const machinesFa = [
         id: 'rm-60',
         name: 'روبات مارکت ۶۰ کانال',
         shortLabel: '۶۰ کانال',
-        priceLabel: '۴,۹۸۰,۰۰۰,۰۰۰ ریال',
-        priceNumeric: 4980000000,
+        priceLabel: '5,480,000,000 ریال',
+        priceNumeric: 5480000000,
         description: 'یخچالدار، ۶۰ کانال اختصاصی برای کسب‌وکارهای پرتردد.',
         highlights: ['یخچالدار', '۶۰ کانال اختصاصی', 'مناسب اماکن پرتردد', 'ظرفیت بالا'],
         image: '/images/machine-60-base.webp',
@@ -48,8 +48,8 @@ const machinesEn = [
         id: 'rm-35',
         name: 'Robot Market RM-35',
         shortLabel: '35 Channels',
-        priceLabel: '3,860,000,000 Rials',
-        priceNumeric: 3860000000,
+        priceLabel: '4,180,000,000 Rials',
+        priceNumeric: 4180000000,
         description: 'Refrigerated, 35 dedicated channels, powerful cooling system, soft delivery, 24/7 online management.',
         highlights: ['Refrigerated', '35 dedicated channels', 'Soft delivery', '24/7 online management'],
         image: '/images/machine-35-base.webp',
@@ -60,8 +60,8 @@ const machinesEn = [
         id: 'rm-48',
         name: 'Robot Market RM-48',
         shortLabel: '48 Channels',
-        priceLabel: '4,480,000,000 Rials',
-        priceNumeric: 4480000000,
+        priceLabel: '4,980,000,000 Rials',
+        priceNumeric: 4980000000,
         description: 'Refrigerated, 48 dedicated channels, advanced online management and delivery capabilities.',
         highlights: ['Refrigerated', '48 dedicated channels', 'Advanced online management', 'Smart delivery'],
         image: '/images/machine-48-base.webp',
@@ -72,8 +72,8 @@ const machinesEn = [
         id: 'rm-60',
         name: 'Robot Market RM-60',
         shortLabel: '60 Channels',
-        priceLabel: '4,980,000,000 Rials',
-        priceNumeric: 4980000000,
+        priceLabel: '5,480,000,000 Rials',
+        priceNumeric: 5480000000,
         description: 'Refrigerated, 60 dedicated channels for high-traffic businesses.',
         highlights: ['Refrigerated', '60 dedicated channels', 'Ideal for high-traffic venues', 'High capacity'],
         image: '/images/machine-60-base.webp',
@@ -96,10 +96,6 @@ export const content = {
             showcase: 'دستگاه‌ها',
             about: 'درباره ما',
             locations: 'مکان‌های نصب',
-            catalog: 'کاتالوگ محصولات',
-            video: 'ویدیوی معرفی',
-            map: 'نقشه',
-            support: 'پشتیبانی',
             contact: 'تماس با ما',
             login: 'ورود به پنل کاربری',
         },
@@ -148,18 +144,6 @@ export const content = {
             gifAlt: (name) => `نمایش عملکرد ${name}`,
         },
         machines: machinesFa,
-        trustedBy: {
-            eyebrow: 'اعتماد شما، افتخار ماست',
-            title: 'کسب‌وکارهایی که به روبات مارکت اعتماد کرده‌اند',
-            clients: [
-                {id: 'c1', name: 'هتل پارسیان'},
-                {id: 'c2', name: 'دانشگاه فردوسی'},
-                {id: 'c3', name: 'بیمارستان رضوی'},
-                {id: 'c4', name: 'فروشگاه‌های زنجیره‌ای رفاه'},
-                {id: 'c5', name: 'مجتمع اداری آسمان'},
-                {id: 'c6', name: 'باشگاه ورزشی تلاش'},
-            ],
-        },
         features: [
             {
                 id: 'warranty',
@@ -243,114 +227,6 @@ export const content = {
                 },
             ],
         },
-        catalog: {
-            eyebrow: 'کاتالوگ محصولات',
-            title: 'محصولات قابل سفارش برای دستگاه شما',
-            subtitle:
-                'با خرید دستگاه روبات مارکت، می‌توانید این محصولات را با قیمت عمده و کمتر از بازار سفارش دهید؛ تیم ما هم چیدمان اولیه و شارژ دستگاه شما را انجام می‌دهد.',
-            addToOrder: 'افزودن به سفارش',
-            originalPriceLabel: 'قیمت بازار',
-            machinePriceLabel: 'قیمت ویژه مشتریان روبات مارکت',
-            addToast: (name) => `${name} به لیست سفارش اضافه شد`,
-            items: [
-                {
-                    id: 'saffron',
-                    name: 'زعفران ممتاز درجه‌یک',
-                    category: 'زعفران',
-                    image: '/images/catalog/saffron.svg',
-                    originalPriceNumeric: 12000000,
-                    priceNumeric: 8900000
-                },
-                {
-                    id: 'chips',
-                    name: 'چیپس و پفک (بسته عمده)',
-                    category: 'تنقلات',
-                    image: '/images/snacks/chips-1.svg',
-                    originalPriceNumeric: 450000,
-                    priceNumeric: 320000
-                },
-                {
-                    id: 'soda',
-                    name: 'نوشابه و نوشیدنی گازدار',
-                    category: 'نوشیدنی',
-                    image: '/images/snacks/soda-1.svg',
-                    originalPriceNumeric: 250000,
-                    priceNumeric: 180000
-                },
-                {
-                    id: 'water',
-                    name: 'آب معدنی',
-                    category: 'نوشیدنی',
-                    image: '/images/catalog/water.svg',
-                    originalPriceNumeric: 120000,
-                    priceNumeric: 80000
-                },
-                {
-                    id: 'coffee',
-                    name: 'قهوه فوری',
-                    category: 'گرم',
-                    image: '/images/catalog/coffee.svg',
-                    originalPriceNumeric: 650000,
-                    priceNumeric: 470000
-                },
-                {
-                    id: 'tea',
-                    name: 'چای کیسه‌ای',
-                    category: 'گرم',
-                    image: '/images/catalog/tea.svg',
-                    originalPriceNumeric: 380000,
-                    priceNumeric: 270000
-                },
-            ],
-        },
-        introVideo: {
-            eyebrow: 'ویدیوی معرفی',
-            title: 'با روبات مارکت آشنا شوید',
-            subtitle: 'نگاهی کوتاه به کارخانه، فرآیند تولید و عملکرد دستگاه‌های روبات مارکت.',
-            videoNotSupported: 'مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.',
-        },
-        map: {
-            eyebrow: 'موقعیت ما روی نقشه',
-            title: 'کارخانه و دفاتر روبات مارکت',
-            factoryLabel: 'کارخانه',
-            salesLabel: 'دفتر فروش مرکزی',
-            openInMaps: 'مشاهده در نشان',
-            configNotice: 'برای فعال شدن نقشه، کلید API نشان را در تنظیمات پروژه قرار دهید.',
-        },
-        ticket: {
-            eyebrow: 'پشتیبانی',
-            title: 'ثبت تیکت پشتیبانی',
-            subtitle: 'سوال یا درخواستی دارید؟ فرم زیر را پر کنید تا تیم پشتیبانی در سریع‌ترین زمان با شما تماس بگیرد.',
-            name: 'نام و نام خانوادگی',
-            namePlaceholder: 'مثال: علی رضایی',
-            phone: 'شماره تماس',
-            phonePlaceholder: '09xxxxxxxxx',
-            email: 'ایمیل (اختیاری)',
-            emailPlaceholder: 'example@email.com',
-            subject: 'موضوع',
-            subjectPlaceholder: 'موضوع درخواست خود را بنویسید',
-            priority: 'اولویت',
-            priorities: [
-                {value: 'low', label: 'کم'},
-                {value: 'medium', label: 'متوسط'},
-                {value: 'high', label: 'فوری'},
-            ],
-            message: 'پیام شما',
-            messagePlaceholder: 'توضیحات کامل درخواست یا مشکل خود را بنویسید…',
-            submit: 'ارسال تیکت',
-            requiredMsg: 'این فیلد الزامی است',
-            invalidPhone: 'شماره تماس معتبر نیست',
-            invalidEmail: 'ایمیل معتبر نیست',
-            successMsg: 'تیکت شما با موفقیت ثبت شد. به‌زودی با شما تماس می‌گیریم.',
-        },
-        chat: {
-            fabLabel: 'گفتگوی آنلاین',
-            title: 'پشتیبانی آنلاین روبات مارکت',
-            placeholder: 'پیام خود را بنویسید…',
-            send: 'ارسال',
-            initialBotMessage: 'سلام! 👋 چطور می‌تونم امروز کمکتون کنم؟',
-            fallbackReply: 'ممنون از پیامتون؛ همکاران ما به‌زودی پاسخ می‌دهند.',
-        },
         footer: {
             aboutLabel: 'روبات مارکت',
             aboutText: 'ارائه‌دهنده دستگاه‌های وندینگ هوشمند برای کسب‌وکارهای مدرن — محصولی از شرکت نگین سازان پیشگام رادمهر آتوسا.',
@@ -386,10 +262,6 @@ export const content = {
             showcase: 'Machines',
             about: 'About Us',
             locations: 'Where to Install',
-            catalog: 'Product Catalog',
-            video: 'Intro Video',
-            map: 'Map',
-            support: 'Support',
             contact: 'Contact',
             login: 'Sign In',
         },
@@ -438,19 +310,6 @@ export const content = {
             gifAlt: (name) => `${name} in action`,
         },
         machines: machinesEn,
-        trustedBy: {
-            eyebrow: 'Trusted by businesses like yours',
-            title: 'Businesses That Trust Robot Market',
-            // Sample/placeholder names — replace with real client names.
-            clients: [
-                {id: 'c1', name: 'Parsian Hotel'},
-                {id: 'c2', name: 'Ferdowsi University'},
-                {id: 'c3', name: 'Razavi Hospital'},
-                {id: 'c4', name: 'Refah Retail Chain'},
-                {id: 'c5', name: 'Asemaan Office Complex'},
-                {id: 'c6', name: 'Talash Sports Club'},
-            ],
-        },
         features: [
             {
                 id: 'warranty',
@@ -534,114 +393,6 @@ export const content = {
                 },
             ],
         },
-        catalog: {
-            eyebrow: 'Product Catalog',
-            title: 'Products You Can Order for Your Machine',
-            subtitle:
-                'When you buy a Robot Market machine, you can order these products at a wholesale price below market rate — our team also handles the initial stocking and layout for you.',
-            addToOrder: 'Add to Order',
-            originalPriceLabel: 'Market price',
-            machinePriceLabel: 'Robot Market customer price',
-            addToast: (name) => `${name} added to your order`,
-            items: [
-                {
-                    id: 'saffron',
-                    name: 'Premium Grade-1 Saffron',
-                    category: 'Saffron',
-                    image: '/images/catalog/saffron.svg',
-                    originalPriceNumeric: 12000000,
-                    priceNumeric: 8900000
-                },
-                {
-                    id: 'chips',
-                    name: 'Chips & Crisps (bulk pack)',
-                    category: 'Snacks',
-                    image: '/images/snacks/chips-1.svg',
-                    originalPriceNumeric: 450000,
-                    priceNumeric: 320000
-                },
-                {
-                    id: 'soda',
-                    name: 'Soda & Carbonated Drinks',
-                    category: 'Drinks',
-                    image: '/images/snacks/soda-1.svg',
-                    originalPriceNumeric: 250000,
-                    priceNumeric: 180000
-                },
-                {
-                    id: 'water',
-                    name: 'Mineral Water',
-                    category: 'Drinks',
-                    image: '/images/catalog/water.svg',
-                    originalPriceNumeric: 120000,
-                    priceNumeric: 80000
-                },
-                {
-                    id: 'coffee',
-                    name: 'Instant Coffee',
-                    category: 'Hot Drinks',
-                    image: '/images/catalog/coffee.svg',
-                    originalPriceNumeric: 650000,
-                    priceNumeric: 470000
-                },
-                {
-                    id: 'tea',
-                    name: 'Tea Bags',
-                    category: 'Hot Drinks',
-                    image: '/images/catalog/tea.svg',
-                    originalPriceNumeric: 380000,
-                    priceNumeric: 270000
-                },
-            ],
-        },
-        introVideo: {
-            eyebrow: 'Intro Video',
-            title: 'Get to Know Robot Market',
-            subtitle: 'A short look at the factory, our production process, and the machines in action.',
-            videoNotSupported: 'Your browser does not support video playback.',
-        },
-        map: {
-            eyebrow: 'Find Us on the Map',
-            title: 'Robot Market Factory & Offices',
-            factoryLabel: 'Factory',
-            salesLabel: 'Central Sales Office',
-            openInMaps: 'Open in Neshan',
-            configNotice: 'Add your Neshan API key in the project settings to activate the map.',
-        },
-        ticket: {
-            eyebrow: 'Support',
-            title: 'Submit a Support Ticket',
-            subtitle: 'Have a question or request? Fill out the form below and our support team will get back to you as soon as possible.',
-            name: 'Full Name',
-            namePlaceholder: 'e.g. John Smith',
-            phone: 'Phone Number',
-            phonePlaceholder: '09xxxxxxxxx',
-            email: 'Email (optional)',
-            emailPlaceholder: 'example@email.com',
-            subject: 'Subject',
-            subjectPlaceholder: 'Write the subject of your request',
-            priority: 'Priority',
-            priorities: [
-                {value: 'low', label: 'Low'},
-                {value: 'medium', label: 'Medium'},
-                {value: 'high', label: 'Urgent'},
-            ],
-            message: 'Your Message',
-            messagePlaceholder: 'Describe your request or issue in full…',
-            submit: 'Submit Ticket',
-            requiredMsg: 'This field is required',
-            invalidPhone: 'Invalid phone number',
-            invalidEmail: 'Invalid email address',
-            successMsg: 'Your ticket was submitted successfully. We will contact you soon.',
-        },
-        chat: {
-            fabLabel: 'Live Chat',
-            title: 'Robot Market Live Support',
-            placeholder: 'Type your message…',
-            send: 'Send',
-            initialBotMessage: "Hi! 👋 How can we help you today?",
-            fallbackReply: "Thanks for your message — our team will reply shortly.",
-        },
         footer: {
             aboutLabel: 'Robot Market',
             aboutText: 'Smart vending machines for modern businesses — a product of Negin Sazan Pishgam Radmehr Atousa Co.',
@@ -676,15 +427,3 @@ export const floatingSnacks = [
 ];
 
 export const showcaseVideoSrc = '/video/showcase-placeholder.mp4';
-
-// Dedicated company introduction video (different from the horizontal-showcase
-// scroll-scrubbed background video above). Drop the real file at this path.
-export const introVideoSrc = '/video/company-intro-placeholder.mp4';
-export const introVideoPoster = '/images/video-poster.svg';
-
-// Placeholder coordinates for Toos Industrial Town, Mashhad (approximate).
-// Replace with the exact factory pin — see README.
-export const mapLocations = {
-    factory: {lat: 36.42, lng: 59.445},
-    salesOffice: {lat: 36.3110, lng: 59.5683}, // approximate central Mashhad placeholder
-};
