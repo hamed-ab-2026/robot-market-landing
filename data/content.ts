@@ -1,10 +1,12 @@
+import type {FloatingSnack, Locale, Machine, SiteContent} from '@/types/domain';
+
 // ---------------------------------------------------------------------------
 // Single bilingual content source (fa/en). Every UI string and every piece of
 // business copy lives here, per locale. Components read via useLanguage().
 // Asset paths (images/gifs/video) are locale-independent and stay the same.
 // ---------------------------------------------------------------------------
 
-const machinesFa = [
+const machinesFa: Machine[] = [
     {
         id: 'rm-35',
         name: 'روبات مارکت ۳۵ کانال',
@@ -43,7 +45,7 @@ const machinesFa = [
     },
 ];
 
-const machinesEn = [
+const machinesEn: Machine[] = [
     {
         id: 'rm-35',
         name: 'Robot Market RM-35',
@@ -82,7 +84,7 @@ const machinesEn = [
     },
 ];
 
-export const content = {
+export const content: Record<Locale, SiteContent> = {
     fa: {
         dir: 'rtl',
         lang: 'fa',
@@ -417,7 +419,7 @@ export const content = {
 };
 
 // Locale-independent asset config (positions/paths only — same in both languages).
-export const floatingSnacks = [
+export const floatingSnacks: FloatingSnack[] = [
     {id: 'chips-1', image: '/images/snacks/item-1.webp', size: 60, top: '5%', left: '-5%', duration: 5.5, delay: 0},
     {id: 'soda-1', image: '/images/snacks/item-2.webp', size: 55, top: '68%', left: '2%', duration: 6.2, delay: 0.6},
     {id: 'chips-2', image: '/images/snacks/item-3.webp', size: 65, top: '10%', left: '85%', duration: 4.8, delay: 0.3},

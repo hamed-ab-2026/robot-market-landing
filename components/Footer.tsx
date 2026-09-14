@@ -1,6 +1,6 @@
 'use client';
 
-// فوتر سایت: درباره ما کوتاه، لینک‌های شبکه اجتماعی، دسترسی سریع، و اطلاعات تماس/آدرس.
+// Company information, quick links, social links, and contact details.
 
 import { PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import { useLanguage } from '@/app/context/LanguageContext';

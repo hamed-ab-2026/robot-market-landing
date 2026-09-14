@@ -1,11 +1,12 @@
 'use client';
 
+import type {Machine} from '@/types/domain';
 import {useEffect, useRef, useState} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {Modal, Button, message} from 'antd';
 import {ShoppingCartOutlined} from '@ant-design/icons';
-import {useDispatch} from 'react-redux';
+import {useAppDispatch} from '@/store/hooks';
 import VendingCard from './VendingCard';
 import {showcaseVideoSrc} from '@/data/content';
 import {useLanguage} from '@/app/context/LanguageContext';
@@ -14,12 +15,12 @@ import {addToCart} from '@/store/cartSlice';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HorizontalShowcase() {
-    const sectionRef = useRef(null);
-    const trackRef = useRef(null);
-    const videoRef = useRef(null);
-    const dispatch = useDispatch();
+    const sectionRef = useRef<HTMLElement>(null);
+    const trackRef = useRef<HTMLDivElement>(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const dispatch = useAppDispatch();
     const {t} = useLanguage();
-    const [quickViewMachine, setQuickViewMachine] = useState(null);
+    const [quickViewMachine, setQuickViewMachine] = useState<Machine | null>(null);
     const [videoAvailable, setVideoAvailable] = useState(true);
 
     useEffect(() => {
@@ -33,10 +34,10 @@ export default function HorizontalShowcase() {
                 Math.max(track.scrollWidth - window.innerWidth, 0)
             );
 
-            let animationFrameId = null;
+            let animationFrameId: number | null = null;
             let latestProgress = 0;
 
-            const syncVideo = (progress) => {
+            const syncVideo = (progress: number) => {
                 latestProgress = progress;
                 if (animationFrameId !== null) return;
 

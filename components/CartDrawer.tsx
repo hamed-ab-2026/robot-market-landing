@@ -1,10 +1,10 @@
 'use client';
 
-// کشوی (Drawer) سبد خرید: نمایش آیتم‌های انتخابی، تغییر تعداد، جمع کل، و دکمه پرداخت (placeholder).
+// Cart drawer with quantity editing, totals, and placeholder checkout.
 
 import {Drawer, Button, Empty, InputNumber, message} from 'antd';
 import {DeleteOutlined} from '@ant-design/icons';
-import {useSelector, useDispatch} from 'react-redux';
+import {useAppSelector, useAppDispatch} from '@/store/hooks';
 import {
     selectCartItems,
     selectCartTotal,
@@ -14,17 +14,18 @@ import {
     setQuantity,
 } from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
+import type {Locale} from '@/types/domain';
 import api from "@/lib/axios";
 
-function toLocaleNumber(n, locale) {
+function toLocaleNumber(n: number, locale: Locale) {
     return n.toLocaleString(locale === 'fa' ? 'fa-IR' : 'en-US');
 }
 
 export default function CartDrawer() {
-    const dispatch = useDispatch();
-    const isOpen = useSelector(selectIsDrawerOpen);
-    const items = useSelector(selectCartItems);
-    const total = useSelector(selectCartTotal);
+    const dispatch = useAppDispatch();
+    const isOpen = useAppSelector(selectIsDrawerOpen);
+    const items = useAppSelector(selectCartItems);
+    const total = useAppSelector(selectCartTotal);
     const {t, locale, dir} = useLanguage();
 
     const currencySuffix = locale === 'fa' ? ' ریال' : ' Rials';

@@ -1,6 +1,6 @@
 'use client';
 
-// گرید «مکان مناسب برای نصب» — هتل‌ها، مدارس، داروخانه‌ها، بیمارستان‌ها، شیفت شب، محصولات تخصصی.
+// Suggested installation locations for vending machines.
 
 import {
   HomeOutlined,

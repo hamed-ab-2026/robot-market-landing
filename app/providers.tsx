@@ -1,8 +1,10 @@
 'use client';
 
-// پل ارتباطی بین Redux، حالت تیره/روشن، و زبان فا/en با تنظیمات ConfigProvider آنت‌دیزاین.
+import type {ReactNode} from 'react';
+// Connect Redux, language, and theme settings to Ant Design.
 
 import {Provider as ReduxProvider} from 'react-redux';
+import type {ThemeConfig} from 'antd';
 import {ConfigProvider, theme as antdThemeApi} from 'antd';
 import faIR from 'antd/locale/fa_IR';
 import enUS from 'antd/locale/en_US';
@@ -10,11 +12,11 @@ import {store} from '@/store/store';
 import {ThemeProvider, useTheme} from './context/ThemeContext';
 import {LanguageProvider, useLanguage} from './context/LanguageContext';
 
-function AntdBridge({children}) {
+function AntdBridge({children}: {children: ReactNode}) {
     const {theme} = useTheme();
     const {locale, dir} = useLanguage();
 
-    const antdTheme = {
+    const antdTheme: ThemeConfig = {
         algorithm: theme === 'dark' ? antdThemeApi.darkAlgorithm : antdThemeApi.defaultAlgorithm,
         token: {
             colorPrimary: '#00a693',
@@ -48,7 +50,7 @@ function AntdBridge({children}) {
     );
 }
 
-export default function Providers({children}) {
+export default function Providers({children}: {children: ReactNode}) {
     return (
         <ReduxProvider store={store}>
             <ThemeProvider>

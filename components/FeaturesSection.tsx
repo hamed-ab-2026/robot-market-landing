@@ -1,6 +1,6 @@
 'use client';
 
-// نوار مزایا: ضمانت کالا، مشاوره رایگان، خرید اقساطی، بسته‌بندی ایمن.
+// Service benefits: warranty, consultation, installments, and packaging.
 
 import {
   SafetyCertificateOutlined,

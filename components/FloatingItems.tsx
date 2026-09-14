@@ -1,17 +1,18 @@
 'use client';
 
-// رندر آیتم‌های شناور (چیپس/نوشابه) دور دستگاه با حرکت تصادفی و ملایم GSAP.
+// Animate decorative snack images with gentle randomized motion.
 
+import type {FloatingSnack} from '@/types/domain';
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 
 /**
  * Renders the centralized `floatingSnacks` config as absolutely-positioned
  * images and gives each one a gentle, randomized floating drift via GSAP.
- * Positions/sizes/images all come from data/content.js — edit there only.
+ * Positions/sizes/images all come from data/content.ts — edit there only.
  */
-export default function FloatingItems({items}) {
-    const containerRef = useRef(null);
+export default function FloatingItems({items}: {items: FloatingSnack[]}) {
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const nodes = containerRef.current?.querySelectorAll('[data-float-item]');

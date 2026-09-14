@@ -4,8 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add landing page device images and fix machine branding">
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="refactor: remove disabled home sections and their unused assets">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/context/LanguageContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/context/ThemeContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/providers.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AboutSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartDrawer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FeaturesSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FloatingItems.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeroSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LanguageToggle.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LocationsSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileShowcase.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ShowcaseSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ThemeToggle.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/VendingCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/cartSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,36 +123,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/hamed/Documents/Projects/GItLabRepo/device_web&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "develop",
+    "javascript.nodejs.core.library.configured.version": "24.20.0",
+    "javascript.nodejs.core.library.typings.version": "24.13.3",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kronk.content.tree.expanded.paths": "",
+    "last_opened_file_path": "/home/hamed/Documents/Projects/GItLabRepo/device_web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\GitHubRepo\robot-market-landing\public\images\icons" />
@@ -204,7 +234,7 @@
       <workItem from="1789362025574" duration="23000" />
       <workItem from="1789362137185" duration="377000" />
       <workItem from="1789362644534" duration="6512000" />
-      <workItem from="1789383269194" duration="679000" />
+      <workItem from="1789383269194" duration="1732000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -470,11 +500,24 @@
       <option name="project" value="LOCAL" />
       <updated>1789369799782</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="refactor: remove disabled home sections and their unused assets">
+      <option name="closed" value="true" />
+      <created>1789384147873</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1789384147873</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/components/AboutSection.jsx" />
+      </list>
+    </option>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="next.config.js" />
@@ -486,6 +529,7 @@
     <MESSAGE value="initial new branch" />
     <MESSAGE value="update" />
     <MESSAGE value="feat: add landing page device images and fix machine branding" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add landing page device images and fix machine branding" />
+    <MESSAGE value="refactor: remove disabled home sections and their unused assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove disabled home sections and their unused assets" />
   </component>
 </project>

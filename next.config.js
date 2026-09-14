@@ -1,5 +1,7 @@
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
+// Next.js 14 loads its configuration as JavaScript.
+/** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
 

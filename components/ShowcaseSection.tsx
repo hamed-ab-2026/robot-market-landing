@@ -7,14 +7,14 @@ import MobileShowcase from './MobileShowcase';
 const MOBILE_BREAKPOINT = 768;
 
 export default function ShowcaseSection() {
-    const [isMobile, setIsMobile] = useState(null);
+    const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia(
             `(max-width: ${MOBILE_BREAKPOINT - 1}px)`
         );
 
-        const handleChange = (event) => setIsMobile(event.matches);
+        const handleChange = (event: MediaQueryListEvent) => setIsMobile(event.matches);
 
         setIsMobile(mediaQuery.matches);
         mediaQuery.addEventListener('change', handleChange);

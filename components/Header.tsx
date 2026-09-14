@@ -1,20 +1,20 @@
 'use client';
 
-// هدر ثابت بالای صفحه: لوگو، منوی ناوبری، سوییچ زبان/تم، دکمه ورود به پنل کاربری و آیکون سبد خرید.
+// Fixed navigation with language, theme, account, and cart controls.
 
 import {useState, useEffect} from 'react';
 import Image from 'next/image';
 import {Badge, Button} from 'antd';
 import {ShoppingCartOutlined, MenuOutlined, CloseOutlined, UserOutlined} from '@ant-design/icons';
-import {useSelector, useDispatch} from 'react-redux';
+import {useAppSelector, useAppDispatch} from '@/store/hooks';
 import {selectCartCount, openDrawer} from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 
 export default function Header() {
-    const dispatch = useDispatch();
-    const cartCount = useSelector(selectCartCount);
+    const dispatch = useAppDispatch();
+    const cartCount = useAppSelector(selectCartCount);
     const {t} = useLanguage();
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);

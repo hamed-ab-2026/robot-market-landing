@@ -1,23 +1,25 @@
 'use client';
 
 
+import type {Machine} from '@/types/domain';
+import type {MouseEvent} from 'react';
 import {useRef} from 'react';
 import {Button, message} from 'antd';
 import {ShoppingCartOutlined, EyeOutlined} from '@ant-design/icons';
-import {useDispatch} from 'react-redux';
+import {useAppDispatch} from '@/store/hooks';
 import {addToCart} from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
 import FloatingItems from './FloatingItems';
 import {floatingSnacks} from '@/data/content';
 
-export default function VendingCard({machine, onQuickView}) {
-    const dispatch = useDispatch();
+export default function VendingCard({machine, onQuickView}: {machine: Machine; onQuickView?: (machine: Machine) => void}) {
+    const dispatch = useAppDispatch();
     const {t, dir} = useLanguage();
-    const stageRef = useRef(null);
-    const lensRef = useRef(null);
-    const revealRef = useRef(null);
+    const stageRef = useRef<HTMLDivElement>(null);
+    const lensRef = useRef<HTMLDivElement>(null);
+    const revealRef = useRef<HTMLImageElement>(null);
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
         const stage = stageRef.current;
         if (!stage) return;
         const rect = stage.getBoundingClientRect();

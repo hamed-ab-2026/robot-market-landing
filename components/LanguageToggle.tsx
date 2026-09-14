@@ -1,6 +1,6 @@
 'use client';
 
-// دکمه سوییچ زبان فارسی/انگلیسی.
+// Switch between Persian and English.
 
 import { Button, Tooltip } from 'antd';
 import { useLanguage } from '@/app/context/LanguageContext';

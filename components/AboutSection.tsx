@@ -1,6 +1,6 @@
 'use client';
 
-// سکشن معرفی شرکت با متن بلند؛ به‌خاطر طولانی بودن متن، یک دکمه «ادامه مطلب» برای باز/بسته کردن دارد.
+// Company introduction with optional expandable paragraphs.
 
 import {useState} from 'react';
 import {useLanguage} from '@/app/context/LanguageContext';

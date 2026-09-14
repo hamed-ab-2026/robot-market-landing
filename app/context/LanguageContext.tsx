@@ -1,13 +1,23 @@
 'use client';
 
-
+import type {Dispatch, SetStateAction, ReactNode} from 'react';
+import type {Locale, SiteContent, Direction} from '@/types/domain';
 import {createContext, useContext, useEffect, useState} from 'react';
 import {content} from '@/data/content';
 
-const LanguageContext = createContext(null);
+interface LanguageContextValue {
+    locale: Locale;
+    setLocale: Dispatch<SetStateAction<Locale>>;
+    toggleLocale: () => void;
+    t: SiteContent;
+    dir: Direction;
+    mounted: boolean;
+}
 
-export function LanguageProvider({children}) {
-    const [locale, setLocale] = useState('fa');
+const LanguageContext = createContext<LanguageContextValue | null>(null);
+
+export function LanguageProvider({children}: {children: ReactNode}) {
+    const [locale, setLocale] = useState<Locale>('fa');
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {

@@ -1,12 +1,21 @@
 'use client';
 
+import type {Dispatch, SetStateAction, ReactNode} from 'react';
+import type {Theme} from '@/types/domain';
 import {createContext, useContext, useEffect, useState} from 'react';
 
-const ThemeContext = createContext(null);
+interface ThemeContextValue {
+    theme: Theme;
+    setTheme: Dispatch<SetStateAction<Theme>>;
+    toggleTheme: () => void;
+    mounted: boolean;
+}
 
-export function ThemeProvider({children}) {
+const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-    const [theme, setTheme] = useState('light');
+export function ThemeProvider({children}: {children: ReactNode}) {
+
+    const [theme, setTheme] = useState<Theme>('light');
     const [mounted, setMounted] = useState(false);
 
 
@@ -42,4 +51,3 @@ export function useTheme() {
     if (!ctx) throw new Error('useTheme must be used within ThemeProvider');
     return ctx;
 }
-

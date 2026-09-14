@@ -43,11 +43,11 @@ api.interceptors.response.use(
             }
 
             if (status >= 500) {
-                // message.error('خطایی در سرور رخ داد. لطفاً بعداً تلاش کنید.');
+                // TODO: Display a server error message.
             }
         } else if (error.request) {
-            // درخواست ارسال شد ولی هیچ جوابی نیومد (قطعی اینترنت، سرور خاموش و ...)
-            // TODO: message.error('اتصال با سرور برقرار نشد.');
+            // The request was sent, but no response arrived.
+            // TODO: Display a network connection error.
         }
 
 

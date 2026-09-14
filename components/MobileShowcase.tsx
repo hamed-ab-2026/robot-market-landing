@@ -1,18 +1,19 @@
 'use client';
 
+import type {Machine} from '@/types/domain';
 import {useState} from 'react';
 import {Modal, Button, message} from 'antd';
 import {ShoppingCartOutlined, EyeOutlined} from '@ant-design/icons';
-import {useDispatch} from 'react-redux';
+import {useAppDispatch} from '@/store/hooks';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {addToCart} from '@/store/cartSlice';
 
 export default function MobileShowcase() {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const {t, dir} = useLanguage();
-    const [quickViewMachine, setQuickViewMachine] = useState(null);
+    const [quickViewMachine, setQuickViewMachine] = useState<Machine | null>(null);
 
-    const handleAddToCart = (machine) => {
+    const handleAddToCart = (machine: Machine) => {
         dispatch(
             addToCart({
                 id: machine.id,

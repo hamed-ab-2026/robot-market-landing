@@ -1,25 +1,20 @@
 'use client';
 
-/**
- * سکشن اول سایت (Hero) — ایده کلی از صفحه وندینگ سایت Sielaff گرفته شده:
- * یک اسلایدر تمام‌عرض که هر ۵ ثانیه به‌صورت خودکار به اسلاید بعدی می‌رود،
- * همراه با یک شکل مورب رنگی (به‌جای قرمز آن‌ها، رنگ سبز برند خودمان #00a693)،
- * عنوان بزرگ دو خطی، و دکمه‌های فلش قبلی/بعدی برای ناوبری دستی.
- */
+/** Full-width product carousel with autoplay and manual navigation. */
 
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {LeftOutlined, RightOutlined} from '@ant-design/icons';
 import {useLanguage} from '@/app/context/LanguageContext';
 
-const AUTOPLAY_DELAY = 5000; // هر ۵ ثانیه اسلاید عوض می‌شود
+const AUTOPLAY_DELAY = 5000; // Advance every five seconds.
 
 export default function HeroSection() {
     const {t, dir} = useLanguage();
     const slides = t.hero.slides;
     const [activeIndex, setActiveIndex] = useState(0);
-    const timerRef = useRef(null);
+    const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-    // رفتن به اسلاید بعدی (با چرخش به اول لیست وقتی به آخر رسید)
+    // Wrap around after the last slide.
     const goToNext = useCallback(() => {
         setActiveIndex((prev) => (prev + 1) % slides.length);
     }, [slides.length]);
@@ -28,9 +23,7 @@ export default function HeroSection() {
         setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
     }, [slides.length]);
 
-    // تایمر پخش خودکار: هر بار که اسلاید عوض می‌شود، تایمر قبلی پاک و یک تایمر
-    // جدید ۵ ثانیه‌ای ست می‌شود. با کلیک دستی روی فلش‌ها هم همین تابع دوباره
-    // صدا زده می‌شود تا شمارش از نو شروع شود (تجربه کاربری بهتر).
+    // Restart the autoplay timer after manual navigation.
     const restartAutoplay = useCallback(() => {
         if (timerRef.current) clearInterval(timerRef.current);
         timerRef.current = setInterval(goToNext, AUTOPLAY_DELAY);
@@ -43,10 +36,10 @@ export default function HeroSection() {
         };
     }, [restartAutoplay]);
 
-    const handleManualNav = (direction) => {
+    const handleManualNav = (direction: 'next' | 'prev') => {
         if (direction === 'next') goToNext();
         else goToPrev();
-        restartAutoplay(); // شمارش ۵ ثانیه بعد از کلیک دستی از نو شروع شود
+        restartAutoplay(); // Reset the delay after a manual click.
     };
 
     const slide = slides[activeIndex];
@@ -54,7 +47,7 @@ export default function HeroSection() {
     return (
         <section id="hero" className="relative h-screen w-full overflow-hidden bg-page">
             {/* ------------------------------------------------------------------ */}
-            {/* شکل مورب تزئینی سمت راست/چپ — نسخه سبز برند به‌جای قرمز Sielaff       */}
+            {/* Decorative brand-colored shape. */}
             {/* ------------------------------------------------------------------ */}
             <div
                 className="absolute inset-y-0 w-1/3 hidden md:block"
@@ -68,8 +61,8 @@ export default function HeroSection() {
             />
 
             {/* ------------------------------------------------------------------ */}
-            {/* اسلایدهای عکس — همه اسلایدها روی هم قرار دارند و فقط با opacity     */}
-            {/* محو/نمایان می‌شوند (transition نرم به‌جای پرش ناگهانی)                */}
+            {/* Fade between overlapping product images. */}
+            {/* Use opacity transitions for smooth slide changes. */}
             {/* ------------------------------------------------------------------ */}
             <div className="absolute inset-0">
                 {slides.map((s, i) => (
@@ -88,7 +81,7 @@ export default function HeroSection() {
                 ))}
             </div>
 
-            {/* لایه‌ی نیمه‌شفاف پشت متن، برای خوانایی روی هر عکسی */}
+            {/* Overlay for text readability. */}
             <div
                 className="absolute inset-0"
                 style={{
@@ -98,7 +91,7 @@ export default function HeroSection() {
             />
 
             {/* ------------------------------------------------------------------ */}
-            {/* متن روی اسلاید: کیکر کوچک + عنوان بزرگ دو خطی + توضیح + دکمه CTA     */}
+            {/* Active slide headline, description, and call to action. */}
             {/* ------------------------------------------------------------------ */}
             <div
                 className="relative  z-10 h-full flex flex-col justify-end md:justify-end px-6 md:px-16 pb-28 md:pb-72">
@@ -124,7 +117,7 @@ export default function HeroSection() {
             </div>
 
             {/* ------------------------------------------------------------------ */}
-            {/* فلش‌های ناوبری دستی (قبلی / بعدی) — وسط دو طرف   */}
+            {/* Previous and next slide controls. */}
             {/* ------------------------------------------------------------------ */}
             <button
                 onClick={() => handleManualNav('prev')}
@@ -141,7 +134,7 @@ export default function HeroSection() {
                 <LeftOutlined/>
             </button>
 
-            {/* نقطه‌های شمارشگر اسلاید پایین صفحه — کلیک روی هرکدام مستقیم به همان اسلاید می‌رود */}
+            {/* Jump directly to a slide using the indicators. */}
             <div className="absolute bottom-8 inset-x-0 z-20 flex justify-center gap-2">
                 {slides.map((s, i) => (
                     <button
