@@ -80,16 +80,15 @@ export default function Header() {
                         {t.nav.login}
                     </Button>
 
-                    {/* faz 1 */}
-                    {/* <Badge count={cartCount} size="small" offset={[-2, 2]}>
+                    <Badge count={cartCount} size="small" offset={[-2, 2]}>
                         <Button
                             shape="circle"
                             size="large"
                             icon={<ShoppingCartOutlined/>}
                             onClick={() => dispatch(openDrawer())}
-                            aria-label="cart"
+                            aria-label={t.cart.title}
                         />
-                    </Badge>*/}
+                    </Badge>
 
                     <button
                         className="xl:hidden text-brand-400 text-2xl"
@@ -117,7 +116,14 @@ export default function Header() {
                     <div className="flex items-center gap-3 pt-2 border-t border-subtle">
                         <LanguageToggle/>
                         <ThemeToggle/>
-                        <Button icon={<UserOutlined/>} className="flex-1">
+                        <Button
+                            icon={<UserOutlined/>}
+                            className="flex-1"
+                            href="https://panel.my-rm.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMobileOpen(false)}
+                        >
                             {t.nav.login}
                         </Button>
                     </div>
