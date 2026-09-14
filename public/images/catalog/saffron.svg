@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
-  <rect x="15" y="20" width="90" height="105" rx="10" fill="#7a1f2b" stroke="#3d0f15" stroke-width="3"/>
-  <rect x="15" y="20" width="90" height="34" rx="10" fill="#00a693"/>
-  <path d="M40 70 q10 -14 20 0 q10 -14 20 0" stroke="#ffcf4d" stroke-width="3" fill="none"/>
-  <text x="60" y="100" font-family="Tahoma, sans-serif" font-size="13" fill="#ffe9b0" text-anchor="middle">زعفران</text>
-</svg>
