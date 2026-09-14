@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="update">
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add landing page device images and fix machine branding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/machine-slide-0.webp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,61 +28,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.004744177134286" />
-      <entry key="MS500" value="1.575240101022852" />
-      <entry key="S2" value="2.764135174065891" />
-      <entry key="S5" value="3.448835067490734" />
-      <entry key="S10" value="4.169244601553037" />
-      <entry key="S30" value="6.312324351429616" />
-      <entry key="S60" value="8.799128624106114" />
-      <entry key="M2" value="13.075282949566317" />
-      <entry key="M5" value="21.208597569347642" />
-      <entry key="M10" value="26.723057802373717" />
-      <entry key="M15" value="29.24409948387227" />
-      <entry key="M30" value="33.22818221953257" />
-      <entry key="H1" value="37.61158513107687" />
-      <entry key="H2" value="41.59825862074022" />
-      <entry key="H4" value="44.40854514760487" />
-      <entry key="D1" value="47.33745168978149" />
-      <entry key="W1" value="47.90363849664463" />
+      <entry key="MS100" value="1.0105021478132723" />
+      <entry key="MS500" value="1.6326904583013002" />
+      <entry key="S2" value="3.200495115489667" />
+      <entry key="S5" value="4.148160592733714" />
+      <entry key="S10" value="4.983360398199462" />
+      <entry key="S30" value="7.2170837140275825" />
+      <entry key="S60" value="9.732495501143132" />
+      <entry key="M2" value="14.025681297470134" />
+      <entry key="M5" value="22.17637857625762" />
+      <entry key="M10" value="27.702751951097298" />
+      <entry key="M15" value="30.22928327611057" />
+      <entry key="M30" value="34.21976380295617" />
+      <entry key="H1" value="38.60682034968035" />
+      <entry key="H2" value="42.59562362296086" />
+      <entry key="H4" value="45.40713861912438" />
+      <entry key="D1" value="48.33720180411775" />
+      <entry key="W1" value="48.90360237164015" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.2072337736932312E-247" />
-      <entry key="S2" value="2.1675148581054447E-62" />
-      <entry key="S5" value="2.159657258399454E-25" />
-      <entry key="S10" value="4.647211269567431E-13" />
-      <entry key="S30" value="7.745761828173629E-5" />
-      <entry key="S60" value="0.008801000981805213" />
-      <entry key="M2" value="0.09381365029570697" />
-      <entry key="M5" value="0.3880667324850055" />
-      <entry key="M10" value="0.6229500240669436" />
-      <entry key="M15" value="0.7294051152067237" />
-      <entry key="M30" value="0.8540521735858551" />
-      <entry key="H1" value="0.9241494324977185" />
-      <entry key="H2" value="0.961326912396464" />
-      <entry key="H4" value="0.9804728004368417" />
-      <entry key="D1" value="0.9967186663423039" />
-      <entry key="W1" value="0.9995305774933927" />
+      <entry key="MS500" value="8.86528819923573E-248" />
+      <entry key="S2" value="1.7255327824639203E-62" />
+      <entry key="S5" value="1.9713751865934254E-25" />
+      <entry key="S10" value="4.440017101986686E-13" />
+      <entry key="S30" value="7.628893420815487E-5" />
+      <entry key="S60" value="0.008734353680047248" />
+      <entry key="M2" value="0.09345776415069663" />
+      <entry key="M5" value="0.387477201784943" />
+      <entry key="M10" value="0.6224766676630884" />
+      <entry key="M15" value="0.7290355699678522" />
+      <entry key="M30" value="0.8538357980126227" />
+      <entry key="H1" value="0.9240323576653702" />
+      <entry key="H2" value="0.9612660181580177" />
+      <entry key="H4" value="0.9804417464378067" />
+      <entry key="D1" value="0.9967134048485689" />
+      <entry key="W1" value="0.9995298237292167" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6384859876128298" />
-      <entry key="MS500" value="1.375261985192324" />
-      <entry key="S2" value="2.659996086992145" />
-      <entry key="S5" value="3.396985510197626" />
-      <entry key="S10" value="4.138561241859121" />
-      <entry key="S30" value="6.297687647760917" />
-      <entry key="S60" value="8.798041013734146" />
-      <entry key="M2" value="13.161710763363537" />
-      <entry key="M5" value="21.59157519741697" />
-      <entry key="M10" value="27.342699996268685" />
-      <entry key="M15" value="29.971072468875995" />
-      <entry key="M30" value="34.080876681341785" />
-      <entry key="H1" value="38.535005855332265" />
-      <entry key="H2" value="42.55920402063908" />
-      <entry key="H4" value="45.38882187391485" />
-      <entry key="D1" value="48.33413681714609" />
-      <entry key="W1" value="48.90316425991373" />
+      <entry key="MS100" value="0.01712637149186048" />
+      <entry key="MS500" value="0.9540168467150943" />
+      <entry key="S2" value="2.9136793264313505" />
+      <entry key="S5" value="4.013649896020289" />
+      <entry key="S10" value="4.909460420460746" />
+      <entry key="S30" value="7.187579804050971" />
+      <entry key="S60" value="9.723843431274007" />
+      <entry key="M2" value="14.107987700307802" />
+      <entry key="M5" value="22.55725525698723" />
+      <entry key="M10" value="28.321163439518607" />
+      <entry key="M15" value="30.955381308867647" />
+      <entry key="M30" value="35.07198888146704" />
+      <entry key="H1" value="39.52999740754272" />
+      <entry key="H2" value="43.55644480884343" />
+      <entry key="H4" value="46.38735262517173" />
+      <entry key="D1" value="49.33387639135037" />
+      <entry key="W1" value="49.903126627030524" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -205,7 +204,7 @@
       <workItem from="1789361888102" duration="68000" />
       <workItem from="1789362025574" duration="23000" />
       <workItem from="1789362137185" duration="377000" />
-      <workItem from="1789362644534" duration="2745000" />
+      <workItem from="1789362644534" duration="3504000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -447,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789362384351</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789367962553</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1789367962553</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,6 +469,7 @@
     <MESSAGE value="feat:dockerized &amp; test actions added" />
     <MESSAGE value="initial new branch" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="feat: add landing page device images and fix machine branding" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add landing page device images and fix machine branding" />
   </component>
 </project>

@@ -112,7 +112,7 @@ export const content = {
                     kicker: 'روبات مارکت',
                     titleLines: ['فروش خودکار،', 'هوشمند و بی‌وقفه'],
                     sub: 'تجربه‌ای نوین از خرید آسان و سریع با دستگاه‌های وندینگ روبات مارکت.',
-                    image: '/images/machine-slide-0.png',
+                    image: '/images/machine-slide-0.webp',
                 },
                 {
                     id: 'slide-2',
