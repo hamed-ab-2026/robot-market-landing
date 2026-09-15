@@ -1,9 +1,11 @@
 export type Locale = 'fa' | 'en';
 export type Direction = 'rtl' | 'ltr';
 export type Theme = 'light' | 'dark';
+export type ProductCategory = 'warm-vending';
 
 export interface Machine {
   id: string;
+  category: ProductCategory;
   name: string;
   shortLabel: string;
   priceLabel: string;

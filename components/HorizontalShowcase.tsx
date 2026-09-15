@@ -1,10 +1,13 @@
 'use client';
 
 import {useEffect, useRef, useState} from 'react';
+import Link from 'next/link';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import VendingCard from './VendingCard';
 import {showcaseVideoSrc} from '@/data/content';
+import {featuredMachines} from '@/data/products';
+import {commerceCopy} from '@/data/commerce';
 import {useLanguage} from '@/app/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -13,7 +16,8 @@ export default function HorizontalShowcase() {
     const sectionRef = useRef<HTMLElement>(null);
     const trackRef = useRef<HTMLDivElement>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
-    const {t} = useLanguage();
+    const {t, locale} = useLanguage();
+    const copy = commerceCopy[locale];
     const [videoAvailable, setVideoAvailable] = useState(true);
 
     useEffect(() => {
@@ -90,8 +94,17 @@ export default function HorizontalShowcase() {
                 />
             </div>
 
-            <div ref={trackRef} className="horizontal-track relative z-10" dir="ltr">
-                {t.machines.map((machine) => (
+            <div className="relative z-20 h-40 pt-20 bg-page-85 backdrop-blur-md">
+                <div className="max-w-7xl h-full mx-auto px-8 flex justify-between items-center gap-4">
+                    <h2 className="text-2xl font-bold text-primary">{copy.featuredProducts}</h2>
+                    <Link href="/products" className="text-brand-400 hover:underline">{copy.allProducts}</Link>
+                </div>
+            </div>
+
+            <div ref={trackRef}
+                 className="horizontal-track relative z-10 [&_.horizontal-panel]:h-full [&_.spotlight-stage]:max-h-[calc(100vh-12rem)]"
+                 style={{height: 'calc(100vh - 10rem)'}} dir="ltr">
+                {featuredMachines(t.machines).map((machine) => (
                     <VendingCard key={machine.id} machine={machine}/>
                 ))}
             </div>

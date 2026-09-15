@@ -1,6 +1,15 @@
 import type {Locale} from '@/types/domain';
 
 const fa = {
+  allProducts: 'همه محصولات',
+  featuredProducts: 'محصولات منتخب',
+  productsDescription: 'دستگاه مناسب خود را انتخاب کنید و مشخصات آن را بررسی کنید.',
+  category: 'دسته‌بندی محصولات',
+  allCategories: 'همه دسته‌بندی‌ها',
+  clearFilters: 'پاک کردن فیلتر',
+  noProducts: 'محصولی با این دسته‌بندی پیدا نشد.',
+  unknownCategory: 'دسته‌بندی نامعتبر',
+  results: 'محصول',
   details: 'جزئیات محصول',
   increase: 'افزایش تعداد',
   decrease: 'کاهش تعداد',
@@ -27,6 +36,15 @@ const fa = {
 export const commerceCopy: Record<Locale, Record<keyof typeof fa, string>> = {
   fa,
   en: {
+    allProducts: 'All products',
+    featuredProducts: 'Featured products',
+    productsDescription: 'Choose a machine and explore its specifications.',
+    category: 'Product category',
+    allCategories: 'All categories',
+    clearFilters: 'Clear filter',
+    noProducts: 'No products found in this category.',
+    unknownCategory: 'Unknown category',
+    results: 'products',
     details: 'Product details',
     increase: 'Increase quantity',
     decrease: 'Decrease quantity',

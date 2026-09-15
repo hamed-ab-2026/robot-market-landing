@@ -3,7 +3,7 @@ import {notFound} from 'next/navigation';
 import {content} from '@/data/content';
 import ProductDetails from '@/components/ProductDetails';
 
-type Props = {params: {id: string}};
+type Props = { params: { id: string } };
 
 export function generateStaticParams() {
     return content.fa.machines.map(machine => ({id: machine.id}));

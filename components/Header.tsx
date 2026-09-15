@@ -11,19 +11,20 @@ import {ShoppingCartOutlined, MenuOutlined, CloseOutlined, UserOutlined} from '@
 import {useAppSelector} from '@/store/hooks';
 import {selectCartCount} from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
+import {commerceCopy} from '@/data/commerce';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 
 export default function Header() {
     const pathname = usePathname();
     const cartCount = useAppSelector(selectCartCount);
-    const {t} = useLanguage();
+    const {t, locale} = useLanguage();
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const navLinks = [
         {href: '/#hero', label: t.nav.home},
-        {href: '/#showcase', label: t.nav.showcase},
+        {href: '/products', label: commerceCopy[locale].allProducts},
         {href: '/#about', label: t.nav.about},
         {href: '/#locations', label: t.nav.locations},
     ];

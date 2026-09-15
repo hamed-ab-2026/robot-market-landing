@@ -19,7 +19,7 @@ export default function ProductDetails({id}: {id: string}) {
             <nav aria-label={copy.details} className="text-sm text-secondary flex flex-wrap gap-3 mb-8">
                 <Link href="/" className="hover:text-brand-400">{t.nav.home}</Link>
                 <span aria-hidden="true">/</span>
-                <Link href="/#showcase" className="hover:text-brand-400">{t.nav.showcase}</Link>
+                <Link href="/products" className="hover:text-brand-400">{t.nav.showcase}</Link>
                 <span aria-hidden="true">/</span><span>{machine.shortLabel}</span>
             </nav>
             <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">

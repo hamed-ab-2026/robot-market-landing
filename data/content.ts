@@ -9,6 +9,7 @@ import type {FloatingSnack, Locale, Machine, SiteContent} from '@/types/domain';
 const machinesFa: Machine[] = [
     {
         id: 'rm-35',
+        category: 'warm-vending',
         name: 'روبات مارکت ۳۵ کانال',
         shortLabel: '۳۵ کانال',
         priceLabel: '4,180,000,000 ریال',
@@ -21,6 +22,7 @@ const machinesFa: Machine[] = [
     },
     {
         id: 'rm-48',
+        category: 'warm-vending',
         name: 'روبات مارکت ۴۸ کانال',
         shortLabel: '۴۸ کانال',
         priceLabel: '4,980,000,000 ریال',
@@ -33,6 +35,7 @@ const machinesFa: Machine[] = [
     },
     {
         id: 'rm-60',
+        category: 'warm-vending',
         name: 'روبات مارکت ۶۰ کانال',
         shortLabel: '۶۰ کانال',
         priceLabel: '5,480,000,000 ریال',
@@ -48,6 +51,7 @@ const machinesFa: Machine[] = [
 const machinesEn: Machine[] = [
     {
         id: 'rm-35',
+        category: 'warm-vending',
         name: 'Robot Market RM-35',
         shortLabel: '35 Channels',
         priceLabel: '4,180,000,000 Rials',
@@ -60,6 +64,7 @@ const machinesEn: Machine[] = [
     },
     {
         id: 'rm-48',
+        category: 'warm-vending',
         name: 'Robot Market RM-48',
         shortLabel: '48 Channels',
         priceLabel: '4,980,000,000 Rials',
@@ -72,6 +77,7 @@ const machinesEn: Machine[] = [
     },
     {
         id: 'rm-60',
+        category: 'warm-vending',
         name: 'Robot Market RM-60',
         shortLabel: '60 Channels',
         priceLabel: '5,480,000,000 Rials',

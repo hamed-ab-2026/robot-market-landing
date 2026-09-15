@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import {featuredMachines} from '@/data/products';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {commerceCopy} from '@/data/commerce';
 import QuantityControl from './QuantityControl';
@@ -10,9 +11,9 @@ export default function MobileShowcase() {
 
     return (
         <section id="showcase" className="relative w-full py-8 px-4" dir={dir}>
-            <div className="flex flex-col gap-4">
-                {t.machines.map(machine => (
-                    <article key={machine.id} className="bg-surface border border-subtle rounded-2xl p-4">
+            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4">
+                {featuredMachines(t.machines).map(machine => (
+                    <article key={machine.id} className="w-[90%] shrink-0 snap-start bg-surface border border-subtle rounded-2xl p-4">
                         <Link href={`/products/${machine.id}`} className="flex gap-4 items-center">
                             <img src={machine.image} alt={machine.name} className="w-24 h-28 object-contain shrink-0"/>
                             <div className="min-w-0">

@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="refactor: migrate project to TypeScript and translate comments to English">
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add cart and product pages, quantity controls, and first-visit development notice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/providers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AboutSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CartDrawer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/products/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MobileShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileShowcase.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/VendingCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VendingCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ShowcaseSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ShowcaseSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/commerce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/commerce.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/cartSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/types/domain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/domain.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +217,8 @@
       <workItem from="1789362137185" duration="377000" />
       <workItem from="1789362644534" duration="6512000" />
       <workItem from="1789383269194" duration="2337000" />
-      <workItem from="1789445417779" duration="2914000" />
+      <workItem from="1789445417779" duration="6709000" />
+      <workItem from="1789456504019" duration="1703000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -501,7 +500,23 @@
       <option name="project" value="LOCAL" />
       <updated>1789385239281</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="feat: add cart and product pages, quantity controls, and first-visit development notice">
+      <option name="closed" value="true" />
+      <created>1789449280006</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1789449280006</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat: add cart and product pages, quantity controls, and first-visit development notice">
+      <option name="closed" value="true" />
+      <created>1789451442320</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1789451442320</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,6 +539,7 @@
     <MESSAGE value="feat: add landing page device images and fix machine branding" />
     <MESSAGE value="refactor: remove disabled home sections and their unused assets" />
     <MESSAGE value="refactor: migrate project to TypeScript and translate comments to English" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: migrate project to TypeScript and translate comments to English" />
+    <MESSAGE value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
   </component>
 </project>

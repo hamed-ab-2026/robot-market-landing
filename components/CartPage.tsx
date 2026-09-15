@@ -19,13 +19,13 @@ export default function CartPage() {
 
     return (
         <main className="mx-auto max-w-7xl min-h-[65vh] px-5 md:px-8 pt-28 pb-20">
-            <Link href="/#showcase" className="text-brand-400 hover:underline">{copy.continueShopping}</Link>
+            <Link href="/products" className="text-brand-400 hover:underline">{copy.continueShopping}</Link>
             <h1 className="text-3xl md:text-4xl font-extrabold text-primary mt-6">{t.cart.title}</h1>
             <p className="text-secondary mt-3 mb-10">{copy.cartDescription}</p>
             {items.length === 0 ? (
                 <div className="rounded-3xl border border-subtle bg-surface p-10 text-center">
                     <Empty description={t.cart.empty}/>
-                    <Link href="/#showcase" className="inline-block mt-6 text-brand-400 hover:underline">{copy.continueShopping}</Link>
+                    <Link href="/products" className="inline-block mt-6 text-brand-400 hover:underline">{copy.continueShopping}</Link>
                 </div>
             ) : (
                 <div className="grid lg:grid-cols-[minmax(0,1fr),340px] gap-8 items-start">
