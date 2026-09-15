@@ -1,108 +1,36 @@
 'use client';
 
-import type {Machine} from '@/types/domain';
-import {useState} from 'react';
-import {Modal, Button, message} from 'antd';
-import {ShoppingCartOutlined, EyeOutlined} from '@ant-design/icons';
-import {useAppDispatch} from '@/store/hooks';
+import Link from 'next/link';
 import {useLanguage} from '@/app/context/LanguageContext';
-import {addToCart} from '@/store/cartSlice';
+import {commerceCopy} from '@/data/commerce';
+import QuantityControl from './QuantityControl';
 
 export default function MobileShowcase() {
-    const dispatch = useAppDispatch();
-    const {t, dir} = useLanguage();
-    const [quickViewMachine, setQuickViewMachine] = useState<Machine | null>(null);
-
-    const handleAddToCart = (machine: Machine) => {
-        dispatch(
-            addToCart({
-                id: machine.id,
-                name: machine.name,
-                priceNumeric: machine.priceNumeric,
-                priceLabel: machine.priceLabel,
-                image: machine.image,
-            })
-        );
-        message.success(t.cart.addToast(machine.name));
-    };
-
-    const handleModalAddToCart = () => {
-        if (!quickViewMachine) return;
-        handleAddToCart(quickViewMachine);
-        setQuickViewMachine(null);
-    };
+    const {t, dir, locale} = useLanguage();
 
     return (
         <section id="showcase" className="relative w-full py-8 px-4" dir={dir}>
             <div className="flex flex-col gap-4">
-                {t.machines.map((machine) => (
-                    <div
-                        key={machine.id}
-                        className="flex gap-4 items-center bg-surface border border-subtle rounded-2xl p-4"
-                    >
-                        <img
-                            src={machine.image}
-                            alt={machine.name}
-                            className="w-24 h-24 object-contain shrink-0"
-                            onClick={() => setQuickViewMachine(machine)}
-                        />
-
-                        <div className="flex flex-col gap-1.5 min-w-0 flex-1">
-                            <span className="text-brand-400 text-xs font-semibold tracking-wide">
-                                {machine.shortLabel}
-                            </span>
-                            <h3 className="text-lg font-bold text-primary truncate">
-                                {machine.name}
-                            </h3>
-                            <p className="text-sm text-secondary line-clamp-2">
-                                {machine.description}
-                            </p>
-                            <p className="text-base font-bold text-primary mt-1">
-                                {machine.priceLabel}
-                            </p>
-
-                            <div className="flex justify-start items-center  mt-3">
-                                <Button
-                                    type="primary"
-                                    size="middle"
-                                    icon={<ShoppingCartOutlined/>}
-                                    onClick={() => handleAddToCart(machine)}
-                                >
-                                    {t.machineActions.addToCart}
-                                </Button>
+                {t.machines.map(machine => (
+                    <article key={machine.id} className="bg-surface border border-subtle rounded-2xl p-4">
+                        <Link href={`/products/${machine.id}`} className="flex gap-4 items-center">
+                            <img src={machine.image} alt={machine.name} className="w-24 h-28 object-contain shrink-0"/>
+                            <div className="min-w-0">
+                                <span className="text-brand-400 text-xs font-semibold">{machine.shortLabel}</span>
+                                <h3 className="text-lg font-bold text-primary mt-1">{machine.name}</h3>
+                                <p className="text-sm text-secondary line-clamp-2 mt-2">{machine.description}</p>
                             </div>
+                        </Link>
+                        <p className="text-base font-bold text-primary my-4">{machine.priceLabel}</p>
+                        <div className="flex flex-wrap justify-between items-center gap-3">
+                            <QuantityControl product={machine}/>
+                            <Link href={`/products/${machine.id}`} className="text-sm text-brand-400 hover:underline">
+                                {commerceCopy[locale].details}
+                            </Link>
                         </div>
-                    </div>
+                    </article>
                 ))}
             </div>
-
-            <Modal
-                open={!!quickViewMachine}
-                onCancel={() => setQuickViewMachine(null)}
-                footer={null}
-                centered
-                title={quickViewMachine?.name}
-            >
-                {quickViewMachine && (
-                    <div className="flex flex-col gap-4">
-                        <img
-                            src={quickViewMachine.image}
-                            alt={quickViewMachine.name}
-                            className="w-full h-64 object-contain"
-                        />
-                        <p className="text-secondary leading-7">{quickViewMachine.description}</p>
-                        <p className="text-xl font-bold text-primary">{quickViewMachine.priceLabel}</p>
-                        <Button
-                            type="primary"
-                            size="large"
-                            icon={<ShoppingCartOutlined/>}
-                            onClick={handleModalAddToCart}
-                        >
-                            {t.machineActions.addToCart}
-                        </Button>
-                    </div>
-                )}
-            </Modal>
         </section>
     );
 }

@@ -1,17 +1,19 @@
 import type {PayloadAction} from '@reduxjs/toolkit';
-import type {CartProduct, CartState} from '@/types/domain';
+import type {CartItem, CartProduct, CartState} from '@/types/domain';
 import type {RootState} from './store';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState: CartState = {
   items: [], // { id, name, priceNumeric, priceLabel, qty, image }
-  isDrawerOpen: false,
 };
 
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    restoreCart: (state, action: PayloadAction<CartItem[]>) => {
+      state.items = action.payload;
+    },
     addToCart: (state, action: PayloadAction<CartProduct>) => {
       const product = action.payload;
       const existing = state.items.find((item) => item.id === product.id);
@@ -20,7 +22,6 @@ const cartSlice = createSlice({
       } else {
         state.items.push({ ...product, qty: 1 });
       }
-      state.isDrawerOpen = true;
     },
     removeFromCart: (state, action: PayloadAction<string>) => {
       state.items = state.items.filter((item) => item.id !== action.payload);
@@ -46,28 +47,17 @@ const cartSlice = createSlice({
     clearCart: (state) => {
       state.items = [];
     },
-    openDrawer: (state) => {
-      state.isDrawerOpen = true;
-    },
-    closeDrawer: (state) => {
-      state.isDrawerOpen = false;
-    },
-    toggleDrawer: (state) => {
-      state.isDrawerOpen = !state.isDrawerOpen;
-    },
   },
 });
 
 export const {
+  restoreCart,
   addToCart,
   removeFromCart,
   setQuantity,
   incrementQty,
   decrementQty,
   clearCart,
-  openDrawer,
-  closeDrawer,
-  toggleDrawer,
 } = cartSlice.actions;
 
 // Selectors
@@ -76,6 +66,5 @@ export const selectCartCount = (state: RootState) =>
   state.cart.items.reduce((sum, item) => sum + item.qty, 0);
 export const selectCartTotal = (state: RootState) =>
   state.cart.items.reduce((sum, item) => sum + item.qty * item.priceNumeric, 0);
-export const selectIsDrawerOpen = (state: RootState) => state.cart.isDrawerOpen;
 
 export default cartSlice.reducer;

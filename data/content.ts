@@ -138,7 +138,6 @@ export const content: Record<Locale, SiteContent> = {
         },
         machineActions: {
             addToCart: 'افزودن به سبد خرید',
-            quickView: 'مشاهده سریع',
             wishlistAdd: 'افزودن به علاقه‌مندی‌ها',
             wishlistRemove: 'حذف از علاقه‌مندی‌ها',
             hoverHint: 'نشانگر را روی دستگاه حرکت دهید',
@@ -304,7 +303,6 @@ export const content: Record<Locale, SiteContent> = {
         },
         machineActions: {
             addToCart: 'Add to Cart',
-            quickView: 'Quick View',
             wishlistAdd: 'Add to Wishlist',
             wishlistRemove: 'Remove from Wishlist',
             hoverHint: 'Move your cursor over the machine',

@@ -2,6 +2,7 @@
 
 // Company information, quick links, social links, and contact details.
 
+import Link from 'next/link';
 import { PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import { useLanguage } from '@/app/context/LanguageContext';
 
@@ -33,10 +34,10 @@ export default function Footer() {
         <div>
           <h3 className="text-primary font-bold text-lg mb-3">{t.footer.quickLinks}</h3>
           <ul className="flex flex-col gap-2 text-sm text-secondary">
-            <li><a href="#hero" className="hover:text-brand-400">{t.nav.home}</a></li>
-            <li><a href="#showcase" className="hover:text-brand-400">{t.nav.showcase}</a></li>
-            <li><a href="#about" className="hover:text-brand-400">{t.nav.about}</a></li>
-            <li><a href="#locations" className="hover:text-brand-400">{t.nav.locations}</a></li>
+            <li><Link href="/#hero" className="hover:text-brand-400">{t.nav.home}</Link></li>
+            <li><Link href="/#showcase" className="hover:text-brand-400">{t.nav.showcase}</Link></li>
+            <li><Link href="/#about" className="hover:text-brand-400">{t.nav.about}</Link></li>
+            <li><Link href="/#locations" className="hover:text-brand-400">{t.nav.locations}</Link></li>
           </ul>
         </div>
 

@@ -3,6 +3,9 @@ import type {ReactNode} from 'react';
 import {Vazirmatn} from 'next/font/google';
 import './globals.css';
 import Providers from './providers';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import DevelopmentNotice from '@/components/DevelopmentNotice';
 
 const vazirmatn = Vazirmatn({
     subsets: ['arabic'],
@@ -28,7 +31,12 @@ export default function RootLayout({children}: {children: ReactNode}) {
     return (
         <html lang="fa" dir="rtl" className={`${vazirmatn.variable} light`} suppressHydrationWarning>
         <body className="bg-page text-primary antialiased transition-colors duration-300">
-        <Providers>{children}</Providers>
+        <Providers>
+            <Header/>
+            {children}
+            <Footer/>
+            <DevelopmentNotice/>
+        </Providers>
         </body>
         </html>
     );

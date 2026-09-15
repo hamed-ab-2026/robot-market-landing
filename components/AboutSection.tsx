@@ -7,7 +7,7 @@ import {useLanguage} from '@/app/context/LanguageContext';
 
 export default function AboutSection() {
     const {t} = useLanguage();
-    const [expanded, setExpanded] = useState(true);
+    const [expanded, setExpanded] = useState(false);
     const visibleParagraphs = expanded ? t.about.paragraphs : t.about.paragraphs.slice(0, 2);
 
     return (
@@ -26,14 +26,13 @@ export default function AboutSection() {
                     ))}
                 </div>
 
-                {/* faz 1 */}
-                {/*   <button
-                onClick={() => setExpanded((v) => !v)}
-                className="mt-6 inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 text-sm font-semibold transition-colors"
-              >
-                {expanded ? t.about.less : t.about.more}
-                <span className={`transition-transform ${expanded ? 'rotate-180' : ''}`}>˅</span>
-              </button>*/}
+                <button
+                    onClick={() => setExpanded((v) => !v)}
+                    className="mt-6 inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 text-sm font-semibold transition-colors"
+                >
+                    {expanded ? t.about.less : t.about.more}
+                    <span className={`transition-transform ${expanded ? 'rotate-180' : ''}`}>˅</span>
+                </button>
             </div>
         </section>
     );

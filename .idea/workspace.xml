@@ -4,38 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="refactor: remove disabled home sections and their unused assets">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="refactor: migrate project to TypeScript and translate comments to English">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/context/LanguageContext.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/context/ThemeContext.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/providers.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AboutSection.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CartDrawer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FeaturesSection.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FloatingItems.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeroSection.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LanguageToggle.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LocationsSection.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MobileShowcase.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ShowcaseSection.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ThemeToggle.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/VendingCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/cartSlice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AboutSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartDrawer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileShowcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/VendingCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VendingCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/cartSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/domain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/domain.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,61 +41,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0105021478132723" />
-      <entry key="MS500" value="1.6326904583013002" />
-      <entry key="S2" value="3.200495115489667" />
-      <entry key="S5" value="4.148160592733714" />
-      <entry key="S10" value="4.983360398199462" />
-      <entry key="S30" value="7.2170837140275825" />
-      <entry key="S60" value="9.732495501143132" />
-      <entry key="M2" value="14.025681297470134" />
-      <entry key="M5" value="22.17637857625762" />
-      <entry key="M10" value="27.702751951097298" />
-      <entry key="M15" value="30.22928327611057" />
-      <entry key="M30" value="34.21976380295617" />
-      <entry key="H1" value="38.60682034968035" />
-      <entry key="H2" value="42.59562362296086" />
-      <entry key="H4" value="45.40713861912438" />
-      <entry key="D1" value="48.33720180411775" />
-      <entry key="W1" value="48.90360237164015" />
+      <entry key="MS100" value="5.636161152320107E-5" />
+      <entry key="MS500" value="0.2302465263814015" />
+      <entry key="S2" value="1.9612794450498428" />
+      <entry key="S5" value="3.4102363921166443" />
+      <entry key="S10" value="4.5184216736456175" />
+      <entry key="S30" value="6.985270524998366" />
+      <entry key="S60" value="9.574915616687461" />
+      <entry key="M2" value="13.91167227171946" />
+      <entry key="M5" value="22.10409689222133" />
+      <entry key="M10" value="27.65756793067821" />
+      <entry key="M15" value="30.196404421732346" />
+      <entry key="M30" value="34.20114919146407" />
+      <entry key="H1" value="38.596318396422" />
+      <entry key="H2" value="42.58982972864479" />
+      <entry key="H4" value="45.40405035457018" />
+      <entry key="D1" value="48.33665386421948" />
+      <entry key="W1" value="48.9035231768996" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.86528819923573E-248" />
-      <entry key="S2" value="1.7255327824639203E-62" />
-      <entry key="S5" value="1.9713751865934254E-25" />
-      <entry key="S10" value="4.440017101986686E-13" />
-      <entry key="S30" value="7.628893420815487E-5" />
-      <entry key="S60" value="0.008734353680047248" />
-      <entry key="M2" value="0.09345776415069663" />
-      <entry key="M5" value="0.387477201784943" />
-      <entry key="M10" value="0.6224766676630884" />
-      <entry key="M15" value="0.7290355699678522" />
-      <entry key="M30" value="0.8538357980126227" />
-      <entry key="H1" value="0.9240323576653702" />
-      <entry key="H2" value="0.9612660181580177" />
-      <entry key="H4" value="0.9804417464378067" />
-      <entry key="D1" value="0.9967134048485689" />
-      <entry key="W1" value="0.9995298237292167" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000004026" />
+      <entry key="S30" value="1.0000738385287775" />
+      <entry key="S60" value="1.0085929348174816" />
+      <entry key="M2" value="1.0926980842168899" />
+      <entry key="M5" value="1.3862142586684925" />
+      <entry key="M10" value="1.6214613895235106" />
+      <entry key="M15" value="1.7282426350470148" />
+      <entry key="M30" value="1.853371334793368" />
+      <entry key="H1" value="1.9237809993680148" />
+      <entry key="H2" value="1.9611352659059051" />
+      <entry key="H4" value="1.9803750638943771" />
+      <entry key="D1" value="1.9967021063244244" />
+      <entry key="W1" value="1.9995282050855745" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.01712637149186048" />
-      <entry key="MS500" value="0.9540168467150943" />
-      <entry key="S2" value="2.9136793264313505" />
-      <entry key="S5" value="4.013649896020289" />
-      <entry key="S10" value="4.909460420460746" />
-      <entry key="S30" value="7.187579804050971" />
-      <entry key="S60" value="9.723843431274007" />
-      <entry key="M2" value="14.107987700307802" />
-      <entry key="M5" value="22.55725525698723" />
-      <entry key="M10" value="28.321163439518607" />
-      <entry key="M15" value="30.955381308867647" />
-      <entry key="M30" value="35.07198888146704" />
-      <entry key="H1" value="39.52999740754272" />
-      <entry key="H2" value="43.55644480884343" />
-      <entry key="H4" value="46.38735262517173" />
-      <entry key="D1" value="49.33387639135037" />
-      <entry key="W1" value="49.903126627030524" />
+      <entry key="MS100" value="5.673108319866789E-5" />
+      <entry key="MS500" value="0.2755608628441334" />
+      <entry key="S2" value="2.398322303413965" />
+      <entry key="S5" value="4.121762152287479" />
+      <entry key="S10" value="5.358118199319534" />
+      <entry key="S30" value="7.924594218734951" />
+      <entry key="S60" value="10.550212525549737" />
+      <entry key="M2" value="14.985181048549935" />
+      <entry key="M5" value="23.480472743765223" />
+      <entry key="M10" value="29.27333974135673" />
+      <entry key="M15" value="31.92062506542455" />
+      <entry key="M30" value="36.05236671041284" />
+      <entry key="H1" value="40.518972305385134" />
+      <entry key="H2" value="44.55038420189922" />
+      <entry key="H4" value="47.38412968080923" />
+      <entry key="D1" value="50.33330581758772" />
+      <entry key="W1" value="50.9030441942503" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -123,36 +107,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "develop",
-    "javascript.nodejs.core.library.configured.version": "24.20.0",
-    "javascript.nodejs.core.library.typings.version": "24.13.3",
-    "javascript.preferred.runtime.type.id": "node",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kronk.content.tree.expanded.paths": "",
-    "last_opened_file_path": "/home/hamed/Documents/Projects/GItLabRepo/device_web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hamed/Documents/Projects/GItLabRepo/device_web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\GitHubRepo\robot-market-landing\public\images\icons" />
@@ -234,7 +218,8 @@
       <workItem from="1789362025574" duration="23000" />
       <workItem from="1789362137185" duration="377000" />
       <workItem from="1789362644534" duration="6512000" />
-      <workItem from="1789383269194" duration="1732000" />
+      <workItem from="1789383269194" duration="2337000" />
+      <workItem from="1789445417779" duration="2914000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -508,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789384147873</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="refactor: migrate project to TypeScript and translate comments to English">
+      <option name="closed" value="true" />
+      <created>1789385239281</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1789385239281</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,6 +523,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="feat: add landing page device images and fix machine branding" />
     <MESSAGE value="refactor: remove disabled home sections and their unused assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove disabled home sections and their unused assets" />
+    <MESSAGE value="refactor: migrate project to TypeScript and translate comments to English" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: migrate project to TypeScript and translate comments to English" />
   </component>
 </project>

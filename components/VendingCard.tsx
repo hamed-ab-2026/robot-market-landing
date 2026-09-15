@@ -4,17 +4,15 @@
 import type {Machine} from '@/types/domain';
 import type {MouseEvent} from 'react';
 import {useRef} from 'react';
-import {Button, message} from 'antd';
-import {ShoppingCartOutlined, EyeOutlined} from '@ant-design/icons';
-import {useAppDispatch} from '@/store/hooks';
-import {addToCart} from '@/store/cartSlice';
+import Link from 'next/link';
+import QuantityControl from './QuantityControl';
+import {commerceCopy} from '@/data/commerce';
 import {useLanguage} from '@/app/context/LanguageContext';
 import FloatingItems from './FloatingItems';
 import {floatingSnacks} from '@/data/content';
 
-export default function VendingCard({machine, onQuickView}: {machine: Machine; onQuickView?: (machine: Machine) => void}) {
-    const dispatch = useAppDispatch();
-    const {t, dir} = useLanguage();
+export default function VendingCard({machine}: {machine: Machine}) {
+    const {t, dir, locale} = useLanguage();
     const stageRef = useRef<HTMLDivElement>(null);
     const lensRef = useRef<HTMLDivElement>(null);
     const revealRef = useRef<HTMLImageElement>(null);
@@ -36,19 +34,6 @@ export default function VendingCard({machine, onQuickView}: {machine: Machine; o
 
     const handleMouseLeave = () => {
         if (revealRef.current) revealRef.current.style.clipPath = 'circle(0px at 50% 50%)';
-    };
-
-    const handleAddToCart = () => {
-        dispatch(
-            addToCart({
-                id: machine.id,
-                name: machine.name,
-                priceNumeric: machine.priceNumeric,
-                priceLabel: machine.priceLabel,
-                image: machine.image,
-            })
-        );
-        message.success(t.cart.addToast(machine.name));
     };
 
     return (
@@ -103,12 +88,10 @@ export default function VendingCard({machine, onQuickView}: {machine: Machine; o
                     <p className="text-xl md:text-2xl font-bold text-primary mt-2">{machine.priceLabel}</p>
 
                     <div className="flex flex-wrap  items-center gap-2 mt-2 ">
-                       {/* <Button type="primary" size="large" icon={<ShoppingCartOutlined/>} onClick={handleAddToCart}>
-                            {t.machineActions.addToCart}
-                        </Button>*/}
-                        <Button size="large" icon={<EyeOutlined/>} onClick={() => onQuickView?.(machine)}>
-                            {t.machineActions.quickView}
-                        </Button>
+                        <QuantityControl product={machine}/>
+                        <Link href={`/products/${machine.id}`} className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400">
+                            {commerceCopy[locale].details}
+                        </Link>
                     </div>
                 </div>
             </div>

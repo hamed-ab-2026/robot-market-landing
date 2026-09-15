@@ -17,7 +17,7 @@ export interface Machine {
 
 export type CartProduct = Pick<Machine, 'id' | 'name' | 'priceNumeric' | 'priceLabel' | 'image'>;
 export interface CartItem extends CartProduct { qty: number }
-export interface CartState { items: CartItem[]; isDrawerOpen: boolean }
+export interface CartState { items: CartItem[] }
 
 export interface FloatingSnack {
   id: string;
@@ -59,7 +59,6 @@ export interface SiteContent {
   };
   machineActions: {
     addToCart: string;
-    quickView: string;
     wishlistAdd: string;
     wishlistRemove: string;
     hoverHint: string;

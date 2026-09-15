@@ -11,6 +11,7 @@ import enUS from 'antd/locale/en_US';
 import {store} from '@/store/store';
 import {ThemeProvider, useTheme} from './context/ThemeContext';
 import {LanguageProvider, useLanguage} from './context/LanguageContext';
+import CartPersistence from '@/components/CartPersistence';
 
 function AntdBridge({children}: {children: ReactNode}) {
     const {theme} = useTheme();
@@ -37,9 +38,6 @@ function AntdBridge({children}: {children: ReactNode}) {
                 headerBg: theme === 'dark' ? '#0c2b24' : '#ffffff',
                 titleColor: theme === 'dark' ? '#e6f7f4' : '#04231f',
             },
-            Drawer: {
-                colorBgElevated: theme === 'dark' ? '#0c2b24' : '#ffffff',
-            },
         },
     };
 
@@ -53,6 +51,7 @@ function AntdBridge({children}: {children: ReactNode}) {
 export default function Providers({children}: {children: ReactNode}) {
     return (
         <ReduxProvider store={store}>
+            <CartPersistence/>
             <ThemeProvider>
                 <LanguageProvider>
                     <AntdBridge>{children}</AntdBridge>
