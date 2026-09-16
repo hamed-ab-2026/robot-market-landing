@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="initial new branch">
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add cart and product pages, quantity controls, and first-visit development notice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/products/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileShowcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ShowcaseSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ShowcaseSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/commerce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/commerce.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/domain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/domain.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7659734554897204" />
-      <entry key="MS500" value="2.6200917385797573" />
-      <entry key="S2" value="2.895672466750576" />
-      <entry key="S5" value="2.9711768722246337" />
-      <entry key="S10" value="3.095911797960576" />
-      <entry key="S30" value="3.6130929483281937" />
-      <entry key="S60" value="4.862542006443887" />
-      <entry key="M2" value="8.222118193057797" />
-      <entry key="M5" value="14.352669475563026" />
-      <entry key="M10" value="18.025488407782152" />
-      <entry key="M15" value="19.665360290707866" />
-      <entry key="M30" value="22.62190726116564" />
-      <entry key="H1" value="26.416500535541072" />
-      <entry key="H2" value="30.051114228090462" />
-      <entry key="H4" value="32.65287419479587" />
-      <entry key="D1" value="35.38129255958758" />
-      <entry key="W1" value="35.9099877286286" />
+      <entry key="MS100" value="5.636161152320107E-5" />
+      <entry key="MS500" value="0.2302465263814015" />
+      <entry key="S2" value="1.9612794450498428" />
+      <entry key="S5" value="3.4102363921166443" />
+      <entry key="S10" value="4.5184216736456175" />
+      <entry key="S30" value="6.985270524998366" />
+      <entry key="S60" value="9.574915616687461" />
+      <entry key="M2" value="13.91167227171946" />
+      <entry key="M5" value="22.10409689222133" />
+      <entry key="M10" value="27.65756793067821" />
+      <entry key="M15" value="30.196404421732346" />
+      <entry key="M30" value="34.20114919146407" />
+      <entry key="H1" value="38.596318396422" />
+      <entry key="H2" value="42.58982972864479" />
+      <entry key="H4" value="45.40405035457018" />
+      <entry key="D1" value="48.33665386421948" />
+      <entry key="W1" value="48.9035231768996" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.5499348360687339E-164" />
-      <entry key="S2" value="1.1157794535925266E-41" />
-      <entry key="S5" value="4.1594062872493325E-17" />
-      <entry key="S10" value="6.449345925944224E-9" />
-      <entry key="S30" value="0.0018613950614188026" />
-      <entry key="S60" value="0.043143887880194604" />
-      <entry key="M2" value="0.20771106826597993" />
-      <entry key="M5" value="0.533315069904893" />
-      <entry key="M10" value="0.7302842391185045" />
-      <entry key="M15" value="0.8109510091490459" />
-      <entry key="M30" value="0.9005281834285062" />
-      <entry key="H1" value="0.9489616343290734" />
-      <entry key="H2" value="0.9741466184969663" />
-      <entry key="H4" value="0.986988661787442" />
-      <entry key="D1" value="0.9978195926881375" />
-      <entry key="W1" value="0.9996882217756649" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000004026" />
+      <entry key="S30" value="1.0000738385287775" />
+      <entry key="S60" value="1.0085929348174816" />
+      <entry key="M2" value="1.0926980842168899" />
+      <entry key="M5" value="1.3862142586684925" />
+      <entry key="M10" value="1.6214613895235106" />
+      <entry key="M15" value="1.7282426350470148" />
+      <entry key="M30" value="1.853371334793368" />
+      <entry key="H1" value="1.9237809993680148" />
+      <entry key="H2" value="1.9611352659059051" />
+      <entry key="H4" value="1.9803750638943771" />
+      <entry key="D1" value="1.9967021063244244" />
+      <entry key="W1" value="1.9995282050855745" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6363299214720612" />
-      <entry key="MS500" value="2.580440430635064" />
-      <entry key="S2" value="2.884654206650678" />
-      <entry key="S5" value="2.9666305108034594" />
-      <entry key="S10" value="3.0934710562664876" />
-      <entry key="S30" value="3.6138341741583195" />
-      <entry key="S60" value="4.903918162005831" />
-      <entry key="M2" value="8.426649355082025" />
-      <entry key="M5" value="14.882896956006677" />
-      <entry key="M10" value="18.75367770497998" />
-      <entry key="M15" value="20.474761353109788" />
-      <entry key="M30" value="23.521564444287325" />
-      <entry key="H1" value="27.364990222969524" />
-      <entry key="H2" value="31.025011433737856" />
-      <entry key="H4" value="33.639733831212105" />
-      <entry key="D1" value="36.37908993480534" />
-      <entry key="W1" value="36.90967275725512" />
+      <entry key="MS100" value="5.673108319866789E-5" />
+      <entry key="MS500" value="0.2755608628441334" />
+      <entry key="S2" value="2.398322303413965" />
+      <entry key="S5" value="4.121762152287479" />
+      <entry key="S10" value="5.358118199319534" />
+      <entry key="S30" value="7.924594218734951" />
+      <entry key="S60" value="10.550212525549737" />
+      <entry key="M2" value="14.985181048549935" />
+      <entry key="M5" value="23.480472743765223" />
+      <entry key="M10" value="29.27333974135673" />
+      <entry key="M15" value="31.92062506542455" />
+      <entry key="M30" value="36.05236671041284" />
+      <entry key="H1" value="40.518972305385134" />
+      <entry key="H2" value="44.55038420189922" />
+      <entry key="H4" value="47.38412968080923" />
+      <entry key="D1" value="50.33330581758772" />
+      <entry key="W1" value="50.9030441942503" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -102,12 +114,14 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/hamed/Documents/Projects/GItLabRepo/device_web&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -116,7 +130,8 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -187,21 +202,23 @@
       <workItem from="1788592387411" duration="8000" />
       <workItem from="1788592424522" duration="13793000" />
       <workItem from="1788670304118" duration="1889000" />
-      <workItem from="1788692863346" duration="12000" />
-      <workItem from="1788693390990" duration="297000" />
-      <workItem from="1788694091581" duration="32000" />
-      <workItem from="1788752617575" duration="6000" />
-      <workItem from="1788752739539" duration="37000" />
-      <workItem from="1788752981242" duration="4000" />
-      <workItem from="1788753013718" duration="6000" />
-      <workItem from="1788753196368" duration="9000" />
-      <workItem from="1788753332401" duration="266000" />
-      <workItem from="1788753911813" duration="62000" />
-      <workItem from="1788754080543" duration="8000" />
-      <workItem from="1788754367612" duration="44000" />
-      <workItem from="1788754500033" duration="11000" />
-      <workItem from="1788755066884" duration="65000" />
-      <workItem from="1788755350943" duration="8000" />
+      <workItem from="1788772211468" duration="3288000" />
+      <workItem from="1788845304938" duration="5986000" />
+      <workItem from="1789189667293" duration="1409000" />
+      <workItem from="1789191385769" duration="3038000" />
+      <workItem from="1789200888982" duration="408000" />
+      <workItem from="1789202103910" duration="646000" />
+      <workItem from="1789202776318" duration="599000" />
+      <workItem from="1789207496509" duration="153000" />
+      <workItem from="1789278993260" duration="734000" />
+      <workItem from="1789360783891" duration="48000" />
+      <workItem from="1789361888102" duration="68000" />
+      <workItem from="1789362025574" duration="23000" />
+      <workItem from="1789362137185" duration="377000" />
+      <workItem from="1789362644534" duration="6512000" />
+      <workItem from="1789383269194" duration="2337000" />
+      <workItem from="1789445417779" duration="6709000" />
+      <workItem from="1789456504019" duration="1703000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -427,21 +444,102 @@
       <option name="project" value="LOCAL" />
       <updated>1788682678051</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update">
+      <option name="closed" value="true" />
+      <created>1789191804591</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1789191804591</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update">
+      <option name="closed" value="true" />
+      <created>1789362384351</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1789362384351</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789367962553</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1789367962553</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789368598921</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1789368598921</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: add landing page device images and fix machine branding">
+      <option name="closed" value="true" />
+      <created>1789369799782</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1789369799782</updated>
+    </task>
+    <task id="LOCAL-00034" summary="refactor: remove disabled home sections and their unused assets">
+      <option name="closed" value="true" />
+      <created>1789384147873</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1789384147873</updated>
+    </task>
+    <task id="LOCAL-00035" summary="refactor: migrate project to TypeScript and translate comments to English">
+      <option name="closed" value="true" />
+      <created>1789385239281</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1789385239281</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat: add cart and product pages, quantity controls, and first-visit development notice">
+      <option name="closed" value="true" />
+      <created>1789449280006</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1789449280006</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat: add cart and product pages, quantity controls, and first-visit development notice">
+      <option name="closed" value="true" />
+      <created>1789451442320</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1789451442320</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/components/AboutSection.jsx" />
+      </list>
+    </option>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="next.config.js" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ui : change the position of header in Hero Section" />
-    <MESSAGE value="update" />
     <MESSAGE value="feat:dockerized &amp; test actions add" />
     <MESSAGE value="feat:dockerized &amp; test actions added" />
     <MESSAGE value="initial new branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial new branch" />
+    <MESSAGE value="update" />
+    <MESSAGE value="feat: add landing page device images and fix machine branding" />
+    <MESSAGE value="refactor: remove disabled home sections and their unused assets" />
+    <MESSAGE value="refactor: migrate project to TypeScript and translate comments to English" />
+    <MESSAGE value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
   </component>
 </project>

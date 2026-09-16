@@ -219,35 +219,3 @@ html[dir='rtl'] body {
         opacity: 0;
     }
 }
-
-/* ------------------------------------------------------------------ */
-/* نوار لوگوی بی‌پایان (trusted-by marquee)                             */
-/* ------------------------------------------------------------------ */
-@keyframes marqueeScroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-    /* دقیقاً نصف عرض، چون لیست دو برابر شده */
-}
-
-.animate-marquee {
-    animation: marqueeScroll 28s linear infinite;
-}
-
-.animate-marquee:hover {
-    animation-play-state: paused;
-}
-
-/* ------------------------------------------------------------------ */
-/* Chat widget                                                          */
-/* ------------------------------------------------------------------ */
-.chat-bubble {
-    max-width: 80%;
-    padding: 10px 14px;
-    border-radius: 14px;
-    font-size: 0.875rem;
-    line-height: 1.6;
-}

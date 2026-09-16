@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 120" width="140" height="120">
-  <rect x="20" y="30" width="80" height="70" rx="8" fill="#6b3f2a" stroke="#3a1f13" stroke-width="3"/>
-  <path d="M100 45 q22 0 22 20 q0 20 -22 20" fill="none" stroke="#3a1f13" stroke-width="6"/>
-  <ellipse cx="60" cy="30" rx="40" ry="10" fill="#c8a27a"/>
-  <text x="60" y="72" font-family="Tahoma, sans-serif" font-size="12" fill="#ffe9d6" text-anchor="middle">قهوه</text>
-</svg>
