@@ -7,8 +7,19 @@ const DEMO_OTP = '12345';
 
 const wait = (milliseconds = 450) => new Promise(resolve => setTimeout(resolve, milliseconds));
 const emptyProfile = (phone: string): CustomerProfile => ({
-    type: 'individual', phone, firstName: '', lastName: '', email: '', province: '', city: '', address: '',
-    postalCode: '', preferredCallTime: '', companyName: '', nationalId: '', economicCode: '',
+    type: 'individual',
+    phone,
+    firstName: '',
+    lastName: '',
+    email: '',
+    province: '',
+    city: '',
+    address: '',
+    postalCode: '',
+    preferredCallTime: '',
+    companyName: '',
+    nationalId: '',
+    economicCode: '',
 });
 
 export function isIranianMobile(phone: string) {

@@ -13,9 +13,12 @@ export default function MobileShowcase() {
         <section id="showcase" className="relative w-full py-8 px-4" dir={dir}>
             <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4">
                 {featuredMachines(t.machines).map(machine => (
-                    <article key={machine.id} className="w-[90%] shrink-0 snap-start bg-surface border border-subtle rounded-2xl p-4">
+                    <article
+                        key={machine.id}
+                        className="w-[90%] shrink-0 snap-start bg-surface border border-subtle rounded-2xl p-4"
+                    >
                         <Link href={`/products/${machine.id}`} className="flex gap-4 items-center">
-                            <img src={machine.image} alt={machine.name} className="w-24 h-28 object-contain shrink-0"/>
+                            <img src={machine.image} alt={machine.name} className="w-24 h-28 object-contain shrink-0" />
                             <div className="min-w-0">
                                 <span className="text-brand-400 text-xs font-semibold">{machine.shortLabel}</span>
                                 <h3 className="text-lg font-bold text-primary mt-1">{machine.name}</h3>
@@ -24,7 +27,7 @@ export default function MobileShowcase() {
                         </Link>
                         <p className="text-base font-bold text-primary my-4">{machine.priceLabel}</p>
                         <div className="flex flex-wrap justify-between items-center gap-3">
-                            <QuantityControl product={machine}/>
+                            <QuantityControl product={machine} />
                             <Link href={`/products/${machine.id}`} className="text-sm text-brand-400 hover:underline">
                                 {commerceCopy[locale].details}
                             </Link>

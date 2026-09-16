@@ -19,13 +19,17 @@ export default function CartPage() {
 
     return (
         <main className="mx-auto max-w-7xl min-h-[65vh] px-5 md:px-8 pt-28 pb-20">
-            <Link href="/products" className="text-brand-400 hover:underline">{copy.continueShopping}</Link>
+            <Link href="/products" className="text-brand-400 hover:underline">
+                {copy.continueShopping}
+            </Link>
             <h1 className="text-3xl md:text-4xl font-extrabold text-primary mt-6">{t.cart.title}</h1>
             <p className="text-secondary mt-3 mb-10">{copy.cartDescription}</p>
             {items.length === 0 ? (
                 <div className="rounded-3xl border border-subtle bg-surface p-10 text-center">
-                    <Empty description={t.cart.empty}/>
-                    <Link href="/products" className="inline-block mt-6 text-brand-400 hover:underline">{copy.continueShopping}</Link>
+                    <Empty description={t.cart.empty} />
+                    <Link href="/products" className="inline-block mt-6 text-brand-400 hover:underline">
+                        {copy.continueShopping}
+                    </Link>
                 </div>
             ) : (
                 <div className="grid lg:grid-cols-[minmax(0,1fr),340px] gap-8 items-start">
@@ -33,20 +37,40 @@ export default function CartPage() {
                         {items.map(item => {
                             const product = t.machines.find(machine => machine.id === item.id) ?? item;
                             return (
-                                <article key={item.id} className="rounded-2xl border border-subtle bg-surface p-5 flex flex-wrap sm:flex-nowrap gap-5 items-center">
+                                <article
+                                    key={item.id}
+                                    className="rounded-2xl border border-subtle bg-surface p-5 flex flex-wrap sm:flex-nowrap gap-5 items-center"
+                                >
                                     <Link href={`/products/${item.id}`} className="shrink-0">
-                                        <img src={product.image} alt={product.name} className="w-24 h-32 object-contain"/>
+                                        <img
+                                            src={product.image}
+                                            alt={product.name}
+                                            className="w-24 h-32 object-contain"
+                                        />
                                     </Link>
                                     <div className="flex-1 min-w-0">
-                                        <Link href={`/products/${item.id}`} className="font-bold text-lg text-primary hover:text-brand-400">{product.name}</Link>
-                                        <p className="text-secondary text-sm mt-2">{copy.unitPrice}: {money(item.priceNumeric)}</p>
+                                        <Link
+                                            href={`/products/${item.id}`}
+                                            className="font-bold text-lg text-primary hover:text-brand-400"
+                                        >
+                                            {product.name}
+                                        </Link>
+                                        <p className="text-secondary text-sm mt-2">
+                                            {copy.unitPrice}: {money(item.priceNumeric)}
+                                        </p>
                                         <div className="flex flex-wrap gap-3 items-center mt-4">
-                                            <QuantityControl product={product}/>
-                                            <Button danger type="text" icon={<DeleteOutlined/>}
-                                                    aria-label={`${copy.remove}: ${product.name}`}
-                                                    onClick={() => dispatch(removeFromCart(item.id))}/>
+                                            <QuantityControl product={product} />
+                                            <Button
+                                                danger
+                                                type="text"
+                                                icon={<DeleteOutlined />}
+                                                aria-label={`${copy.remove}: ${product.name}`}
+                                                onClick={() => dispatch(removeFromCart(item.id))}
+                                            />
                                         </div>
-                                        <p className="mt-4 text-primary font-semibold">{copy.lineTotal}: {money(item.qty * item.priceNumeric)}</p>
+                                        <p className="mt-4 text-primary font-semibold">
+                                            {copy.lineTotal}: {money(item.qty * item.priceNumeric)}
+                                        </p>
                                     </div>
                                 </article>
                             );
@@ -59,7 +83,9 @@ export default function CartPage() {
                             <strong className="text-primary">{money(total)}</strong>
                         </div>
                         <p className="text-secondary text-sm leading-7 my-5">{copy.checkoutUnavailable}</p>
-                        <Button type="primary" size="large" disabled block>{t.cart.checkout}</Button>
+                        <Button type="primary" size="large" disabled block>
+                            {t.cart.checkout}
+                        </Button>
                     </aside>
                 </div>
             )}

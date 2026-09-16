@@ -32,9 +32,18 @@ export default function DevelopmentNotice() {
     };
 
     return (
-        <Modal open={open} centered title={copy.developmentTitle} onCancel={dismiss}
-               footer={<Button type="primary" onClick={dismiss}>{copy.acknowledge}</Button>}>
-            <ToolOutlined className="text-brand-400 text-3xl my-4"/>
+        <Modal
+            open={open}
+            centered
+            title={copy.developmentTitle}
+            onCancel={dismiss}
+            footer={
+                <Button type="primary" onClick={dismiss}>
+                    {copy.acknowledge}
+                </Button>
+            }
+        >
+            <ToolOutlined className="text-brand-400 text-3xl my-4" />
             <p className="text-secondary leading-8">{copy.developmentMessage}</p>
         </Modal>
     );

@@ -1,0 +1,9 @@
+.next
+node_modules
+docs
+public
+.idea
+.agents
+.codex
+*.tsbuildinfo
+package-lock.json

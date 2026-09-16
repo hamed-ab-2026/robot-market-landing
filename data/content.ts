@@ -56,7 +56,8 @@ const machinesEn: Machine[] = [
         shortLabel: '35 Channels',
         priceLabel: '4,180,000,000 Rials',
         priceNumeric: 4180000000,
-        description: 'Refrigerated, 35 dedicated channels, powerful cooling system, soft delivery, 24/7 online management.',
+        description:
+            'Refrigerated, 35 dedicated channels, powerful cooling system, soft delivery, 24/7 online management.',
         highlights: ['Refrigerated', '35 dedicated channels', 'Soft delivery', '24/7 online management'],
         image: '/images/machine-35-base.webp',
         imageAlt: '/images/machine-35-white.webp',
@@ -96,8 +97,7 @@ export const content: Record<Locale, SiteContent> = {
         lang: 'fa',
         meta: {
             title: 'روبات مارکت | دستگاه‌های وندینگ هوشمند',
-            description:
-                'روبات مارکت؛ دستگاه‌های فروش خودکار هوشمند با مدیریت آنلاین، تحویل نرم و طراحی مدرن.',
+            description: 'روبات مارکت؛ دستگاه‌های فروش خودکار هوشمند با مدیریت آنلاین، تحویل نرم و طراحی مدرن.',
         },
         nav: {
             home: 'خانه',
@@ -140,7 +140,7 @@ export const content: Record<Locale, SiteContent> = {
             total: 'جمع کل',
             checkout: 'پرداخت / تسویه حساب',
             checkoutToast: 'درگاه پرداخت به‌زودی متصل می‌شود.',
-            addToast: (name) => `${name} به سبد خرید اضافه شد`,
+            addToast: name => `${name} به سبد خرید اضافه شد`,
         },
         machineActions: {
             addToCart: 'افزودن به سبد خرید',
@@ -148,7 +148,7 @@ export const content: Record<Locale, SiteContent> = {
             wishlistRemove: 'حذف از علاقه‌مندی‌ها',
             hoverHint: 'نشانگر را روی دستگاه حرکت دهید',
             altVariant: 'رنگ جایگزین',
-            gifAlt: (name) => `نمایش عملکرد ${name}`,
+            gifAlt: name => `نمایش عملکرد ${name}`,
         },
         machines: machinesFa,
         features: [
@@ -156,25 +156,25 @@ export const content: Record<Locale, SiteContent> = {
                 id: 'warranty',
                 icon: 'safety',
                 title: 'ضمانت کالا',
-                description: 'کلیه محصولات شرکت دارای یک سال خدمات پس از فروش می‌باشند.'
+                description: 'کلیه محصولات شرکت دارای یک سال خدمات پس از فروش می‌باشند.',
             },
             {
                 id: 'consulting',
                 icon: 'consulting',
                 title: 'مشاوره تخصصی و رایگان',
-                description: 'خدمات مشاوره رایگان در مورد نوع دستگاه و چیدمان محصولات.'
+                description: 'خدمات مشاوره رایگان در مورد نوع دستگاه و چیدمان محصولات.',
             },
             {
                 id: 'installment',
                 icon: 'installment',
                 title: 'امکان خرید اقساطی',
-                description: 'امکان خرید اقساط با شرایط آسان و مناسب جهت کلیه مشاغل.'
+                description: 'امکان خرید اقساط با شرایط آسان و مناسب جهت کلیه مشاغل.',
             },
             {
                 id: 'packaging',
                 icon: 'packaging',
                 title: 'بسته‌بندی ایمن',
-                description: 'با درخواست شما، محصولات با بسته‌بندی باکس پالت با هزینه‌ای اندک ارسال می‌شود.'
+                description: 'با درخواست شما، محصولات با بسته‌بندی باکس پالت با هزینه‌ای اندک ارسال می‌شود.',
             },
         ],
         about: {
@@ -200,43 +200,48 @@ export const content: Record<Locale, SiteContent> = {
                     id: 'hotels',
                     icon: 'hotel',
                     title: 'هتل‌ها و مراکز اقامتی',
-                    description: 'هر جایی که جمعیت زیادی در صف انتظار قرار دارند، به‌جز درآمد، روبات مارکت جزو امکانات رفاهی آن مکان محسوب شده و میزان رضایت مراجعان را نیز افزایش می‌دهد.'
+                    description:
+                        'هر جایی که جمعیت زیادی در صف انتظار قرار دارند، به‌جز درآمد، روبات مارکت جزو امکانات رفاهی آن مکان محسوب شده و میزان رضایت مراجعان را نیز افزایش می‌دهد.',
                 },
                 {
                     id: 'schools',
                     icon: 'school',
                     title: 'مراکز آموزشی و مدارس',
-                    description: 'در صورتی که هر یک از دانش‌آموزان و دانشجویان برای خرید مایحتاج خود به خارج از مجموعه مراجعه کنند و خدای‌ناکرده اتفاقی بیفتد، مسئولیت آن مستقیماً به عهده مدیر آموزشگاه است. در نتیجه وجود یک روبات مارکت در هر آموزشگاه ضروری است.'
+                    description:
+                        'در صورتی که هر یک از دانش‌آموزان و دانشجویان برای خرید مایحتاج خود به خارج از مجموعه مراجعه کنند و خدای‌ناکرده اتفاقی بیفتد، مسئولیت آن مستقیماً به عهده مدیر آموزشگاه است. در نتیجه وجود یک روبات مارکت در هر آموزشگاه ضروری است.',
                 },
                 {
                     id: 'pharmacies',
                     icon: 'pharmacy',
                     title: 'داروخانه‌ها و سوپرمارکت‌ها',
-                    description: 'برای فروش محصولات جنسی و پیشگیری، ویژه مشتریانی که برای خرید آن معذوریت دارند.'
+                    description: 'برای فروش محصولات جنسی و پیشگیری، ویژه مشتریانی که برای خرید آن معذوریت دارند.',
                 },
                 {
                     id: 'hospitals',
                     icon: 'hospital',
                     title: 'بیمارستان‌ها و مراکز درمانی',
-                    description: 'برای فروش محصولات جنسی و پیشگیری، ویژه مشتریانی که برای خرید آن معذوریت دارند.'
+                    description: 'برای فروش محصولات جنسی و پیشگیری، ویژه مشتریانی که برای خرید آن معذوریت دارند.',
                 },
                 {
                     id: 'night-shift',
                     icon: 'night',
                     title: 'کشیک شیفت شب',
-                    description: 'امکان تعبیه روبات مارکت پشت شیشه سکوریت مغازه‌ها نیز وجود دارد تا در زمان تعطیلی فروشگاه و حتی نیمه‌شب‌ها، روبات زحمتکش در حال خدمت‌دهی به مشتریان عزیز شما باشد.'
+                    description:
+                        'امکان تعبیه روبات مارکت پشت شیشه سکوریت مغازه‌ها نیز وجود دارد تا در زمان تعطیلی فروشگاه و حتی نیمه‌شب‌ها، روبات زحمتکش در حال خدمت‌دهی به مشتریان عزیز شما باشد.',
                 },
                 {
                     id: 'specialty',
                     icon: 'specialty',
                     title: 'محصولات تخصصی',
-                    description: 'اگر تولیدکننده هستید یا نماینده تولیدکننده محصولی خاص هستید، یک روبات مارکت می‌تواند مسئولیت معرفی و عرضه محصولات تخصصی شما را نیز بر عهده بگیرد.'
+                    description:
+                        'اگر تولیدکننده هستید یا نماینده تولیدکننده محصولی خاص هستید، یک روبات مارکت می‌تواند مسئولیت معرفی و عرضه محصولات تخصصی شما را نیز بر عهده بگیرد.',
                 },
             ],
         },
         footer: {
             aboutLabel: 'روبات مارکت',
-            aboutText: 'ارائه‌دهنده دستگاه‌های وندینگ هوشمند برای کسب‌وکارهای مدرن — محصولی از شرکت نگین سازان پیشگام رادمهر آتوسا.',
+            aboutText:
+                'ارائه‌دهنده دستگاه‌های وندینگ هوشمند برای کسب‌وکارهای مدرن — محصولی از شرکت نگین سازان پیشگام رادمهر آتوسا.',
             quickLinks: 'دسترسی سریع',
             contactTitle: 'تماس با ما',
             factoryLabel: 'کارخانه',
@@ -246,7 +251,8 @@ export const content: Record<Locale, SiteContent> = {
         contactInfo: {
             orderPhone: '۰۹۱۵۱۶۰۱۸۴۷',
             orderPhoneHref: '09151601847',
-            factoryAddress: 'مشهد، کیلومتر ۸ جاده مشهد - چناران، دور برگردان اصلی شهرک صنعتی توس به سمت مشهد، بعد از نیروگاه، اولین فرعی سمت راست (خیابان کاله)، اولین کوچه سمت راست، پلاک ۱۱۰، شرکت نگین سازان پیشگام رادمهر آتوسا',
+            factoryAddress:
+                'مشهد، کیلومتر ۸ جاده مشهد - چناران، دور برگردان اصلی شهرک صنعتی توس به سمت مشهد، بعد از نیروگاه، اولین فرعی سمت راست (خیابان کاله)، اولین کوچه سمت راست، پلاک ۱۱۰، شرکت نگین سازان پیشگام رادمهر آتوسا',
             salesOfficeAddress: 'مشهد، نبش پیامبر اعظم ۷، جنب بیمارستان رضوی، برج نخل، واحد ۴۰۱',
             socialLinks: [
                 {id: 'instagram', label: 'صفحه اینستاگرام', href: 'http://instagram.com/vending_machin_life'},
@@ -305,7 +311,7 @@ export const content: Record<Locale, SiteContent> = {
             total: 'Total',
             checkout: 'Checkout',
             checkoutToast: 'Payment gateway will be connected soon.',
-            addToast: (name) => `${name} added to cart`,
+            addToast: name => `${name} added to cart`,
         },
         machineActions: {
             addToCart: 'Add to Cart',
@@ -313,7 +319,7 @@ export const content: Record<Locale, SiteContent> = {
             wishlistRemove: 'Remove from Wishlist',
             hoverHint: 'Move your cursor over the machine',
             altVariant: 'Alternate color',
-            gifAlt: (name) => `${name} in action`,
+            gifAlt: name => `${name} in action`,
         },
         machines: machinesEn,
         features: [
@@ -321,25 +327,25 @@ export const content: Record<Locale, SiteContent> = {
                 id: 'warranty',
                 icon: 'safety',
                 title: 'Product Warranty',
-                description: 'All our products come with one year of after-sales service.'
+                description: 'All our products come with one year of after-sales service.',
             },
             {
                 id: 'consulting',
                 icon: 'consulting',
                 title: 'Free Expert Consulting',
-                description: 'Free consulting on the right machine type and product layout.'
+                description: 'Free consulting on the right machine type and product layout.',
             },
             {
                 id: 'installment',
                 icon: 'installment',
                 title: 'Installment Purchase',
-                description: 'Flexible, easy installment plans suitable for any business.'
+                description: 'Flexible, easy installment plans suitable for any business.',
             },
             {
                 id: 'packaging',
                 icon: 'packaging',
                 title: 'Secure Packaging',
-                description: 'On request, products ship in pallet-box packaging for a small fee.'
+                description: 'On request, products ship in pallet-box packaging for a small fee.',
             },
         ],
         about: {
@@ -350,12 +356,12 @@ export const content: Record<Locale, SiteContent> = {
             paragraphs: [
                 'Negin Sazan Pishgam Radmehr Atousa Co. (registration No. 84094), also known as "Ideh Avaran Pishgam Atousa" (No. 63097) and "Pishgam Gostar Negin Atousa" (No. 73416), began operations in 2017 producing precision saffron-processing machines. After building a nationwide saffron distribution network, in 2022 the company entered the vending-machine industry with saffron-dedicated machines under the "Robot Market" brand.',
                 'In 2023, cooling capability was added to preserve saffron quality, and Robot Market gained the ability to sell snacks and cold drinks as well. By spring 2024, with the wide rollout of "Robot Market" machines, these robots were introduced as an official retailer of snacks and cold drinks in Iran.',
-                'Robot Market is not just a name — it is a symbol of a modern, forward-looking way of thinking in the vending industry. What happens inside Robot Market is the result of our engineers\' technical expertise combined with today\'s technology. Every Robot Market machine is a tireless, intelligent assistant that bridges consumer needs and your business goals with precision and speed.',
+                "Robot Market is not just a name — it is a symbol of a modern, forward-looking way of thinking in the vending industry. What happens inside Robot Market is the result of our engineers' technical expertise combined with today's technology. Every Robot Market machine is a tireless, intelligent assistant that bridges consumer needs and your business goals with precision and speed.",
                 'Our commitment is to build high-quality machines with modern design and flawless performance, delivering a different experience of shopping and revenue generation. Robot Market stands for trust, innovation, and continuous progress in the vending industry.',
-                'Hundreds of hours of engineering work and operational testing go into every Robot Market unit. We believe durability and machine lifespan are the most important measures of our customers\' investment. That is why, from selecting the best materials and electronic components to final assembly, we follow strict standards so our machines perform reliably in any condition.',
+                "Hundreds of hours of engineering work and operational testing go into every Robot Market unit. We believe durability and machine lifespan are the most important measures of our customers' investment. That is why, from selecting the best materials and electronic components to final assembly, we follow strict standards so our machines perform reliably in any condition.",
                 'Our smart machines offer a simple yet advanced user interface for an enjoyable experience. Secure payment systems and internet connectivity for online management and price monitoring set Robot Market apart from competitors. We have made the purchase process as simple as a few taps, so your customers can access what they need, any time of day, in the shortest time possible. Robot Market is not just a manufacturer — it is a trusted advisor for growing your business, designing automated sales solutions tailored to your needs.',
                 'Whether you run a large retail chain or manage a small office, our machines let you increase sales without time or location limits, and without worrying about staffing issues.',
-                'Behind Robot Market\'s specialized, forward-looking products lies technology that replaces foreign alternatives — meeting domestic needs today, and poised to compete meaningfully in export markets in the near future. We take pride in building an Iranian product that competes with global standards — a small but firm step toward self-sufficiency and economic growth.',
+                "Behind Robot Market's specialized, forward-looking products lies technology that replaces foreign alternatives — meeting domestic needs today, and poised to compete meaningfully in export markets in the near future. We take pride in building an Iranian product that competes with global standards — a small but firm step toward self-sufficiency and economic growth.",
             ],
         },
         locations: {
@@ -365,43 +371,50 @@ export const content: Record<Locale, SiteContent> = {
                     id: 'hotels',
                     icon: 'hotel',
                     title: 'Hotels & Accommodations',
-                    description: 'Anywhere large crowds wait in line — beyond the revenue, Robot Market becomes an amenity that increases guest satisfaction.'
+                    description:
+                        'Anywhere large crowds wait in line — beyond the revenue, Robot Market becomes an amenity that increases guest satisfaction.',
                 },
                 {
                     id: 'schools',
                     icon: 'school',
                     title: 'Schools & Educational Centers',
-                    description: 'If a student has to leave campus to buy something and, God forbid, an incident occurs, responsibility falls directly on the school administrator. A Robot Market on-site is essential.'
+                    description:
+                        'If a student has to leave campus to buy something and, God forbid, an incident occurs, responsibility falls directly on the school administrator. A Robot Market on-site is essential.',
                 },
                 {
                     id: 'pharmacies',
                     icon: 'pharmacy',
                     title: 'Pharmacies & Supermarkets',
-                    description: 'For selling personal/health products discreetly, for customers who prefer not to purchase them in person.'
+                    description:
+                        'For selling personal/health products discreetly, for customers who prefer not to purchase them in person.',
                 },
                 {
                     id: 'hospitals',
                     icon: 'hospital',
                     title: 'Hospitals & Medical Centers',
-                    description: 'For selling personal/health products discreetly, for customers who prefer not to purchase them in person.'
+                    description:
+                        'For selling personal/health products discreetly, for customers who prefer not to purchase them in person.',
                 },
                 {
                     id: 'night-shift',
                     icon: 'night',
                     title: 'Night-Shift Coverage',
-                    description: 'Robot Market can be installed behind a shop\'s security glass, serving customers even after closing time and in the middle of the night.'
+                    description:
+                        "Robot Market can be installed behind a shop's security glass, serving customers even after closing time and in the middle of the night.",
                 },
                 {
                     id: 'specialty',
                     icon: 'specialty',
                     title: 'Specialty Products',
-                    description: 'If you manufacture or represent a specific product line, a Robot Market machine can take on introducing and offering your specialty products too.'
+                    description:
+                        'If you manufacture or represent a specific product line, a Robot Market machine can take on introducing and offering your specialty products too.',
                 },
             ],
         },
         footer: {
             aboutLabel: 'Robot Market',
-            aboutText: 'Smart vending machines for modern businesses — a product of Negin Sazan Pishgam Radmehr Atousa Co.',
+            aboutText:
+                'Smart vending machines for modern businesses — a product of Negin Sazan Pishgam Radmehr Atousa Co.',
             quickLinks: 'Quick Links',
             contactTitle: 'Contact Us',
             factoryLabel: 'Factory',
@@ -411,7 +424,8 @@ export const content: Record<Locale, SiteContent> = {
         contactInfo: {
             orderPhone: '09151601847',
             orderPhoneHref: '09151601847',
-            factoryAddress: 'Mashhad, Mashhad–Chenaran Rd. km 8, main roundabout of Toos Industrial Town toward Mashhad, after the power plant, 1st street on the right (Kaleh St.), 1st alley on the right, No. 110 — Negin Sazan Pishgam Radmehr Atousa Co.',
+            factoryAddress:
+                'Mashhad, Mashhad–Chenaran Rd. km 8, main roundabout of Toos Industrial Town toward Mashhad, after the power plant, 1st street on the right (Kaleh St.), 1st alley on the right, No. 110 — Negin Sazan Pishgam Radmehr Atousa Co.',
             salesOfficeAddress: 'Mashhad, corner of Payambar-e Azam 7, next to Razavi Hospital, Nakhl Tower, Unit 401',
             socialLinks: [
                 {id: 'instagram', label: 'Instagram', href: 'http://instagram.com/vending_machin_life'},

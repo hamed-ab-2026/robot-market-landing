@@ -52,7 +52,7 @@ function AntdBridge({children}: {children: ReactNode}) {
 export default function Providers({children}: {children: ReactNode}) {
     return (
         <ReduxProvider store={store}>
-            <CartPersistence/>
+            <CartPersistence />
             <ThemeProvider>
                 <LanguageProvider>
                     <AntdBridge>

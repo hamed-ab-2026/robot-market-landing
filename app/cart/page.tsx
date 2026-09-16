@@ -5,5 +5,9 @@ import ProtectedPage from '@/components/auth/ProtectedPage';
 export const metadata: Metadata = {title: 'سبد خرید | روبات مارکت'};
 
 export default function Page() {
-    return <ProtectedPage><CartPage/></ProtectedPage>;
+    return (
+        <ProtectedPage>
+            <CartPage />
+        </ProtectedPage>
+    );
 }

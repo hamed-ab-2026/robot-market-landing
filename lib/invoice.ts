@@ -33,12 +33,19 @@ export async function downloadInvoiceExcel(order: CustomerOrder, filename: strin
         {header: 'قیمت واحد (ریال)', key: 'unitPrice', width: 22},
         {header: 'جمع (ریال)', key: 'total', width: 22},
     ];
-    order.items.forEach(item => sheet.addRow({
-        name: item.name, model: item.model, modules: item.modules.join('، '), quantity: item.quantity,
-        unitPrice: item.unitPrice, total: item.unitPrice * item.quantity,
-    }));
+    order.items.forEach(item =>
+        sheet.addRow({
+            name: item.name,
+            model: item.model,
+            modules: item.modules.join('، '),
+            quantity: item.quantity,
+            unitPrice: item.unitPrice,
+            total: item.unitPrice * item.quantity,
+        }),
+    );
     const subtotal = order.items.reduce((sum, item) => sum + item.unitPrice * item.quantity, 0);
-    const total = subtotal - (order.invoice?.discount || 0) + (order.invoice?.shipping || 0) + (order.invoice?.tax || 0);
+    const total =
+        subtotal - (order.invoice?.discount || 0) + (order.invoice?.shipping || 0) + (order.invoice?.tax || 0);
     sheet.addRow({name: 'مبلغ نهایی', total});
     sheet.getRow(1).font = {bold: true, color: {argb: 'FFFFFFFF'}};
     sheet.getRow(1).fill = {type: 'pattern', pattern: 'solid', fgColor: {argb: 'FF00A693'}};

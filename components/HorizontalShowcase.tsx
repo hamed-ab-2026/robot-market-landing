@@ -27,9 +27,7 @@ export default function HorizontalShowcase() {
 
             if (!track || !section) return;
 
-            const scrollDistance = () => (
-                Math.max(track.scrollWidth - window.innerWidth, 0)
-            );
+            const scrollDistance = () => Math.max(track.scrollWidth - window.innerWidth, 0);
 
             let animationFrameId: number | null = null;
             let latestProgress = 0;
@@ -57,7 +55,7 @@ export default function HorizontalShowcase() {
                     scrub: 1,
                     pin: true,
                     invalidateOnRefresh: true,
-                    onUpdate: (self) => syncVideo(self.progress),
+                    onUpdate: self => syncVideo(self.progress),
                 },
             });
 
@@ -97,18 +95,22 @@ export default function HorizontalShowcase() {
             <div className="relative z-20 h-40 pt-20 bg-page-85 backdrop-blur-md">
                 <div className="max-w-7xl h-full mx-auto px-8 flex justify-between items-center gap-4">
                     <h2 className="text-2xl font-bold text-primary">{copy.featuredProducts}</h2>
-                    <Link href="/products" className="text-brand-400 hover:underline">{copy.allProducts}</Link>
+                    <Link href="/products" className="text-brand-400 hover:underline">
+                        {copy.allProducts}
+                    </Link>
                 </div>
             </div>
 
-            <div ref={trackRef}
-                 className="horizontal-track relative z-10 [&_.horizontal-panel]:h-full [&_.spotlight-stage]:max-h-[calc(100vh-12rem)]"
-                 style={{height: 'calc(100vh - 10rem)'}} dir="ltr">
-                {featuredMachines(t.machines).map((machine) => (
-                    <VendingCard key={machine.id} machine={machine}/>
+            <div
+                ref={trackRef}
+                className="horizontal-track relative z-10 [&_.horizontal-panel]:h-full [&_.spotlight-stage]:max-h-[calc(100vh-12rem)]"
+                style={{height: 'calc(100vh - 10rem)'}}
+                dir="ltr"
+            >
+                {featuredMachines(t.machines).map(machine => (
+                    <VendingCard key={machine.id} machine={machine} />
                 ))}
             </div>
-
         </section>
     );
 }

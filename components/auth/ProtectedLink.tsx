@@ -5,7 +5,17 @@ import Link from 'next/link';
 import {useRouter} from 'next/navigation';
 import {useAuth} from '@/app/context/AuthContext';
 
-export default function ProtectedLink({href, children, className, onClick}: {href: string; children: ReactNode; className?: string; onClick?: () => void}) {
+export default function ProtectedLink({
+    href,
+    children,
+    className,
+    onClick,
+}: {
+    href: string;
+    children: ReactNode;
+    className?: string;
+    onClick?: () => void;
+}) {
     const auth = useAuth();
     const router = useRouter();
     const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
@@ -15,5 +25,9 @@ export default function ProtectedLink({href, children, className, onClick}: {hre
             auth.openLogin(() => router.push(href));
         }
     };
-    return <Link href={href} className={className} onClick={handleClick}>{children}</Link>;
+    return (
+        <Link href={href} className={className} onClick={handleClick}>
+            {children}
+        </Link>
+    );
 }

@@ -51,13 +51,16 @@ export function AuthProvider({children}: {children: ReactNode}) {
         }
     }, []);
 
-    const finishLogin = useCallback((next: AuthSession) => {
-        persist(next);
-        setLoginOpen(false);
-        const callback = successCallback.current;
-        successCallback.current = undefined;
-        callback?.();
-    }, [persist]);
+    const finishLogin = useCallback(
+        (next: AuthSession) => {
+            persist(next);
+            setLoginOpen(false);
+            const callback = successCallback.current;
+            successCallback.current = undefined;
+            callback?.();
+        },
+        [persist],
+    );
 
     const openLogin = useCallback((onSuccess?: () => void) => {
         successCallback.current = onSuccess;
@@ -76,7 +79,9 @@ export function AuthProvider({children}: {children: ReactNode}) {
         loginOpen,
         openLogin,
         closeLogin,
-        sendOtp: async phone => { await requestOtp(phone); },
+        sendOtp: async phone => {
+            await requestOtp(phone);
+        },
         verifyOtp: async (phone, code) => finishLogin(await loginWithOtp(phone, code)),
         loginPassword: async (phone, password) => finishLogin(await loginWithPassword(phone, password)),
         updateProfile: async profile => {
@@ -90,7 +95,7 @@ export function AuthProvider({children}: {children: ReactNode}) {
     return (
         <AuthContext.Provider value={value}>
             {children}
-            <AuthModal/>
+            <AuthModal />
         </AuthContext.Provider>
     );
 }

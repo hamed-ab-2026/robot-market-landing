@@ -17,21 +17,40 @@ export default function QuantityControl({product}: {product: CartProduct}) {
     const quantity = useAppSelector(state => state.cart.items.find(item => item.id === product.id)?.qty ?? 0);
 
     return (
-        <div role="group" aria-label={`${copy.quantity}: ${product.name}`}
-             className="inline-flex items-center gap-3 rounded-xl border border-subtle bg-page p-1" dir="ltr">
-            <Button icon={<MinusOutlined/>} disabled={quantity === 0}
-                    aria-label={`${copy.decrease}: ${product.name}`}
-                    onClick={() => auth.isAuthenticated ? dispatch(decrementQty(product.id)) : auth.openLogin()}/>
+        <div
+            role="group"
+            aria-label={`${copy.quantity}: ${product.name}`}
+            className="inline-flex items-center gap-3 rounded-xl border border-subtle bg-page p-1"
+            dir="ltr"
+        >
+            <Button
+                icon={<MinusOutlined />}
+                disabled={quantity === 0}
+                aria-label={`${copy.decrease}: ${product.name}`}
+                onClick={() => (auth.isAuthenticated ? dispatch(decrementQty(product.id)) : auth.openLogin())}
+            />
             <span aria-live="polite" aria-atomic="true" className="min-w-8 text-center font-bold text-primary">
                 {quantity.toLocaleString(locale === 'fa' ? 'fa-IR' : 'en-US')}
             </span>
-            <Button type="primary" icon={<PlusOutlined/>}
-                    aria-label={`${copy.increase}: ${product.name}`}
-                    onClick={() => {
-                        const add = () => dispatch(addToCart({id: product.id, name: product.name, image: product.image,
-                            priceLabel: product.priceLabel, priceNumeric: product.priceNumeric}));
-                        if (auth.isAuthenticated) add(); else auth.openLogin(add);
-                    }}/>
+            <Button
+                type="primary"
+                icon={<PlusOutlined />}
+                aria-label={`${copy.increase}: ${product.name}`}
+                onClick={() => {
+                    const add = () =>
+                        dispatch(
+                            addToCart({
+                                id: product.id,
+                                name: product.name,
+                                image: product.image,
+                                priceLabel: product.priceLabel,
+                                priceNumeric: product.priceNumeric,
+                            }),
+                        );
+                    if (auth.isAuthenticated) add();
+                    else auth.openLogin(add);
+                }}
+            />
         </div>
     );
 }

@@ -33,7 +33,7 @@ export function LanguageProvider({children}: {children: ReactNode}) {
         window.localStorage.setItem('rm-locale', locale);
     }, [locale]);
 
-    const toggleLocale = () => setLocale((l) => (l === 'fa' ? 'en' : 'fa'));
+    const toggleLocale = () => setLocale(l => (l === 'fa' ? 'en' : 'fa'));
 
     return (
         <LanguageContext.Provider

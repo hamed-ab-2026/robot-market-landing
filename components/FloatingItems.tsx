@@ -32,12 +32,12 @@ export default function FloatingItems({items}: {items: FloatingSnack[]}) {
             });
         });
 
-        return () => tweens.forEach((t) => t.kill());
+        return () => tweens.forEach(t => t.kill());
     }, [items]);
 
     return (
         <div ref={containerRef} className="absolute inset-0 pointer-events-none hidden md:block">
-            {items.map((item) => (
+            {items.map(item => (
                 <img
                     key={item.id}
                     data-float-item

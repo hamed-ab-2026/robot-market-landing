@@ -27,7 +27,7 @@ export default function AboutSection() {
                 </div>
 
                 <button
-                    onClick={() => setExpanded((v) => !v)}
+                    onClick={() => setExpanded(v => !v)}
                     className="mt-6 inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 text-sm font-semibold transition-colors"
                 >
                     {expanded ? t.about.less : t.about.more}

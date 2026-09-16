@@ -15,9 +15,7 @@ export default function ShowcaseSection() {
     const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia(
-            `(max-width: ${MOBILE_BREAKPOINT - 1}px)`
-        );
+        const mediaQuery = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
 
         const handleChange = (event: MediaQueryListEvent) => setIsMobile(event.matches);
 
@@ -28,15 +26,17 @@ export default function ShowcaseSection() {
     }, []);
 
     if (isMobile === null) return null;
-    if (!isMobile) return <HorizontalShowcase/>;
+    if (!isMobile) return <HorizontalShowcase />;
 
     return (
         <>
             <div className="max-w-7xl mx-auto px-5 md:px-8 py-8 flex flex-wrap justify-between items-center gap-4">
                 <h2 className="text-2xl font-bold text-primary">{copy.featuredProducts}</h2>
-                <Link href="/products" className="text-brand-400 hover:underline">{copy.allProducts}</Link>
+                <Link href="/products" className="text-brand-400 hover:underline">
+                    {copy.allProducts}
+                </Link>
             </div>
-            <MobileShowcase/>
+            <MobileShowcase />
         </>
     );
 }

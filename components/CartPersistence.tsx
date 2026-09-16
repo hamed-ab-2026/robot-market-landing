@@ -19,13 +19,25 @@ export default function CartPersistence() {
             if (Array.isArray(saved)) {
                 const items: CartItem[] = [];
                 for (const entry of saved) {
-                    if (!entry || typeof entry !== 'object' || typeof entry.id !== 'string'
-                        || !Number.isSafeInteger(entry.qty) || entry.qty < 1) continue;
+                    if (
+                        !entry ||
+                        typeof entry !== 'object' ||
+                        typeof entry.id !== 'string' ||
+                        !Number.isSafeInteger(entry.qty) ||
+                        entry.qty < 1
+                    )
+                        continue;
                     const machine = content.fa.machines.find(item => item.id === entry.id);
                     if (!machine || items.some(item => item.id === machine.id)) continue;
                     // Restore identifiers and quantities; use current catalog prices and images.
-                    items.push({id: machine.id, name: machine.name, image: machine.image,
-                        priceNumeric: machine.priceNumeric, priceLabel: machine.priceLabel, qty: entry.qty});
+                    items.push({
+                        id: machine.id,
+                        name: machine.name,
+                        image: machine.image,
+                        priceNumeric: machine.priceNumeric,
+                        priceLabel: machine.priceLabel,
+                        qty: entry.qty,
+                    });
                 }
                 store.dispatch(restoreCart(items));
             }
@@ -35,7 +47,10 @@ export default function CartPersistence() {
 
         return store.subscribe(() => {
             try {
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(store.getState().cart.items.map(({id, qty}) => ({id, qty}))));
+                localStorage.setItem(
+                    STORAGE_KEY,
+                    JSON.stringify(store.getState().cart.items.map(({id, qty}) => ({id, qty}))),
+                );
             } catch {
                 // Keep the in-memory cart usable when storage is full or disabled.
             }

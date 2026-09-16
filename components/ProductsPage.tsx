@@ -32,15 +32,29 @@ export default function ProductsPage() {
             <p className="text-secondary mt-4 leading-7">{copy.productsDescription}</p>
             <div className="mt-8 mb-8 rounded-2xl border border-subtle bg-surface p-5 flex flex-wrap items-end gap-4">
                 <div className="flex flex-col gap-2 w-full sm:w-72">
-                    <label htmlFor="product-category" className="text-sm font-semibold text-primary">{copy.category}</label>
-                    <select id="product-category" value={category} onChange={event => setCategory(event.target.value)}
-                            className="w-full border border-subtle bg-elevated text-primary rounded-xl px-4 py-3 focus:outline-brand">
+                    <label htmlFor="product-category" className="text-sm font-semibold text-primary">
+                        {copy.category}
+                    </label>
+                    <select
+                        id="product-category"
+                        value={category}
+                        onChange={event => setCategory(event.target.value)}
+                        className="w-full border border-subtle bg-elevated text-primary rounded-xl px-4 py-3 focus:outline-brand"
+                    >
                         <option value="">{copy.allCategories}</option>
                         {category && !knownCategory && <option value={category}>{copy.unknownCategory}</option>}
-                        {productCategories.map(item => <option key={item.id} value={item.id}>{item.label[locale]}</option>)}
+                        {productCategories.map(item => (
+                            <option key={item.id} value={item.id}>
+                                {item.label[locale]}
+                            </option>
+                        ))}
                     </select>
                 </div>
-                {category && <button onClick={() => setCategory('')} className="text-brand-400 py-3 hover:underline">{copy.clearFilters}</button>}
+                {category && (
+                    <button onClick={() => setCategory('')} className="text-brand-400 py-3 hover:underline">
+                        {copy.clearFilters}
+                    </button>
+                )}
                 <p aria-live="polite" aria-atomic="true" className="text-secondary text-sm py-3 sm:ms-auto">
                     {products.length.toLocaleString(locale === 'fa' ? 'fa-IR' : 'en-US')} {copy.results}
                 </p>
@@ -48,22 +62,38 @@ export default function ProductsPage() {
             {products.length ? (
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {products.map(machine => (
-                        <article key={machine.id} className="flex flex-col rounded-3xl border border-subtle bg-surface p-5">
+                        <article
+                            key={machine.id}
+                            className="flex flex-col rounded-3xl border border-subtle bg-surface p-5"
+                        >
                             <Link href={`/products/${machine.id}`} className="rounded-2xl bg-page p-5">
-                                <img src={machine.image} alt={machine.name} className="w-full h-60 object-contain"/>
+                                <img src={machine.image} alt={machine.name} className="w-full h-60 object-contain" />
                             </Link>
-                            <span className="text-brand-400 text-xs mt-5">{productCategories.find(item => item.id === machine.category)?.label[locale]}</span>
-                            <h2 className="text-xl font-bold text-primary mt-2"><Link href={`/products/${machine.id}`}>{machine.name}</Link></h2>
+                            <span className="text-brand-400 text-xs mt-5">
+                                {productCategories.find(item => item.id === machine.category)?.label[locale]}
+                            </span>
+                            <h2 className="text-xl font-bold text-primary mt-2">
+                                <Link href={`/products/${machine.id}`}>{machine.name}</Link>
+                            </h2>
                             <p className="text-secondary text-sm leading-7 mt-3 mb-5">{machine.description}</p>
                             <p className="text-primary text-lg font-bold mt-auto mb-4">{machine.priceLabel}</p>
                             <div className="flex flex-wrap items-center justify-between gap-3">
-                                <QuantityControl product={machine}/>
-                                <Link href={`/products/${machine.id}`} className="text-brand-400 text-sm hover:underline">{copy.details}</Link>
+                                <QuantityControl product={machine} />
+                                <Link
+                                    href={`/products/${machine.id}`}
+                                    className="text-brand-400 text-sm hover:underline"
+                                >
+                                    {copy.details}
+                                </Link>
                             </div>
                         </article>
                     ))}
                 </div>
-            ) : <div className="text-center text-secondary border border-subtle rounded-2xl p-12">{copy.noProducts}</div>}
+            ) : (
+                <div className="text-center text-secondary border border-subtle rounded-2xl p-12">
+                    {copy.noProducts}
+                </div>
+            )}
         </main>
     );
 }

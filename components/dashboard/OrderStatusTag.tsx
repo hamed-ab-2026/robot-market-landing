@@ -7,6 +7,13 @@ import {orderStatusLabels} from '@/data/account';
 
 export default function OrderStatusTag({status}: {status: OrderStatus}) {
     const {locale} = useLanguage();
-    const color = status === 'cancelled' ? 'red' : status === 'delivered' ? 'green' : status === 'proforma_issued' ? 'cyan' : 'gold';
+    const color =
+        status === 'cancelled'
+            ? 'red'
+            : status === 'delivered'
+              ? 'green'
+              : status === 'proforma_issued'
+                ? 'cyan'
+                : 'gold';
     return <Tag color={color}>{orderStatusLabels[locale][status]}</Tag>;
 }

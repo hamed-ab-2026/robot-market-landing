@@ -1,6 +1,5 @@
 'use client';
 
-
 import type {Machine} from '@/types/domain';
 import type {MouseEvent} from 'react';
 import {useRef} from 'react';
@@ -45,29 +44,27 @@ export default function VendingCard({machine}: {machine: Machine}) {
                     onMouseLeave={handleMouseLeave}
                     className="spotlight-stage relative h-48  md:h-[500px] flex items-center justify-center"
                 >
-                    <FloatingItems items={floatingSnacks}/>
+                    <FloatingItems items={floatingSnacks} />
 
-                    <img src={machine.image} alt={machine.name} className="base-layer z-10"/>
+                    <img src={machine.image} alt={machine.name} className="base-layer z-10" />
                     <img
                         ref={revealRef}
                         src={machine.imageAlt}
                         alt={`${machine.name} - ${t.machineActions.altVariant}`}
                         className="reveal-layer z-20"
                     />
-                    <div ref={lensRef} className="spotlight-lens"/>
+                    <div ref={lensRef} className="spotlight-lens" />
 
-                    <span
-                        className="absolute hidden md:block top-3 z-30 text-[11px] px-3 py-1 rounded-full bg-brand/15 border border-subtle text-brand-400 start-3">
-            {t.machineActions.hoverHint}
-          </span>
+                    <span className="absolute hidden md:block top-3 z-30 text-[11px] px-3 py-1 rounded-full bg-brand/15 border border-subtle text-brand-400 start-3">
+                        {t.machineActions.hoverHint}
+                    </span>
                 </div>
 
                 <div className="flex flex-col justify-center items-center gap-5 ">
                     <span className="text-brand-400 text-sm font-semibold tracking-wide">{machine.shortLabel}</span>
                     <h3 className="text-2xl md:text-4xl font-extrabold text-primary">{machine.name}</h3>
 
-                    <div
-                        className="grid grid-cols-[auto,1fr] gap-4 items-start bg-surface border border-subtle rounded-2xl p-4">
+                    <div className="grid grid-cols-[auto,1fr] gap-4 items-start bg-surface border border-subtle rounded-2xl p-4">
                         <img
                             src={machine.gif}
                             alt={t.machineActions.gifAlt(machine.name)}
@@ -77,9 +74,11 @@ export default function VendingCard({machine}: {machine: Machine}) {
                     </div>
 
                     <ul className="flex flex-wrap gap-2">
-                        {machine.highlights.map((h) => (
-                            <li key={h}
-                                className="text-xs md:text-sm text-brand-400 bg-brand/10 border border-subtle rounded-full px-3 py-1">
+                        {machine.highlights.map(h => (
+                            <li
+                                key={h}
+                                className="text-xs md:text-sm text-brand-400 bg-brand/10 border border-subtle rounded-full px-3 py-1"
+                            >
                                 {h}
                             </li>
                         ))}
@@ -88,8 +87,11 @@ export default function VendingCard({machine}: {machine: Machine}) {
                     <p className="text-xl md:text-2xl font-bold text-primary mt-2">{machine.priceLabel}</p>
 
                     <div className="flex flex-wrap  items-center gap-2 mt-2 ">
-                        <QuantityControl product={machine}/>
-                        <ProtectedLink href={`/products/${machine.id}`} className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400">
+                        <QuantityControl product={machine} />
+                        <ProtectedLink
+                            href={`/products/${machine.id}`}
+                            className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400"
+                        >
                             {commerceCopy[locale].details}
                         </ProtectedLink>
                     </div>
