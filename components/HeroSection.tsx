@@ -5,11 +5,12 @@
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {LeftOutlined, RightOutlined} from '@ant-design/icons';
 import {useLanguage} from '@/app/context/LanguageContext';
+import {accountCopy} from '@/data/account';
 
 const AUTOPLAY_DELAY = 5000; // Advance every five seconds.
 
 export default function HeroSection() {
-    const {t, dir} = useLanguage();
+    const {t, dir, locale} = useLanguage();
     const slides = t.hero.slides;
     const [activeIndex, setActiveIndex] = useState(0);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -107,12 +108,15 @@ export default function HeroSection() {
                         ))}
                     </h1>
                     <p className="mt-5 text-white/90 text-base md:text-lg max-w-xl drop-shadow-lg">{slide.sub}</p>
-                    <a
-                        href="#showcase"
-                        className="mt-8 inline-flex items-center gap-2 bg-brand hover:bg-brand-400 text-ink-950 font-bold px-8 py-3.5 rounded-full transition-colors shadow-brandGlow"
-                    >
-                        {t.hero.cta}
-                    </a>
+                    <div className="mt-8 flex flex-wrap gap-3">
+                        <a href="#showcase" className="inline-flex items-center gap-2 bg-brand hover:bg-brand-400 text-ink-950 font-bold px-8 py-3.5 rounded-full transition-colors shadow-brandGlow">
+                            {t.hero.cta}
+                        </a>
+                        <a href="https://panel.my-rm.com" target="_blank" rel="noopener noreferrer"
+                           className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-8 py-3.5 rounded-full transition-colors backdrop-blur-sm">
+                            {accountCopy[locale].robotMasterPanel}
+                        </a>
+                    </div>
                 </div>
             </div>
 

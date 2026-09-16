@@ -5,13 +5,14 @@ import type {ReactNode} from 'react';
 
 import {Provider as ReduxProvider} from 'react-redux';
 import type {ThemeConfig} from 'antd';
-import {ConfigProvider, theme as antdThemeApi} from 'antd';
+import {App as AntdApp, ConfigProvider, theme as antdThemeApi} from 'antd';
 import faIR from 'antd/locale/fa_IR';
 import enUS from 'antd/locale/en_US';
 import {store} from '@/store/store';
 import {ThemeProvider, useTheme} from './context/ThemeContext';
 import {LanguageProvider, useLanguage} from './context/LanguageContext';
 import CartPersistence from '@/components/CartPersistence';
+import {AuthProvider} from './context/AuthContext';
 
 function AntdBridge({children}: {children: ReactNode}) {
     const {theme} = useTheme();
@@ -43,7 +44,7 @@ function AntdBridge({children}: {children: ReactNode}) {
 
     return (
         <ConfigProvider direction={dir} locale={locale === 'fa' ? faIR : enUS} theme={antdTheme}>
-            {children}
+            <AntdApp>{children}</AntdApp>
         </ConfigProvider>
     );
 }
@@ -54,7 +55,9 @@ export default function Providers({children}: {children: ReactNode}) {
             <CartPersistence/>
             <ThemeProvider>
                 <LanguageProvider>
-                    <AntdBridge>{children}</AntdBridge>
+                    <AntdBridge>
+                        <AuthProvider>{children}</AuthProvider>
+                    </AntdBridge>
                 </LanguageProvider>
             </ThemeProvider>
         </ReduxProvider>

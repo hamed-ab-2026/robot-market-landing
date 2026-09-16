@@ -4,8 +4,8 @@
 import type {Machine} from '@/types/domain';
 import type {MouseEvent} from 'react';
 import {useRef} from 'react';
-import Link from 'next/link';
 import QuantityControl from './QuantityControl';
+import ProtectedLink from './auth/ProtectedLink';
 import {commerceCopy} from '@/data/commerce';
 import {useLanguage} from '@/app/context/LanguageContext';
 import FloatingItems from './FloatingItems';
@@ -89,9 +89,9 @@ export default function VendingCard({machine}: {machine: Machine}) {
 
                     <div className="flex flex-wrap  items-center gap-2 mt-2 ">
                         <QuantityControl product={machine}/>
-                        <Link href={`/products/${machine.id}`} className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400">
+                        <ProtectedLink href={`/products/${machine.id}`} className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400">
                             {commerceCopy[locale].details}
-                        </Link>
+                        </ProtectedLink>
                     </div>
                 </div>
             </div>

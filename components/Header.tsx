@@ -12,6 +12,9 @@ import {useAppSelector} from '@/store/hooks';
 import {selectCartCount} from '@/store/cartSlice';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {commerceCopy} from '@/data/commerce';
+import {accountCopy} from '@/data/account';
+import {useAuth} from '@/app/context/AuthContext';
+import ProtectedLink from './auth/ProtectedLink';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 
@@ -19,6 +22,8 @@ export default function Header() {
     const pathname = usePathname();
     const cartCount = useAppSelector(selectCartCount);
     const {t, locale} = useLanguage();
+    const auth = useAuth();
+    const account = accountCopy[locale];
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -28,6 +33,9 @@ export default function Header() {
         {href: '/#about', label: t.nav.about},
         {href: '/#locations', label: t.nav.locations},
     ];
+    const accountLabel = auth.session?.profile.firstName
+        ? `${auth.session.profile.firstName} ${auth.session.profile.lastName}`.trim()
+        : auth.session?.profile.phone || account.login;
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 24);
@@ -70,21 +78,17 @@ export default function Header() {
                         <ThemeToggle/>
                     </div>
 
-                    <Button
-                        className="hidden sm:inline-flex"
-                        icon={<UserOutlined/>}
-                        href="https://panel.my-rm.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {t.nav.login}
-                    </Button>
+                    {auth.isAuthenticated ? (
+                        <Button className="hidden sm:inline-flex" icon={<UserOutlined/>} href="/dashboard">{accountLabel}</Button>
+                    ) : (
+                        <Button className="hidden sm:inline-flex" icon={<UserOutlined/>} onClick={() => auth.openLogin()}>{account.login}</Button>
+                    )}
 
                     <Badge count={cartCount} size="small" offset={[-2, 2]}>
-                        <Link href="/cart" onClick={() => setMobileOpen(false)} aria-label={t.cart.title}
+                        <ProtectedLink href="/cart" onClick={() => setMobileOpen(false)}
                               className="w-11 h-11 rounded-full border border-subtle bg-elevated inline-flex items-center justify-center text-xl text-primary hover:text-brand-400">
                             <ShoppingCartOutlined/>
-                        </Link>
+                        </ProtectedLink>
                     </Badge>
 
                     <button
@@ -113,16 +117,11 @@ export default function Header() {
                     <div className="flex items-center gap-3 pt-2 border-t border-subtle">
                         <LanguageToggle/>
                         <ThemeToggle/>
-                        <Button
-                            icon={<UserOutlined/>}
-                            className="flex-1"
-                            href="https://panel.my-rm.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => setMobileOpen(false)}
-                        >
-                            {t.nav.login}
-                        </Button>
+                        {auth.isAuthenticated ? (
+                            <Button icon={<UserOutlined/>} className="flex-1" href="/dashboard" onClick={() => setMobileOpen(false)}>{accountLabel}</Button>
+                        ) : (
+                            <Button icon={<UserOutlined/>} className="flex-1" onClick={() => {setMobileOpen(false); auth.openLogin();}}>{account.login}</Button>
+                        )}
                     </div>
                 </nav>
             )}

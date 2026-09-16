@@ -4,20 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add cart and product pages, quantity controls, and first-visit development notice">
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add customer authentication and order dashboard">
+      <change afterPath="$PROJECT_DIR$/app/context/AuthContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/orders/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/orders/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/profile/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/AuthModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/ProtectedLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/ProtectedPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dashboard/DashboardShell.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dashboard/InvoiceDocument.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dashboard/OrderCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dashboard/OrderStatusTag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/account.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/invoice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/orders.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/account.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/cart/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/products/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/providers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MobileShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileShowcase.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ShowcaseSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ShowcaseSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/commerce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/commerce.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/domain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/domain.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/QuantityControl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/QuantityControl.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/VendingCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VendingCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -540,6 +558,7 @@
     <MESSAGE value="refactor: remove disabled home sections and their unused assets" />
     <MESSAGE value="refactor: migrate project to TypeScript and translate comments to English" />
     <MESSAGE value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
+    <MESSAGE value="feat: add customer authentication and order dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add customer authentication and order dashboard" />
   </component>
 </project>

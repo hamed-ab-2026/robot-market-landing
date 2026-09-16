@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {content} from '@/data/content';
 import ProductDetails from '@/components/ProductDetails';
+import ProtectedPage from '@/components/auth/ProtectedPage';
 
 type Props = { params: { id: string } };
 
@@ -17,5 +18,5 @@ export function generateMetadata({params}: Props): Metadata {
 
 export default function ProductPage({params}: Props) {
     if (!content.fa.machines.some(machine => machine.id === params.id)) notFound();
-    return <ProductDetails id={params.id}/>;
+    return <ProtectedPage><ProductDetails id={params.id}/></ProtectedPage>;
 }
