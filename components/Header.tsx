@@ -76,30 +76,29 @@ export default function Header() {
                         <LanguageToggle />
                         <ThemeToggle />
                     </div>
-                    {/*FAZ1*/}
-                    {/*{auth.isAuthenticated ? (*/}
-                    {/*    <Button className="hidden sm:inline-flex" icon={<UserOutlined />} href="/dashboard">*/}
-                    {/*        {accountLabel}*/}
-                    {/*    </Button>*/}
-                    {/*) : (*/}
-                    {/*    <Button*/}
-                    {/*        className="hidden sm:inline-flex"*/}
-                    {/*        icon={<UserOutlined />}*/}
-                    {/*        onClick={() => auth.openLogin()}*/}
-                    {/*    >*/}
-                    {/*        {account.login}*/}
-                    {/*    </Button>*/}
-                    {/*)}*/}
+                    {auth.isAuthenticated ? (
+                        <Button className="hidden sm:inline-flex" icon={<UserOutlined />} href="/dashboard">
+                            {accountLabel}
+                        </Button>
+                    ) : (
+                        <Button
+                            className="hidden sm:inline-flex"
+                            icon={<UserOutlined />}
+                            onClick={() => auth.openLogin()}
+                        >
+                            {account.login}
+                        </Button>
+                    )}
 
-                    {/*<Badge count={cartCount} size="small" offset={[-2, 2]}>*/}
-                    {/*    <ProtectedLink*/}
-                    {/*        href="/cart"*/}
-                    {/*        onClick={() => setMobileOpen(false)}*/}
-                    {/*        className="w-11 h-11 rounded-full border border-subtle bg-elevated inline-flex items-center justify-center text-xl text-primary hover:text-brand-400"*/}
-                    {/*    >*/}
-                    {/*        <ShoppingCartOutlined />*/}
-                    {/*    </ProtectedLink>*/}
-                    {/*</Badge>*/}
+                    <Badge count={cartCount} size="small" offset={[-2, 2]}>
+                        <ProtectedLink
+                            href="/cart"
+                            onClick={() => setMobileOpen(false)}
+                            className="w-11 h-11 rounded-full border border-subtle bg-elevated inline-flex items-center justify-center text-xl text-primary hover:text-brand-400"
+                        >
+                            <ShoppingCartOutlined />
+                        </ProtectedLink>
+                    </Badge>
 
                     <button
                         className="xl:hidden text-brand-400 text-2xl"
@@ -126,28 +125,27 @@ export default function Header() {
                     <div className="flex items-center gap-3 pt-2 border-t border-subtle">
                         <LanguageToggle />
                         <ThemeToggle />
-                        {/*FAZ1*/}
-                        {/*{auth.isAuthenticated ? (*/}
-                        {/*    <Button*/}
-                        {/*        icon={<UserOutlined />}*/}
-                        {/*        className="flex-1"*/}
-                        {/*        href="/dashboard"*/}
-                        {/*        onClick={() => setMobileOpen(false)}*/}
-                        {/*    >*/}
-                        {/*        {accountLabel}*/}
-                        {/*    </Button>*/}
-                        {/*) : (*/}
-                        {/*    <Button*/}
-                        {/*        icon={<UserOutlined />}*/}
-                        {/*        className="flex-1"*/}
-                        {/*        onClick={() => {*/}
-                        {/*            setMobileOpen(false);*/}
-                        {/*            auth.openLogin();*/}
-                        {/*        }}*/}
-                        {/*    >*/}
-                        {/*        {account.login}*/}
-                        {/*    </Button>*/}
-                        {/*)}*/}
+                        {auth.isAuthenticated ? (
+                            <Button
+                                icon={<UserOutlined />}
+                                className="flex-1"
+                                href="/dashboard"
+                                onClick={() => setMobileOpen(false)}
+                            >
+                                {accountLabel}
+                            </Button>
+                        ) : (
+                            <Button
+                                icon={<UserOutlined />}
+                                className="flex-1"
+                                onClick={() => {
+                                    setMobileOpen(false);
+                                    auth.openLogin();
+                                }}
+                            >
+                                {account.login}
+                            </Button>
+                        )}
                     </div>
                 </nav>
             )}

@@ -77,16 +77,15 @@ export default function ProductsPage() {
                             </h2>
                             <p className="text-secondary text-sm leading-7 mt-3 mb-5">{machine.description}</p>
                             <p className="text-primary text-lg font-bold mt-auto mb-4">{machine.priceLabel}</p>
-                            {/*FAZ1*/}
-                            {/*<div className="flex flex-wrap items-center justify-between gap-3">*/}
-                            {/*    <QuantityControl product={machine} />*/}
-                            {/*    <Link*/}
-                            {/*        href={`/products/${machine.id}`}*/}
-                            {/*        className="text-brand-400 text-sm hover:underline"*/}
-                            {/*    >*/}
-                            {/*        {copy.details}*/}
-                            {/*    </Link>*/}
-                            {/*</div>*/}
+                            <div className="flex flex-wrap items-center justify-between gap-3">
+                                <QuantityControl product={machine} />
+                                <Link
+                                    href={`/products/${machine.id}`}
+                                    className="text-brand-400 text-sm hover:underline"
+                                >
+                                    {copy.details}
+                                </Link>
+                            </div>
                         </article>
                     ))}
                 </div>

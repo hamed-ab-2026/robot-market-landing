@@ -86,16 +86,15 @@ export default function VendingCard({machine}: {machine: Machine}) {
 
                     <p className="text-xl md:text-2xl font-bold text-primary mt-2">{machine.priceLabel}</p>
 
-                    {/*FAZ1*/}
-                    {/*<div className="flex flex-wrap  items-center gap-2 mt-2 ">*/}
-                    {/*    <QuantityControl product={machine} />*/}
-                    {/*    <ProtectedLink*/}
-                    {/*        href={`/products/${machine.id}`}*/}
-                    {/*        className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400"*/}
-                    {/*    >*/}
-                    {/*        {commerceCopy[locale].details}*/}
-                    {/*    </ProtectedLink>*/}
-                    {/*</div>*/}
+                    <div className="flex flex-wrap  items-center gap-2 mt-2 ">
+                        <QuantityControl product={machine} />
+                        <ProtectedLink
+                            href={`/products/${machine.id}`}
+                            className="px-5 py-3 rounded-xl border border-subtle text-primary hover:text-brand-400"
+                        >
+                            {commerceCopy[locale].details}
+                        </ProtectedLink>
+                    </div>
                 </div>
             </div>
         </div>
