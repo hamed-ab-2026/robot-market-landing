@@ -1,0 +1,246 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"bb7b50a5-be9c-4cd7-a05b-979f0e91b173\" name=\"Changes\" comment=\"FAZ1\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/components/Header.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/Header.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/components/ProductsPage.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/ProductsPage.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/components/VendingCard.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/VendingCard.tsx\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"develop\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"JsbtTreeLayoutManager\">\n    <layout place=\"tools.popupnpm\">\n      <scroll-view-position x=\"0\" y=\"0\" />\n    </layout>\n  </component>\n  <component name=\"NextEditCompletionFeaturesState\">\n    <decayedCancelled>\n      <entry key=\"MS100\" value=\"1.3126050306930988\" />\n      <entry key=\"MS500\" value=\"2.4174321743679275\" />\n      <entry key=\"S2\" value=\"5.760663204458928\" />\n      <entry key=\"S5\" value=\"8.718038936163953\" />\n      <entry key=\"S10\" value=\"10.899458978485994\" />\n      <entry key=\"S30\" value=\"13.71871166850881\" />\n      <entry key=\"S60\" value=\"15.02375410553951\" />\n      <entry key=\"M2\" value=\"16.109223757209108\" />\n      <entry key=\"M5\" value=\"17.262032001622917\" />\n      <entry key=\"M10\" value=\"18.096933797244933\" />\n      <entry key=\"M15\" value=\"18.547284873299162\" />\n      <entry key=\"M30\" value=\"19.157355075940966\" />\n      <entry key=\"H1\" value=\"19.796647030974285\" />\n      <entry key=\"H2\" value=\"23.218554040560207\" />\n      <entry key=\"H4\" value=\"32.8142283509826\" />\n      <entry key=\"D1\" value=\"59.189138593091656\" />\n      <entry key=\"W1\" value=\"67.46023957519546\" />\n    </decayedCancelled>\n    <decayedSelected>\n      <entry key=\"MS100\" value=\"0.0\" />\n      <entry key=\"MS500\" value=\"1.869983064070256E-97\" />\n      <entry key=\"S2\" value=\"6.575963868505937E-25\" />\n      <entry key=\"S5\" value=\"2.1241430815719422E-10\" />\n      <entry key=\"S10\" value=\"1.4574440234780689E-5\" />\n      <entry key=\"S30\" value=\"0.02442665292146035\" />\n      <entry key=\"S60\" value=\"0.1562946295843684\" />\n      <entry key=\"M2\" value=\"0.39742024371240164\" />\n      <entry key=\"M5\" value=\"0.7745466510326866\" />\n      <entry key=\"M10\" value=\"1.1215427208277322\" />\n      <entry key=\"M15\" value=\"1.3226852453543323\" />\n      <entry key=\"M30\" value=\"1.602712635647115\" />\n      <entry key=\"H1\" value=\"1.7962338912125444\" />\n      <entry key=\"H2\" value=\"2.046075741152618\" />\n      <entry key=\"H4\" value=\"2.506385567975677\" />\n      <entry key=\"D1\" value=\"3.6098636085065974\" />\n      <entry key=\"W1\" value=\"3.939229387403781\" />\n    </decayedSelected>\n    <decayedShown>\n      <entry key=\"MS100\" value=\"1.2352304782530594\" />\n      <entry key=\"MS500\" value=\"2.3878950215944323\" />\n      <entry key=\"S2\" value=\"5.742279038722399\" />\n      <entry key=\"S5\" value=\"8.704662777466437\" />\n      <entry key=\"S10\" value=\"10.885398060710521\" />\n      <entry key=\"S30\" value=\"13.730215833657688\" />\n      <entry key=\"S60\" value=\"15.167062792572892\" />\n      <entry key=\"M2\" value=\"16.49512171474211\" />\n      <entry key=\"M5\" value=\"18.029269951770694\" />\n      <entry key=\"M10\" value=\"19.213852805105926\" />\n      <entry key=\"M15\" value=\"19.866551389806048\" />\n      <entry key=\"M30\" value=\"20.758135824137973\" />\n      <entry key=\"H1\" value=\"21.591838012217227\" />\n      <entry key=\"H2\" value=\"25.264045314155364\" />\n      <entry key=\"H4\" value=\"35.32025579799523\" />\n      <entry key=\"D1\" value=\"62.79891512477701\" />\n      <entry key=\"W1\" value=\"71.3994553401565\" />\n    </decayedShown>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 2\n}</component>\n  <component name=\"ProjectId\" id=\"3HDEfy1HyzjDcELlwvnRRXxPltq\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_MARK_IGNORED_FILES_AS_EXCLUDED\": \"true\",\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\n    \"com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1\": \"true\",\n    \"git-widget-placeholder\": \"Implement\",\n    \"javascript.nodejs.core.library.configured.version\": \"24.20.0\",\n    \"javascript.nodejs.core.library.typings.version\": \"24.13.3\",\n    \"javascript.preferred.runtime.type.id\": \"node\",\n    \"js.debugger.nextJs.config.created.client\": \"true\",\n    \"js.debugger.nextJs.config.created.server\": \"true\",\n    \"junie.onboarding.icon.badge.shown\": \"true\",\n    \"kronk.content.tree.expanded.paths\": \"\",\n    \"last_opened_file_path\": \"/home/hamed/Documents/Projects/GItLabRepo/device_web\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"prettierjs.PrettierConfiguration.Package\": \"/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/prettier\",\n    \"settings.editor.selected.configurable\": \"settings.javascript.prettier\",\n    \"to.speed.mode.migration.done\": \"true\",\n    \"ts.external.directory.path\": \"/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"D:\\Project\\GitHubRepo\\robot-market-landing\\public\\images\\icons\" />\n      <recent name=\"D:\\Project\\GitHubRepo\\robot-market-landing\\public\\images\" />\n      <recent name=\"D:\\Project\\GitHubRepo\\robot-market-landing\\app\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"npm.Next.js: server-side\">\n    <configuration name=\"Next.js: debug client-side\" type=\"JavascriptDebugType\" uri=\"http://localhost:3000/\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Next.js: server-side\" type=\"js.build_tools.npm\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"dev\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.259\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"bb7b50a5-be9c-4cd7-a05b-979f0e91b173\" name=\"Changes\" comment=\"\" />\n      <created>1785394346997</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1785394346997</updated>\n      <workItem from=\"1785394348169\" duration=\"14851000\" />\n      <workItem from=\"1785556493808\" duration=\"2292000\" />\n      <workItem from=\"1785581294427\" duration=\"1693000\" />\n      <workItem from=\"1785583200703\" duration=\"181000\" />\n      <workItem from=\"1785583393176\" duration=\"49000\" />\n      <workItem from=\"1785583486761\" duration=\"9000\" />\n      <workItem from=\"1785583517424\" duration=\"145000\" />\n      <workItem from=\"1785645096071\" duration=\"26000\" />\n      <workItem from=\"1785646314677\" duration=\"16621000\" />\n      <workItem from=\"1785730130350\" duration=\"12049000\" />\n      <workItem from=\"1785757166936\" duration=\"5000\" />\n      <workItem from=\"1785901279535\" duration=\"17323000\" />\n      <workItem from=\"1785988592310\" duration=\"763000\" />\n      <workItem from=\"1785993398943\" duration=\"489000\" />\n      <workItem from=\"1785995385816\" duration=\"1586000\" />\n      <workItem from=\"1785999660169\" duration=\"117000\" />\n      <workItem from=\"1785999908774\" duration=\"697000\" />\n      <workItem from=\"1786434051896\" duration=\"714000\" />\n      <workItem from=\"1787030163530\" duration=\"2042000\" />\n      <workItem from=\"1787052515900\" duration=\"43000\" />\n      <workItem from=\"1787980069071\" duration=\"1369000\" />\n      <workItem from=\"1787993488084\" duration=\"706000\" />\n      <workItem from=\"1788148958104\" duration=\"1576000\" />\n      <workItem from=\"1788244010046\" duration=\"3900000\" />\n      <workItem from=\"1788412255571\" duration=\"40000\" />\n      <workItem from=\"1788412435362\" duration=\"4637000\" />\n      <workItem from=\"1788423298952\" duration=\"3393000\" />\n      <workItem from=\"1788580635152\" duration=\"776000\" />\n      <workItem from=\"1788592387411\" duration=\"8000\" />\n      <workItem from=\"1788592424522\" duration=\"13793000\" />\n      <workItem from=\"1788670304118\" duration=\"1889000\" />\n      <workItem from=\"1788772211468\" duration=\"3288000\" />\n      <workItem from=\"1788845304938\" duration=\"5986000\" />\n      <workItem from=\"1789189667293\" duration=\"1409000\" />\n      <workItem from=\"1789191385769\" duration=\"3038000\" />\n      <workItem from=\"1789200888982\" duration=\"408000\" />\n      <workItem from=\"1789202103910\" duration=\"646000\" />\n      <workItem from=\"1789202776318\" duration=\"599000\" />\n      <workItem from=\"1789207496509\" duration=\"153000\" />\n      <workItem from=\"1789278993260\" duration=\"734000\" />\n      <workItem from=\"1789360783891\" duration=\"48000\" />\n      <workItem from=\"1789361888102\" duration=\"68000\" />\n      <workItem from=\"1789362025574\" duration=\"23000\" />\n      <workItem from=\"1789362137185\" duration=\"377000\" />\n      <workItem from=\"1789362644534\" duration=\"6512000\" />\n      <workItem from=\"1789383269194\" duration=\"2337000\" />\n      <workItem from=\"1789445417779\" duration=\"6709000\" />\n      <workItem from=\"1789456504019\" duration=\"1703000\" />\n      <workItem from=\"1789618327035\" duration=\"326000\" />\n      <workItem from=\"1789618878095\" duration=\"14000\" />\n      <workItem from=\"1789618912128\" duration=\"2222000\" />\n      <workItem from=\"1789622601965\" duration=\"2006000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785394671723</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785394671723</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785581338739</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785581338740</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785582935941</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785582935941</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785646368102</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785646368102</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785646373594</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785646373594</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785661529816</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785661529816</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785661545228</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785661545228</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785670271325</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785670271325</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"ui : change the position of header in Hero Section\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785733806431</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785733806431</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785735982915</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785735982915</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785744250045</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785744250045</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785745317460</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785745317460</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785745546500</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785745546500</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785747909966</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785747909967</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785754086526</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785754086526</updated>\n    </task>\n    <task id=\"LOCAL-00016\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785754201946</created>\n      <option name=\"number\" value=\"00016\" />\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785754201946</updated>\n    </task>\n    <task id=\"LOCAL-00017\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785755999255</created>\n      <option name=\"number\" value=\"00017\" />\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785755999255</updated>\n    </task>\n    <task id=\"LOCAL-00018\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785914887554</created>\n      <option name=\"number\" value=\"00018\" />\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785914887554</updated>\n    </task>\n    <task id=\"LOCAL-00019\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785915840468</created>\n      <option name=\"number\" value=\"00019\" />\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785915840468</updated>\n    </task>\n    <task id=\"LOCAL-00020\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785918100372</created>\n      <option name=\"number\" value=\"00020\" />\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785918100372</updated>\n    </task>\n    <task id=\"LOCAL-00021\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785919055708</created>\n      <option name=\"number\" value=\"00021\" />\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785919055708</updated>\n    </task>\n    <task id=\"LOCAL-00022\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1785988898095</created>\n      <option name=\"number\" value=\"00022\" />\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1785988898096</updated>\n    </task>\n    <task id=\"LOCAL-00023\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1787052543722</created>\n      <option name=\"number\" value=\"00023\" />\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1787052543722</updated>\n    </task>\n    <task id=\"LOCAL-00024\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1788245193637</created>\n      <option name=\"number\" value=\"00024\" />\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1788245193637</updated>\n    </task>\n    <task id=\"LOCAL-00025\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1788418070013</created>\n      <option name=\"number\" value=\"00025\" />\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1788418070013</updated>\n    </task>\n    <task id=\"LOCAL-00026\" summary=\"feat:dockerized &amp; test actions add\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1788601868240</created>\n      <option name=\"number\" value=\"00026\" />\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1788601868240</updated>\n    </task>\n    <task id=\"LOCAL-00027\" summary=\"initial new branch\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1788682674027</created>\n      <option name=\"number\" value=\"00027\" />\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1788682674027</updated>\n    </task>\n    <task id=\"LOCAL-00028\" summary=\"initial new branch\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1788682678051</created>\n      <option name=\"number\" value=\"00028\" />\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1788682678051</updated>\n    </task>\n    <task id=\"LOCAL-00029\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789191804591</created>\n      <option name=\"number\" value=\"00029\" />\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789191804591</updated>\n    </task>\n    <task id=\"LOCAL-00030\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789362384351</created>\n      <option name=\"number\" value=\"00030\" />\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789362384351</updated>\n    </task>\n    <task id=\"LOCAL-00031\" summary=\"feat: add landing page device images and fix machine branding\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789367962553</created>\n      <option name=\"number\" value=\"00031\" />\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789367962553</updated>\n    </task>\n    <task id=\"LOCAL-00032\" summary=\"feat: add landing page device images and fix machine branding\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789368598921</created>\n      <option name=\"number\" value=\"00032\" />\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789368598921</updated>\n    </task>\n    <task id=\"LOCAL-00033\" summary=\"feat: add landing page device images and fix machine branding\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789369799782</created>\n      <option name=\"number\" value=\"00033\" />\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789369799782</updated>\n    </task>\n    <task id=\"LOCAL-00034\" summary=\"refactor: remove disabled home sections and their unused assets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789384147873</created>\n      <option name=\"number\" value=\"00034\" />\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789384147873</updated>\n    </task>\n    <task id=\"LOCAL-00035\" summary=\"refactor: migrate project to TypeScript and translate comments to English\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789385239281</created>\n      <option name=\"number\" value=\"00035\" />\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789385239281</updated>\n    </task>\n    <task id=\"LOCAL-00036\" summary=\"feat: add cart and product pages, quantity controls, and first-visit development notice\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789449280006</created>\n      <option name=\"number\" value=\"00036\" />\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789449280006</updated>\n    </task>\n    <task id=\"LOCAL-00037\" summary=\"feat: add cart and product pages, quantity controls, and first-visit development notice\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789451442320</created>\n      <option name=\"number\" value=\"00037\" />\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789451442320</updated>\n    </task>\n    <task id=\"LOCAL-00038\" summary=\"feat: add customer authentication and order dashboard\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789537009629</created>\n      <option name=\"number\" value=\"00038\" />\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789537009629</updated>\n    </task>\n    <task id=\"LOCAL-00039\" summary=\"chore: configure prettier for consistent WebStorm formatting\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789555937414</created>\n      <option name=\"number\" value=\"00039\" />\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789555937414</updated>\n    </task>\n    <task id=\"LOCAL-00040\" summary=\"FAZ1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789558460777</created>\n      <option name=\"number\" value=\"00040\" />\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789558460777</updated>\n    </task>\n    <task id=\"LOCAL-00041\" summary=\"FAZ1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1789619546219</created>\n      <option name=\"number\" value=\"00041\" />\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1789619546219</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"42\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n    <option name=\"exactExcludedFiles\">\n      <list>\n        <option value=\"$PROJECT_DIR$/components/AboutSection.jsx\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"com.intellij.fileTypeFactory\" implementationName=\"next.config.js\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"ui : change the position of header in Hero Section\" />\n    <MESSAGE value=\"feat:dockerized &amp; test actions add\" />\n    <MESSAGE value=\"feat:dockerized &amp; test actions added\" />\n    <MESSAGE value=\"initial new branch\" />\n    <MESSAGE value=\"update\" />\n    <MESSAGE value=\"feat: add landing page device images and fix machine branding\" />\n    <MESSAGE value=\"refactor: remove disabled home sections and their unused assets\" />\n    <MESSAGE value=\"refactor: migrate project to TypeScript and translate comments to English\" />\n    <MESSAGE value=\"feat: add cart and product pages, quantity controls, and first-visit development notice\" />\n    <MESSAGE value=\"feat: add customer authentication and order dashboard\" />\n    <MESSAGE value=\"chore: format project automatically before starting dev server\" />\n    <MESSAGE value=\"chore: configure prettier for consistent WebStorm formatting\" />\n    <MESSAGE value=\"FAZ1\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"FAZ1\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision be3d57cc6879896bb6aabaa099007b1c4d3dcd3f)
++++ b/.idea/workspace.xml	(date 1789898153093)
+@@ -4,11 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="FAZ1">
++    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="feat: add customer authentication and order dashboard">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/ProductsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductsPage.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/VendingCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VendingCard.tsx" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,61 +27,61 @@
+   </component>
+   <component name="NextEditCompletionFeaturesState">
+     <decayedCancelled>
+-      <entry key="MS100" value="1.3126050306930988" />
+-      <entry key="MS500" value="2.4174321743679275" />
+-      <entry key="S2" value="5.760663204458928" />
+-      <entry key="S5" value="8.718038936163953" />
+-      <entry key="S10" value="10.899458978485994" />
+-      <entry key="S30" value="13.71871166850881" />
+-      <entry key="S60" value="15.02375410553951" />
+-      <entry key="M2" value="16.109223757209108" />
+-      <entry key="M5" value="17.262032001622917" />
+-      <entry key="M10" value="18.096933797244933" />
+-      <entry key="M15" value="18.547284873299162" />
+-      <entry key="M30" value="19.157355075940966" />
+-      <entry key="H1" value="19.796647030974285" />
+-      <entry key="H2" value="23.218554040560207" />
+-      <entry key="H4" value="32.8142283509826" />
+-      <entry key="D1" value="59.189138593091656" />
+-      <entry key="W1" value="67.46023957519546" />
++      <entry key="MS100" value="1.0000000000000002" />
++      <entry key="MS500" value="1.000775814843844" />
++      <entry key="S2" value="1.1668935379119885" />
++      <entry key="S5" value="1.4886251406822344" />
++      <entry key="S10" value="1.6990172677997548" />
++      <entry key="S30" value="1.8874882967390423" />
++      <entry key="S60" value="1.9420659726043832" />
++      <entry key="M2" value="1.9706008309040355" />
++      <entry key="M5" value="1.988851555999286" />
++      <entry key="M10" value="2.110649399834542" />
++      <entry key="M15" value="2.638236351226052" />
++      <entry key="M30" value="5.562794288934216" />
++      <entry key="H1" value="10.538660949345124" />
++      <entry key="H2" value="17.2491401482206" />
++      <entry key="H4" value="28.59318216495192" />
++      <entry key="D1" value="59.15142543494043" />
++      <entry key="W1" value="69.12345788269783" />
+     </decayedCancelled>
+     <decayedSelected>
+       <entry key="MS100" value="0.0" />
+-      <entry key="MS500" value="1.869983064070256E-97" />
+-      <entry key="S2" value="6.575963868505937E-25" />
+-      <entry key="S5" value="2.1241430815719422E-10" />
+-      <entry key="S10" value="1.4574440234780689E-5" />
+-      <entry key="S30" value="0.02442665292146035" />
+-      <entry key="S60" value="0.1562946295843684" />
+-      <entry key="M2" value="0.39742024371240164" />
+-      <entry key="M5" value="0.7745466510326866" />
+-      <entry key="M10" value="1.1215427208277322" />
+-      <entry key="M15" value="1.3226852453543323" />
+-      <entry key="M30" value="1.602712635647115" />
+-      <entry key="H1" value="1.7962338912125444" />
+-      <entry key="H2" value="2.046075741152618" />
+-      <entry key="H4" value="2.506385567975677" />
+-      <entry key="D1" value="3.6098636085065974" />
+-      <entry key="W1" value="3.939229387403781" />
++      <entry key="MS500" value="0.0" />
++      <entry key="S2" value="0.0" />
++      <entry key="S5" value="2.619642431377365E-273" />
++      <entry key="S10" value="5.118244260854852E-137" />
++      <entry key="S30" value="3.712846572316987E-46" />
++      <entry key="S60" value="1.9269283941045388E-23" />
++      <entry key="M2" value="4.412764449555908E-12" />
++      <entry key="M5" value="3.215376879785663E-5" />
++      <entry key="M10" value="0.00722616665032872" />
++      <entry key="M15" value="0.04579850241333392" />
++      <entry key="M30" value="0.29823117864679227" />
++      <entry key="H1" value="0.7748391898721907" />
++      <entry key="H2" value="1.3438353225788" />
++      <entry key="H4" value="2.0312344525864092" />
++      <entry key="D1" value="3.4855888320289132" />
++      <entry key="W1" value="3.919563921850723" />
+     </decayedSelected>
+     <decayedShown>
+-      <entry key="MS100" value="1.2352304782530594" />
+-      <entry key="MS500" value="2.3878950215944323" />
+-      <entry key="S2" value="5.742279038722399" />
+-      <entry key="S5" value="8.704662777466437" />
+-      <entry key="S10" value="10.885398060710521" />
+-      <entry key="S30" value="13.730215833657688" />
+-      <entry key="S60" value="15.167062792572892" />
+-      <entry key="M2" value="16.49512171474211" />
+-      <entry key="M5" value="18.029269951770694" />
+-      <entry key="M10" value="19.213852805105926" />
+-      <entry key="M15" value="19.866551389806048" />
+-      <entry key="M30" value="20.758135824137973" />
+-      <entry key="H1" value="21.591838012217227" />
+-      <entry key="H2" value="25.264045314155364" />
+-      <entry key="H4" value="35.32025579799523" />
+-      <entry key="D1" value="62.79891512477701" />
+-      <entry key="W1" value="71.3994553401565" />
++      <entry key="MS100" value="0.8827029962906551" />
++      <entry key="MS500" value="0.976084357222611" />
++      <entry key="S2" value="1.1580919826642495" />
++      <entry key="S5" value="1.4830942074296074" />
++      <entry key="S10" value="1.6955934294649164" />
++      <entry key="S30" value="1.886150234414038" />
++      <entry key="S60" value="1.9413684345663718" />
++      <entry key="M2" value="1.970244608561024" />
++      <entry key="M5" value="1.98873908529269" />
++      <entry key="M10" value="2.117773306060455" />
++      <entry key="M15" value="2.683868096801727" />
++      <entry key="M30" value="5.860641758339947" />
++      <entry key="H1" value="11.31303813901656" />
++      <entry key="H2" value="18.59258553741138" />
++      <entry key="H4" value="30.624123355818067" />
++      <entry key="D1" value="62.63692968248885" />
++      <entry key="W1" value="73.0430081779094" />
+     </decayedShown>
+   </component>
+   <component name="ProjectColorInfo">{
+@@ -96,37 +93,37 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+-    "codeWithMe.voiceChat.enabledByDefault": "false",
+-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+-    "git-widget-placeholder": "Implement",
+-    "javascript.nodejs.core.library.configured.version": "24.20.0",
+-    "javascript.nodejs.core.library.typings.version": "24.13.3",
+-    "javascript.preferred.runtime.type.id": "node",
+-    "js.debugger.nextJs.config.created.client": "true",
+-    "js.debugger.nextJs.config.created.server": "true",
+-    "junie.onboarding.icon.badge.shown": "true",
+-    "kronk.content.tree.expanded.paths": "",
+-    "last_opened_file_path": "/home/hamed/Documents/Projects/GItLabRepo/device_web",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "prettierjs.PrettierConfiguration.Package": "/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/prettier",
+-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+-    "to.speed.mode.migration.done": "true",
+-    "ts.external.directory.path": "/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
++    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
++    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;Implement&quot;,
++    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
++    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
++    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
++    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
++    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
++    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
++    &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/hamed/Documents/Projects/GItLabRepo/device_web&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/prettier&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
++    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="D:\Project\GitHubRepo\robot-market-landing\public\images\icons" />
+@@ -214,7 +211,10 @@
+       <workItem from="1789618327035" duration="326000" />
+       <workItem from="1789618878095" duration="14000" />
+       <workItem from="1789618912128" duration="2222000" />
+-      <workItem from="1789622601965" duration="2006000" />
++      <workItem from="1789622601965" duration="5275000" />
++      <workItem from="1789791697163" duration="3373000" />
++      <workItem from="1789877583932" duration="1141000" />
++      <workItem from="1789878790270" duration="4498000" />
+     </task>
+     <task id="LOCAL-00001" summary="update">
+       <option name="closed" value="true" />
+@@ -544,7 +544,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1789619546219</updated>
+     </task>
+-    <option name="localTasksCounter" value="42" />
++    <task id="LOCAL-00042" summary="feat: add customer authentication and order dashboard">
++      <option name="closed" value="true" />
++      <created>1789632107250</created>
++      <option name="number" value="00042" />
++      <option name="presentableId" value="LOCAL-00042" />
++      <option name="project" value="LOCAL" />
++      <updated>1789632107250</updated>
++    </task>
++    <option name="localTasksCounter" value="43" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -568,10 +576,10 @@
+     <MESSAGE value="refactor: remove disabled home sections and their unused assets" />
+     <MESSAGE value="refactor: migrate project to TypeScript and translate comments to English" />
+     <MESSAGE value="feat: add cart and product pages, quantity controls, and first-visit development notice" />
+-    <MESSAGE value="feat: add customer authentication and order dashboard" />
+     <MESSAGE value="chore: format project automatically before starting dev server" />
+     <MESSAGE value="chore: configure prettier for consistent WebStorm formatting" />
+     <MESSAGE value="FAZ1" />
+-    <option name="LAST_COMMIT_MESSAGE" value="FAZ1" />
++    <MESSAGE value="feat: add customer authentication and order dashboard" />
++    <option name="LAST_COMMIT_MESSAGE" value="feat: add customer authentication and order dashboard" />
+   </component>
+ </project>
+\ No newline at end of file

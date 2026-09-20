@@ -66,9 +66,13 @@ export default function ProductsPage() {
                             key={machine.id}
                             className="flex flex-col rounded-3xl border border-subtle bg-surface p-5"
                         >
-                            <Link href={`/products/${machine.id}`} className="rounded-2xl bg-page p-5">
+                            {/*<Link href={`/products/${machine.id}`} className="rounded-2xl bg-page p-5">*/}
+                            {/*    <img src={machine.image} alt={machine.name} className="w-full h-60 object-contain" />*/}
+                            {/*</Link>*/}
+
+                            <div className="rounded-2xl bg-page p-5">
                                 <img src={machine.image} alt={machine.name} className="w-full h-60 object-contain" />
-                            </Link>
+                            </div>
                             <span className="text-brand-400 text-xs mt-5">
                                 {productCategories.find(item => item.id === machine.category)?.label[locale]}
                             </span>
