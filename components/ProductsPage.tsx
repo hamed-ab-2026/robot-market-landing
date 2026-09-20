@@ -77,7 +77,8 @@ export default function ProductsPage() {
                                 {productCategories.find(item => item.id === machine.category)?.label[locale]}
                             </span>
                             <h2 className="text-xl font-bold text-primary mt-2">
-                                <Link href={`/products/${machine.id}`}>{machine.name}</Link>
+                                {/*<Link href={`/products/${machine.id}`}>{machine.name}</Link>*/}
+                                <div href={`/products/${machine.id}`}>{machine.name}</div>
                             </h2>
                             <p className="text-secondary text-sm leading-7 mt-3 mb-5">{machine.description}</p>
                             <p className="text-primary text-lg font-bold mt-auto mb-4">{machine.priceLabel}</p>

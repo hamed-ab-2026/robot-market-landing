@@ -28,61 +28,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.028605430515295" />
-      <entry key="MS500" value="2.124649469580447" />
-      <entry key="S2" value="5.757603075779661" />
-      <entry key="S5" value="9.075791406095624" />
-      <entry key="S10" value="11.490304279732543" />
-      <entry key="S30" value="14.544855509715473" />
-      <entry key="S60" value="15.928253142043944" />
-      <entry key="M2" value="17.05794166660894" />
-      <entry key="M5" value="18.240030198039076" />
-      <entry key="M10" value="19.085397144523835" />
-      <entry key="M15" value="19.539401536900623" />
-      <entry key="M30" value="20.15328332293758" />
-      <entry key="H1" value="20.794543104303607" />
-      <entry key="H2" value="24.217320209573487" />
-      <entry key="H4" value="33.81335646745446" />
-      <entry key="D1" value="60.18887647810417" />
-      <entry key="W1" value="68.4601968975454" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000004701758343" />
+      <entry key="S60" value="1.0028638060052324" />
+      <entry key="M2" value="1.228725374867468" />
+      <entry key="M5" value="4.250728076454436" />
+      <entry key="M10" value="9.057099856689712" />
+      <entry key="M15" value="11.99587061191686" />
+      <entry key="M30" value="16.11837076953653" />
+      <entry key="H1" value="19.010632856516875" />
+      <entry key="H2" value="23.538026208971672" />
+      <entry key="H4" value="33.619941709812636" />
+      <entry key="D1" value="60.82950176199853" />
+      <entry key="W1" value="69.40165249199089" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.699625509373026E-98" />
-      <entry key="S2" value="5.430941684423347E-25" />
-      <entry key="S5" value="1.9676599943042008E-10" />
-      <entry key="S10" value="1.4027330445612952E-5" />
-      <entry key="S30" value="0.02411709586160527" />
-      <entry key="S60" value="0.1553011170701436" />
-      <entry key="M2" value="0.3961550964122234" />
-      <entry key="M5" value="0.7735594310297959" />
-      <entry key="M10" value="1.120827746179152" />
-      <entry key="M15" value="1.3221230513291828" />
-      <entry key="M30" value="1.6023719910246246" />
-      <entry key="H1" value="1.7960429930071773" />
-      <entry key="H2" value="2.045967012949897" />
-      <entry key="H4" value="2.5063189725869783" />
-      <entry key="D1" value="3.6098476224764395" />
-      <entry key="W1" value="3.9392268953128196" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="2.3885730499652336E-137" />
+      <entry key="S5" value="2.2452019521541863E-55" />
+      <entry key="S10" value="4.73835620458634E-28" />
+      <entry key="S30" value="7.79607309213201E-10" />
+      <entry key="S60" value="2.7922225225741823E-5" />
+      <entry key="M2" value="0.005311937671232334" />
+      <entry key="M5" value="0.13786333322655445" />
+      <entry key="M10" value="0.4731691462708206" />
+      <entry key="M15" value="0.744029645841161" />
+      <entry key="M30" value="1.2020499827667592" />
+      <entry key="H1" value="1.5555942142762111" />
+      <entry key="H2" value="1.9040941673772573" />
+      <entry key="H4" value="2.417860494585188" />
+      <entry key="D1" value="3.588294005920995" />
+      <entry key="W1" value="3.9358582269860896" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04871208675588815" />
-      <entry key="MS500" value="1.5761328815881446" />
-      <entry key="S2" value="5.568297668845106" />
-      <entry key="S5" value="8.989731845795651" />
-      <entry key="S10" value="11.439232203057065" />
-      <entry key="S30" value="14.54354096178068" />
-      <entry key="S60" value="16.064294199401182" />
-      <entry key="M2" value="17.43942775764285" />
-      <entry key="M5" value="19.00501566584518" />
-      <entry key="M10" value="20.200966633195225" />
-      <entry key="M15" value="20.857682272562908" />
-      <entry key="M30" value="21.753511294575368" />
-      <entry key="H1" value="22.589437021258547" />
-      <entry key="H2" value="26.262649646152585" />
-      <entry key="H4" value="36.319290758304845" />
-      <entry key="D1" value="63.798632595714466" />
-      <entry key="W1" value="72.39940953778996" />
+      <entry key="MS100" value="0.002107867649422708" />
+      <entry key="MS500" value="0.29158734244711687" />
+      <entry key="S2" value="0.7348389482848886" />
+      <entry key="S5" value="0.8840500779329719" />
+      <entry key="S10" value="0.9402393726774964" />
+      <entry key="S30" value="0.9796697229086149" />
+      <entry key="S60" value="0.99267069237379" />
+      <entry key="M2" value="1.2287187163179756" />
+      <entry key="M5" value="4.385011444628511" />
+      <entry key="M10" value="9.52702268872706" />
+      <entry key="M15" value="12.737053539335015" />
+      <entry key="M30" value="17.318470096071508" />
+      <entry key="H1" value="20.565060675354452" />
+      <entry key="H2" value="25.441441430474942" />
+      <entry key="H4" value="36.03738830839267" />
+      <entry key="D1" value="64.41769767739929" />
+      <entry key="W1" value="73.33749545723742" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -94,37 +94,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "develop",
-    "javascript.nodejs.core.library.configured.version": "24.20.0",
-    "javascript.nodejs.core.library.typings.version": "24.13.3",
-    "javascript.preferred.runtime.type.id": "node",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kronk.content.tree.expanded.paths": "",
-    "last_opened_file_path": "/home/hamed/Documents/Projects/GItLabRepo/device_web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.20.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.13.3&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hamed/Documents/Projects/GItLabRepo/device_web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/hamed/Documents/Projects/GIthubRepo/robot-market-landing/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\GitHubRepo\robot-market-landing\public\images\icons" />
