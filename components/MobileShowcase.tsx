@@ -1,21 +1,22 @@
 'use client';
 
-import Link from 'next/link';
+import {PhoneOutlined} from '@ant-design/icons';
 import {featuredMachines} from '@/data/products';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {commerceCopy} from '@/data/commerce';
-import QuantityControl from './QuantityControl';
 
 export default function MobileShowcase() {
     const {t, dir, locale} = useLanguage();
+    const copy = commerceCopy[locale];
+    const contact = t.contactInfo;
 
     return (
         <section id="showcase" className="relative w-full py-8 px-4" dir={dir}>
-            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4">
+            <div className="flex flex-col gap-4 pb-4">
                 {featuredMachines(t.machines).map(machine => (
                     <article
                         key={machine.id}
-                        className="w-[90%] shrink-0 snap-start bg-surface border border-subtle rounded-2xl p-4"
+                        className="w-full bg-surface border border-subtle rounded-2xl p-4"
                     >
                         <div className="flex gap-4 items-center">
                             {/*<Link href={`/products/${machine.id}`} className="flex gap-4 items-center">*/}
@@ -31,11 +32,25 @@ export default function MobileShowcase() {
                         {/* <div className="flex flex-wrap justify-between items-center gap-3">
                             <QuantityControl product={machine} />
                             <Link href={`/products/${machine.id}`} className="text-sm text-brand-400 hover:underline">
-                                {commerceCopy[locale].details}
+                                {copy.details}
                             </Link>
                         </div>*/}
                     </article>
                 ))}
+            </div>
+
+            <div className="mt-3 rounded-2xl border border-subtle bg-elevated p-5 text-center">
+                <h3 className="text-xl font-bold text-primary">{copy.supportOrderTitle}</h3>
+                <p className="mt-3 text-sm leading-7 text-secondary">{copy.supportOrderDescription}</p>
+                <a
+                    href={`tel:${contact.orderPhoneHref}`}
+                    className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand px-5 py-3 font-bold text-ink-950 transition-colors hover:bg-brand-300"
+                    dir="ltr"
+                >
+                    <PhoneOutlined />
+                    <span>{copy.callSupport}</span>
+                    <span>{contact.orderPhone}</span>
+                </a>
             </div>
         </section>
     );
