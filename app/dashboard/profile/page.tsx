@@ -1,11 +1,23 @@
 'use client';
 
 import {useEffect, useState} from 'react';
-import {Alert, App, Button, Form, Input, Radio} from 'antd';
+import {DeleteOutlined, UploadOutlined, UserOutlined} from '@ant-design/icons';
+import {Alert, App, Avatar, Button, Form, Input, Radio, Upload} from 'antd';
+import type {UploadProps} from 'antd';
 import type {CustomerProfile} from '@/types/account';
 import {useAuth} from '@/app/context/AuthContext';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {accountCopy} from '@/data/account';
+
+const MAX_AVATAR_SIZE = 2 * 1024 * 1024;
+
+const fileToDataUrl = (file: File) =>
+    new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(String(reader.result));
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+    });
 
 export default function ProfilePage() {
     const auth = useAuth();
@@ -15,6 +27,24 @@ export default function ProfilePage() {
     const [form] = Form.useForm<CustomerProfile>();
     const [saving, setSaving] = useState(false);
     const customerType = Form.useWatch('type', form);
+    const avatarUrl = Form.useWatch('avatarUrl', form);
+
+    const uploadProps: UploadProps = {
+        accept: 'image/png,image/jpeg,image/webp',
+        maxCount: 1,
+        showUploadList: false,
+        beforeUpload: async file => {
+            const isValidImage = ['image/jpeg', 'image/png', 'image/webp'].includes(file.type);
+            if (!isValidImage || file.size > MAX_AVATAR_SIZE) {
+                message.error(copy.invalidAvatar);
+                return Upload.LIST_IGNORE;
+            }
+
+            form.setFieldsValue({avatarUrl: await fileToDataUrl(file)});
+            return false;
+        },
+    };
+
     useEffect(() => {
         if (auth.session) form.setFieldsValue(auth.session.profile);
     }, [auth.session, form]);
@@ -52,6 +82,27 @@ export default function ProfilePage() {
                             },
                         ]}
                     />
+                </Form.Item>
+                <Form.Item name="avatarUrl" hidden>
+                    <Input />
+                </Form.Item>
+                <Form.Item label={copy.avatar}>
+                    <div className="flex flex-wrap items-center gap-4">
+                        <Avatar size={88} src={avatarUrl} icon={<UserOutlined />} className="bg-primary/10 text-primary" />
+                        <div className="space-y-2">
+                            <div className="flex flex-wrap gap-2">
+                                <Upload {...uploadProps}>
+                                    <Button icon={<UploadOutlined />}>{avatarUrl ? copy.changePhoto : copy.uploadPhoto}</Button>
+                                </Upload>
+                                {avatarUrl && (
+                                    <Button icon={<DeleteOutlined />} onClick={() => form.setFieldsValue({avatarUrl: ''})}>
+                                        {copy.removePhoto}
+                                    </Button>
+                                )}
+                            </div>
+                            <p className="text-xs text-secondary">{copy.avatarHint}</p>
+                        </div>
+                    </div>
                 </Form.Item>
                 <div className="grid md:grid-cols-2 gap-x-5">
                     <Form.Item name="firstName" label={copy.firstName} rules={[{required: true}]}>

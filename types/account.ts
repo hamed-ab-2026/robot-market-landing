@@ -16,6 +16,7 @@ export type PaymentStatus = 'not_payable' | 'awaiting_payment' | 'paid' | 'faile
 export interface CustomerProfile {
     type: CustomerType;
     phone: string;
+    avatarUrl: string;
     firstName: string;
     lastName: string;
     email: string;

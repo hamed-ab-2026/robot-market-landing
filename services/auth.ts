@@ -9,6 +9,7 @@ const wait = (milliseconds = 450) => new Promise(resolve => setTimeout(resolve, 
 const emptyProfile = (phone: string): CustomerProfile => ({
     type: 'individual',
     phone,
+    avatarUrl: '',
     firstName: '',
     lastName: '',
     email: '',
