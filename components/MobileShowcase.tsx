@@ -14,10 +14,7 @@ export default function MobileShowcase() {
         <section id="showcase" className="relative w-full py-8 px-4" dir={dir}>
             <div className="flex flex-col gap-4 pb-4">
                 {featuredMachines(t.machines).map(machine => (
-                    <article
-                        key={machine.id}
-                        className="w-full bg-surface border border-subtle rounded-2xl p-4"
-                    >
+                    <article key={machine.id} className="w-full bg-surface border border-subtle rounded-2xl p-4">
                         <div className="flex gap-4 items-center">
                             {/*<Link href={`/products/${machine.id}`} className="flex gap-4 items-center">*/}
                             <img src={machine.image} alt={machine.name} className="w-24 h-28 object-contain shrink-0" />
