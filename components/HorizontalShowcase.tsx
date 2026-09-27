@@ -1,13 +1,10 @@
 'use client';
 
-import {useEffect, useRef, useState} from 'react';
-import Link from 'next/link';
+import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import VendingCard from './VendingCard';
-import {showcaseVideoSrc} from '@/data/content';
 import {featuredMachines} from '@/data/products';
-import {commerceCopy} from '@/data/commerce';
 import {useLanguage} from '@/app/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,35 +12,21 @@ gsap.registerPlugin(ScrollTrigger);
 export default function HorizontalShowcase() {
     const sectionRef = useRef<HTMLElement>(null);
     const trackRef = useRef<HTMLDivElement>(null);
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const {t, locale} = useLanguage();
-    const copy = commerceCopy[locale];
-    const [videoAvailable, setVideoAvailable] = useState(true);
+    const backgroundRef = useRef<HTMLDivElement>(null);
+    const {t} = useLanguage();
 
     useEffect(() => {
         const ctx = gsap.context(() => {
             const track = trackRef.current;
             const section = sectionRef.current;
+            const background = backgroundRef.current;
 
             if (!track || !section) return;
 
             const scrollDistance = () => Math.max(track.scrollWidth - window.innerWidth, 0);
 
-            let animationFrameId: number | null = null;
-            let latestProgress = 0;
-
-            const syncVideo = (progress: number) => {
-                latestProgress = progress;
-                if (animationFrameId !== null) return;
-
-                animationFrameId = window.requestAnimationFrame(() => {
-                    const video = videoRef.current;
-                    if (video && Number.isFinite(video.duration) && video.duration > 0) {
-                        video.currentTime = latestProgress * video.duration;
-                    }
-                    animationFrameId = null;
-                });
-            };
+            const backgroundColors = ['#062522', '#0b3d38', '#123d67', '#45235e', '#4a2c18'];
+            const colorAtProgress = (progress: number) => gsap.utils.interpolate(backgroundColors, progress);
 
             const horizontalTween = gsap.to(track, {
                 x: () => -scrollDistance(),
@@ -55,12 +38,16 @@ export default function HorizontalShowcase() {
                     scrub: 1,
                     pin: true,
                     invalidateOnRefresh: true,
-                    onUpdate: self => syncVideo(self.progress),
+                    onUpdate: self => {
+                        if (!background) return;
+
+                        background.style.backgroundColor = colorAtProgress(self.progress);
+                        background.style.backgroundPosition = `${self.progress * 100}% ${50 + self.progress * 30}%`;
+                    },
                 },
             });
 
             return () => {
-                if (animationFrameId !== null) window.cancelAnimationFrame(animationFrameId);
                 horizontalTween.scrollTrigger?.kill();
                 horizontalTween.kill();
             };
@@ -71,18 +58,16 @@ export default function HorizontalShowcase() {
 
     return (
         <section id="showcase" ref={sectionRef} className="relative w-full overflow-hidden">
-            <div className="absolute inset-0 z-0">
-                {videoAvailable && (
-                    <video
-                        ref={videoRef}
-                        src={showcaseVideoSrc}
-                        muted
-                        playsInline
-                        preload="auto"
-                        className="w-full h-full object-cover opacity-60"
-                        onError={() => setVideoAvailable(false)}
-                    />
-                )}
+            <div
+                ref={backgroundRef}
+                className="absolute inset-0 z-0 bg-[#062522] transition-[background-color] duration-300"
+                style={{
+                    backgroundImage:
+                        'radial-gradient(circle at 18% 22%, rgba(92, 204, 180, 0.42), transparent 31%), radial-gradient(circle at 78% 72%, rgba(255, 177, 92, 0.36), transparent 36%), linear-gradient(125deg, rgba(255,255,255,0.06), transparent 55%)',
+                    backgroundSize: '145% 145%, 145% 145%, 100% 100%',
+                    backgroundPosition: '0% 50%',
+                }}
+            >
                 <div
                     className="absolute inset-0"
                     style={{
@@ -92,19 +77,10 @@ export default function HorizontalShowcase() {
                 />
             </div>
 
-            <div className="relative z-20 h-40 pt-20 bg-page-85 backdrop-blur-md">
-                <div className="max-w-7xl h-full mx-auto px-8 flex justify-between items-center gap-4">
-                    <h2 className="text-2xl font-bold text-primary">{copy.featuredProducts}</h2>
-                    <Link href="/products" className="text-brand-400 hover:underline">
-                        {copy.allProducts}
-                    </Link>
-                </div>
-            </div>
-
             <div
                 ref={trackRef}
-                className="horizontal-track relative z-10 [&_.horizontal-panel]:h-full [&_.spotlight-stage]:max-h-[calc(100vh-12rem)]"
-                style={{height: 'calc(100vh - 10rem)'}}
+                className="horizontal-track relative z-10 [&_.horizontal-panel]:h-full [&_.spotlight-stage]:max-h-[calc(100vh-4rem)]"
+                style={{height: '100vh'}}
                 dir="ltr"
             >
                 {featuredMachines(t.machines).map(machine => (
