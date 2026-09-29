@@ -4,8 +4,8 @@ import Link from 'next/link';
 import {usePathname, useRouter, useSearchParams} from 'next/navigation';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {commerceCopy} from '@/data/commerce';
-import {filterMachines, productCategories} from '@/data/products';
-import QuantityControl from './QuantityControl';
+import {filterMachines, productCategories} from '@/features/products/data/catalog';
+import QuantityControl from '@/components/QuantityControl';
 
 export default function ProductsPage() {
     const {t, locale} = useLanguage();

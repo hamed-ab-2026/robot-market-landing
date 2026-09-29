@@ -1,6 +1,6 @@
 import {Suspense} from 'react';
 import type {Metadata} from 'next';
-import ProductsPage from '@/components/ProductsPage';
+import {ProductsPage} from '@/features/products';
 
 export const metadata: Metadata = {title: 'همه محصولات | روبات مارکت'};
 

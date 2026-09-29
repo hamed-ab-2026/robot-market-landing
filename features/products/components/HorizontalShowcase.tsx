@@ -4,7 +4,7 @@ import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import VendingCard from './VendingCard';
-import {featuredMachines} from '@/data/products';
+import {featuredMachines} from '@/features/products/data/catalog';
 import {useLanguage} from '@/app/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);

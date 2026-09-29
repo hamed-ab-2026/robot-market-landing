@@ -1,7 +1,7 @@
 'use client';
 
 import {PhoneOutlined} from '@ant-design/icons';
-import {featuredMachines} from '@/data/products';
+import {featuredMachines} from '@/features/products/data/catalog';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {commerceCopy} from '@/data/commerce';
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {CheckCircleOutlined} from '@ant-design/icons';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {commerceCopy} from '@/data/commerce';
-import QuantityControl from './QuantityControl';
+import QuantityControl from '@/components/QuantityControl';
 
 export default function ProductDetails({id}: {id: string}) {
     const {t, locale} = useLanguage();

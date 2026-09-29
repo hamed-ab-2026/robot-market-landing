@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {content} from '@/data/content';
-import ProductDetails from '@/components/ProductDetails';
+import {ProductDetails} from '@/features/products';
 import ProtectedPage from '@/components/auth/ProtectedPage';
 
 type Props = {params: {id: string}};

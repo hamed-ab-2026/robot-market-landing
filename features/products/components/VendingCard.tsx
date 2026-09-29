@@ -3,9 +3,6 @@
 import type {Machine} from '@/types/domain';
 import type {MouseEvent} from 'react';
 import {useRef} from 'react';
-import QuantityControl from './QuantityControl';
-import ProtectedLink from './auth/ProtectedLink';
-import {commerceCopy} from '@/data/commerce';
 import {useLanguage} from '@/app/context/LanguageContext';
 import FloatingItems from './FloatingItems';
 import {floatingSnacks} from '@/data/content';
