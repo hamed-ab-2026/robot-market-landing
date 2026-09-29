@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="Replace desktop showcase video with scroll-driven color backgrounds">
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/products/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/products/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FloatingItems.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HorizontalShowcase.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MobileShowcase.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductDetails.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductsPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ShowcaseSection.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/VendingCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/products.ts" beforeDir="false" />
+    <list default="true" id="bb7b50a5-be9c-4cd7-a05b-979f0e91b173" name="Changes" comment="refactor(products): organize product showcase into feature module">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,61 +28,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.028605430515295" />
-      <entry key="MS500" value="2.124649469580447" />
-      <entry key="S2" value="5.757603075779661" />
-      <entry key="S5" value="9.075791406095624" />
-      <entry key="S10" value="11.490304279732543" />
-      <entry key="S30" value="14.544855509715473" />
-      <entry key="S60" value="15.928253142043944" />
-      <entry key="M2" value="17.05794166660894" />
-      <entry key="M5" value="18.240030198039076" />
-      <entry key="M10" value="19.085397144523835" />
-      <entry key="M15" value="19.539401536900623" />
-      <entry key="M30" value="20.15328332293758" />
-      <entry key="H1" value="20.794543104303607" />
-      <entry key="H2" value="24.217320209573487" />
-      <entry key="H4" value="33.81335646745446" />
-      <entry key="D1" value="60.18887647810417" />
-      <entry key="W1" value="68.4601968975454" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000008943214075" />
+      <entry key="S2" value="1.2607914241876252" />
+      <entry key="S5" value="3.6321166926353086" />
+      <entry key="S10" value="7.187879480049254" />
+      <entry key="S30" value="12.833490057716963" />
+      <entry key="S60" value="15.367124944343653" />
+      <entry key="M2" value="17.200465165116825" />
+      <entry key="M5" value="18.867586649419653" />
+      <entry key="M10" value="19.889539626550388" />
+      <entry key="M15" value="20.405494126294794" />
+      <entry key="M30" value="21.08410736765042" />
+      <entry key="H1" value="21.75882388976373" />
+      <entry key="H2" value="25.19651197545119" />
+      <entry key="H4" value="34.79882663024789" />
+      <entry key="D1" value="61.184565108820564" />
+      <entry key="W1" value="69.45949632611399" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.699625509373026E-98" />
-      <entry key="S2" value="5.430941684423347E-25" />
-      <entry key="S5" value="1.9676599943042008E-10" />
-      <entry key="S10" value="1.4027330445612952E-5" />
-      <entry key="S30" value="0.02411709586160527" />
-      <entry key="S60" value="0.1553011170701436" />
-      <entry key="M2" value="0.3961550964122234" />
-      <entry key="M5" value="0.7735594310297959" />
-      <entry key="M10" value="1.120827746179152" />
-      <entry key="M15" value="1.3221230513291828" />
-      <entry key="M30" value="1.6023719910246246" />
-      <entry key="H1" value="1.7960429930071773" />
-      <entry key="H2" value="2.045967012949897" />
-      <entry key="H4" value="2.5063189725869783" />
-      <entry key="D1" value="3.6098476224764395" />
-      <entry key="W1" value="3.9392268953128196" />
+      <entry key="MS100" value="7.962034587841035E-12" />
+      <entry key="MS500" value="0.006028438183823964" />
+      <entry key="S2" value="0.2786449669589018" />
+      <entry key="S5" value="0.5998193629466475" />
+      <entry key="S10" value="0.7744876138562475" />
+      <entry key="S30" value="0.9379611448586518" />
+      <entry key="S60" value="1.098380535936316" />
+      <entry key="M2" value="1.3551692202762455" />
+      <entry key="M5" value="1.7492815083633066" />
+      <entry key="M10" value="2.1050752944469457" />
+      <entry key="M15" value="2.3102267135979067" />
+      <entry key="M30" value="2.595453075209157" />
+      <entry key="H1" value="2.792248246685056" />
+      <entry key="H2" value="3.0438541717577623" />
+      <entry key="H4" value="3.5050645308767083" />
+      <entry key="D1" value="4.609559468032772" />
+      <entry key="W1" value="4.939182358578843" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04871208675588815" />
-      <entry key="MS500" value="1.5761328815881446" />
-      <entry key="S2" value="5.568297668845106" />
-      <entry key="S5" value="8.989731845795651" />
-      <entry key="S10" value="11.439232203057065" />
-      <entry key="S30" value="14.54354096178068" />
-      <entry key="S60" value="16.064294199401182" />
-      <entry key="M2" value="17.43942775764285" />
-      <entry key="M5" value="19.00501566584518" />
-      <entry key="M10" value="20.200966633195225" />
-      <entry key="M15" value="20.857682272562908" />
-      <entry key="M30" value="21.753511294575368" />
-      <entry key="H1" value="22.589437021258547" />
-      <entry key="H2" value="26.262649646152585" />
-      <entry key="H4" value="36.319290758304845" />
-      <entry key="D1" value="63.798632595714466" />
-      <entry key="W1" value="72.39940953778996" />
+      <entry key="MS100" value="3.2612493671796914E-8" />
+      <entry key="MS500" value="0.03182913112034664" />
+      <entry key="S2" value="0.7198587400143126" />
+      <entry key="S5" value="3.605555500545043" />
+      <entry key="S10" value="7.540560604413133" />
+      <entry key="S30" value="13.59016436886081" />
+      <entry key="S60" value="16.363500468632758" />
+      <entry key="M2" value="18.498243290148842" />
+      <entry key="M5" value="20.590803130608784" />
+      <entry key="M10" value="21.980529817792103" />
+      <entry key="M15" value="22.705973658811303" />
+      <entry key="M30" value="23.6744528413458" />
+      <entry key="H1" value="24.548438225385052" />
+      <entry key="H2" value="28.238985379440273" />
+      <entry key="H4" value="38.30313469133441" />
+      <entry key="D1" value="65.7939710746819" />
+      <entry key="W1" value="74.39865557179122" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -234,7 +225,7 @@
       <workItem from="1790568898974" duration="91000" />
       <workItem from="1790569032481" duration="788000" />
       <workItem from="1790573950198" duration="16000" />
-      <workItem from="1790660862579" duration="1055000" />
+      <workItem from="1790660862579" duration="2098000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -588,7 +579,23 @@
       <option name="project" value="LOCAL" />
       <updated>1790661145102</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="refactor(products): organize product showcase into feature module">
+      <option name="closed" value="true" />
+      <created>1790662441910</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1790662441910</updated>
+    </task>
+    <task id="LOCAL-00046" summary="refactor(products): organize product showcase into feature module">
+      <option name="closed" value="true" />
+      <created>1790662596270</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1790662596270</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,6 +625,7 @@
     <MESSAGE value="FAZ1" />
     <MESSAGE value="Improve featured products layout and add support CTA" />
     <MESSAGE value="Replace desktop showcase video with scroll-driven color backgrounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace desktop showcase video with scroll-driven color backgrounds" />
+    <MESSAGE value="refactor(products): organize product showcase into feature module" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(products): organize product showcase into feature module" />
   </component>
 </project>
