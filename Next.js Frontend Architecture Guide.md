@@ -130,14 +130,8 @@ All components should be Server Components by default.
 Example:
 
 ```tsx
-export default function UsersPage(){
-
- return (
-   <div>
-     Users
-   </div>
- )
-
+export default function UsersPage() {
+    return <div>Users</div>;
 }
 ```
 
@@ -158,7 +152,7 @@ Examples:
 Then add:
 
 ```tsx
-"use client"
+'use client';
 ```
 
 at the top.
@@ -166,11 +160,9 @@ at the top.
 Example:
 
 ```tsx
-"use client"
+'use client';
 
-export default function LoginForm(){
-
-}
+export default function LoginForm() {}
 ```
 
 Do not add `"use client"` unnecessarily.
@@ -274,10 +266,8 @@ Never call Axios directly inside components.
 Wrong:
 
 ```tsx
-function Users(){
-
- axios.get("/users")
-
+function Users() {
+    axios.get('/users');
 }
 ```
 
@@ -319,8 +309,8 @@ Example:
 
 ```ts
 export const api = axios.create({
- baseURL: process.env.NEXT_PUBLIC_API_URL
-})
+    baseURL: process.env.NEXT_PUBLIC_API_URL,
+});
 ```
 
 ---
@@ -335,7 +325,6 @@ Examples:
 - User preferences
 - Application settings
 - Global UI state
-
 
 Structure:
 
@@ -383,20 +372,12 @@ store/provider.tsx
 ```
 
 ```tsx
-"use client"
+'use client';
 
-import {Provider} from "react-redux"
+import {Provider} from 'react-redux';
 
-export function ReduxProvider({
- children
-}){
-
- return (
-   <Provider store={store}>
-      {children}
-   </Provider>
- )
-
+export function ReduxProvider({children}) {
+    return <Provider store={store}>{children}</Provider>;
 }
 ```
 
@@ -415,16 +396,16 @@ The project must be strongly typed.
 Avoid:
 
 ```ts
-any
+any;
 ```
 
 Prefer:
 
 ```ts
-interface
-type
-generics
-unknown
+interface;
+type;
+generics;
+unknown;
 ```
 
 Each feature owns its types:
@@ -445,7 +426,6 @@ Use Tailwind for:
 - Spacing
 - Responsive design
 - Custom styling
-
 
 Example:
 
@@ -477,14 +457,12 @@ Examples:
 - Pagination
 - Notification
 
-
 Use Tailwind for:
 
 - Layout
 - Positioning
 - Spacing
 - Responsive behavior
-
 
 Do not rewrite Ant Design components unless required.
 
@@ -568,12 +546,11 @@ When refactoring an existing project:
 3. Move code gradually into feature folders.
 4. Preserve existing functionality.
 5. Improve:
-   - Type safety
-   - Separation of concerns
-   - API abstraction
-   - Component reuse
-   - State management
-
+    - Type safety
+    - Separation of concerns
+    - API abstraction
+    - Component reuse
+    - State management
 
 ---
 
