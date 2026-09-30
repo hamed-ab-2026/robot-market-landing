@@ -23,10 +23,16 @@
         "app/**/*.tsx",
         "components/**/*.tsx",
         "data/**/*.ts",
+        "features/**/*.ts",
+        "features/**/*.tsx",
         "lib/**/*.ts",
+        "tests/**/*.ts",
         "store/**/*.ts",
         "types/**/*.ts",
         "tailwind.config.ts",
+        "vitest.config.ts",
+        "vitest.setup.ts",
+        "playwright.config.ts",
         ".next/types/**/*.ts"
     ],
     "exclude": ["node_modules", "docs", "out"]

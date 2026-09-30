@@ -88,7 +88,7 @@ Server Components are the default.
 Do not add:
 
 ```ts
-"use client";
+'use client';
 ```
 
 unless the component actually requires client-side functionality.
@@ -175,13 +175,13 @@ Avoid putting hundreds of lines of business logic inside `page.tsx`.
 Prefer:
 
 ```tsx
-import { ProductList } from "@/features/products/components/ProductList";
+import {ProductList} from '@/features/products/components/ProductList';
 
 /**
  * Displays the product-management page.
  */
 export default async function ProductsPage() {
-  return <ProductList />;
+    return <ProductList />;
 }
 ```
 
@@ -301,20 +301,20 @@ Functions should be:
 Prefer meaningful names:
 
 ```ts
-calculateSaleTotal()
-formatMachineStatus()
-canUserEditProduct()
-getAvailableProducts()
+calculateSaleTotal();
+formatMachineStatus();
+canUserEditProduct();
+getAvailableProducts();
 ```
 
 Avoid vague names:
 
 ```ts
-handleData()
-processStuff()
-doWork()
-helper()
-func1()
+handleData();
+processStuff();
+doWork();
+helper();
+func1();
 ```
 
 ---
@@ -337,7 +337,7 @@ Example:
  * Returns true when a product is enabled and still has stock available.
  */
 function canSellProduct(product: Product): boolean {
-  return product.enabled && product.stock > 0;
+    return product.enabled && product.stock > 0;
 }
 ```
 
@@ -354,12 +354,12 @@ Keep important business rules outside JSX when practical.
 Bad:
 
 ```tsx
-{machine.enabled &&
- machine.status === "online" &&
- machine.products.length > 0 &&
- user.permissions.includes("manage_machine") && (
-   <ManageButton />
- )}
+{
+    machine.enabled &&
+        machine.status === 'online' &&
+        machine.products.length > 0 &&
+        user.permissions.includes('manage_machine') && <ManageButton />;
+}
 ```
 
 Prefer:
@@ -368,23 +368,22 @@ Prefer:
 /**
  * Determines whether the current user can manage the given machine.
  */
-function canManageMachine(
-  machine: Machine,
-  user: User
-): boolean {
-  return (
-    machine.enabled &&
-    machine.status === "online" &&
-    machine.products.length > 0 &&
-    user.permissions.includes("manage_machine")
-  );
+function canManageMachine(machine: Machine, user: User): boolean {
+    return (
+        machine.enabled &&
+        machine.status === 'online' &&
+        machine.products.length > 0 &&
+        user.permissions.includes('manage_machine')
+    );
 }
 ```
 
 Then:
 
 ```tsx
-{canManageMachine(machine, user) && <ManageButton />}
+{
+    canManageMachine(machine, user) && <ManageButton />;
+}
 ```
 
 This improves:
@@ -478,9 +477,9 @@ Example:
  * Loads the available products and renders the product list.
  */
 export default async function ProductsPage() {
-  const products = await getProducts();
+    const products = await getProducts();
 
-  return <ProductList products={products} />;
+    return <ProductList products={products} />;
 }
 ```
 
@@ -507,13 +506,13 @@ Example:
  * Loads all products from the backend.
  */
 export async function getProducts(): Promise<Product[]> {
-  const response = await fetch(`${API_URL}/products`);
+    const response = await fetch(`${API_URL}/products`);
 
-  if (!response.ok) {
-    throw new Error("Failed to load products.");
-  }
+    if (!response.ok) {
+        throw new Error('Failed to load products.');
+    }
 
-  return response.json();
+    return response.json();
 }
 ```
 
@@ -615,9 +614,9 @@ Do not duplicate values that can be calculated.
 Bad:
 
 ```ts
-const [firstName, setFirstName] = useState("");
-const [lastName, setLastName] = useState("");
-const [fullName, setFullName] = useState("");
+const [firstName, setFirstName] = useState('');
+const [lastName, setLastName] = useState('');
+const [fullName, setFullName] = useState('');
 ```
 
 Prefer:
@@ -657,11 +656,11 @@ Bad:
 
 ```ts
 if (session) {
-  if (session.user) {
-    if (session.user.active) {
-      // logic
+    if (session.user) {
+        if (session.user.active) {
+            // logic
+        }
     }
-  }
 }
 ```
 
@@ -721,25 +720,25 @@ Names should explain intent.
 Prefer:
 
 ```ts
-selectedProduct
-currentUser
-isMachineOnline
-canEditSale
-hasAdminPermission
-shouldReloadProducts
+selectedProduct;
+currentUser;
+isMachineOnline;
+canEditSale;
+hasAdminPermission;
+shouldReloadProducts;
 ```
 
 Avoid vague names such as:
 
 ```ts
-data
-info
-item2
-temp
-res2
-obj
-value1
-stuff
+data;
+info;
+item2;
+temp;
+res2;
+obj;
+value1;
+stuff;
 ```
 
 unless the surrounding context makes the meaning completely obvious.
@@ -948,7 +947,7 @@ Prefer:
 const product = await getProduct(productId);
 
 if (!product) {
-  return null;
+    return null;
 }
 
 return product;

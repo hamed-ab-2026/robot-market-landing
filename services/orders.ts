@@ -2,6 +2,9 @@ import type {CustomerOrder, CustomerProfile} from '@/types/account';
 
 const wait = () => new Promise(resolve => setTimeout(resolve, 300));
 
+/**
+ * Builds demo orders with the latest profile fields until the real orders API is connected.
+ */
 function createOrders(customer: CustomerProfile): CustomerOrder[] {
     const buyer = {
         ...customer,

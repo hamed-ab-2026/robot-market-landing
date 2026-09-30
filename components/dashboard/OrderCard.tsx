@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type {CustomerOrder} from '@/types/account';
 import {useLanguage} from '@/app/context/LanguageContext';
 import {accountCopy, paymentStatusLabels} from '@/data/account';
+import {getOrderItemQuantity} from '@/features/dashboard/lib/orderSummary';
 import OrderStatusTag from './OrderStatusTag';
 
 export default function OrderCard({order}: {order: CustomerOrder}) {
@@ -32,9 +33,7 @@ export default function OrderCard({order}: {order: CustomerOrder}) {
                 <div>
                     <span className="text-secondary block">{copy.orderItems}</span>
                     <span className="text-primary">
-                        {order.items
-                            .reduce((sum, item) => sum + item.quantity, 0)
-                            .toLocaleString(locale === 'fa' ? 'fa-IR' : 'en-US')}
+                        {getOrderItemQuantity(order).toLocaleString(locale === 'fa' ? 'fa-IR' : 'en-US')}
                     </span>
                 </div>
             </div>
